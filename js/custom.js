@@ -62,3 +62,6 @@ function myJsonData() {
         console.error('Error fetching JSON:', error);
       });
 }
+
+myJsonData() ;
+
