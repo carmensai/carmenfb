@@ -1,0 +1,6 @@
+// data.json
+{
+  "name": "John Doe",
+  "age": 30,
+  "city": "New York"
+}
