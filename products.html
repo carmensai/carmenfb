@@ -1,44 +1,103 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Nike Store</title>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/logo.jpg" type="">
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+  <link rel="stylesheet" href="index.css"> 
+  <title> Carmen Fashion Boutique </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
-<body>
-    <nav id="nav">
-        <div class="navTop">
-            <div class="navItem">
-                <img src="./img/sneakers.png" alt="">
-            </div>
-            <div class="navItem">
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              <!-- img src="images/logo.jpg" alt="logo" -->
+			  <h1> <b>CARMEN</b> <br> <p1>Fashion Boutique</p1> 
+			  <img style="vertical-align: top; text-align: top;" src="images/logo.jpg" alt="logo" width="75" height="75" align="center">
+			  </h1> 
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+            
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+                <div class="nav-item active">
                 <div class="search">
                     <input type="text" placeholder="Search..." class="searchInput">
                     <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
                 </div>
-            </div>
-            <div class="navItem">
-                <span class="limitedOffer">Limited Offer!</span>
-            </div>
-        </div>
-        <div class="navBottom">
-            <h3 class="menuItem">AIR FORCE</h3>
-            <h3 class="menuItem">JORDAN</h3>
-            <h3 class="menuItem">BLAZER</h3>
-            <h3 class="menuItem">CRATER</h3>
-            <h3 class="menuItem">HIPPIE</h3>
-        </div>
-    </nav>
+                </div>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- Product section -->
+
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
-                <img src="./img/air.png" alt="" class="sliderImg">
+                <img src="./productimages/air.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$119</h2>
@@ -47,7 +106,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="./img/jordan.png" alt="" class="sliderImg">
+                <img src="./productimages/jordan.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$149</h2>
@@ -56,7 +115,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="./img/blazer.png" alt="" class="sliderImg">
+                <img src="./productimages/blazer.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$109</h2>
@@ -65,7 +124,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="./img/crater.png" alt="" class="sliderImg">
+                <img src="./productimages/crater.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$129</h2>
@@ -74,7 +133,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="./img/hippie.png" alt="" class="sliderImg">
+                <img src="./productimages/hippie.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$99</h2>
@@ -87,22 +146,22 @@
    
     <div class="features">
         <div class="feature">
-            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <img src="./productimages/shipping.png" alt="" class="featureIcon">
             <span class="featureTitle">FREE SHIPPING</span>
             <span class="featureDesc">Free worldwide shipping on all orders.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="./img/return.png" alt="">
+            <img class="featureIcon" src="./productimages/return.png" alt="">
             <span class="featureTitle">30 DAYS RETURN</span>
             <span class="featureDesc">No question return and easy refund in 14 days.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="./img/gift.png" alt="">
+            <img class="featureIcon" src="./productimages/gift.png" alt="">
             <span class="featureTitle">GIFT CARDS</span>
             <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="./img/contact.png" alt="">
+            <img class="featureIcon" src="./productimages/contact.png" alt="">
             <span class="featureTitle">CONTACT US!</span>
             <span class="featureDesc">Keep in touch via email and support system.</span>
         </div>
@@ -185,62 +244,143 @@
                 alt="" class="nsImg">
         </div>
     </div>
-    <footer>
-        <div class="footerLeft">
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">About Us</h1>
-                <ul class="fList">
-                    <li class="fListItem">Company</li>
-                    <li class="fListItem">Contact</li>
-                    <li class="fListItem">Careers</li>
-                    <li class="fListItem">Affiliates</li>
-                    <li class="fListItem">Stores</li>
-                </ul>
+
+  <!-- end Product section Add Details Here-->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/2yqmSuEe9UNBebnB9">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call <br>+91 7299045123/+91 6382082980 </br>
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  carmenboutiquecollections@gmail.com
+                </span>
+              </a>
             </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Useful Links</h1>
-                <ul class="fList">
-                    <li class="fListItem">Support</li>
-                    <li class="fListItem">Refund</li>
-                    <li class="fListItem">FAQ</li>
-                    <li class="fListItem">Feedback</li>
-                    <li class="fListItem">Stories</li>
-                </ul>
-            </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Products</h1>
-                <ul class="fList">
-                    <li class="fListItem">Air Force</li>
-                    <li class="fListItem">Air Jordan</li>
-                    <li class="fListItem">Blazer</li>
-                    <li class="fListItem">Crater</li>
-                    <li class="fListItem">Hippie</li>
-                </ul>
-            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        <div class="footerRight">
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-                <div class="fMail">
-                    <input type="text" placeholder="your@email.com" class="fInput">
-                    <button class="fButton">Join!</button>
-                </div>
-            </div>
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Follow Us</h1>
-                <div class="fIcons">
-                    <img src="./img/facebook.png" alt="" class="fIcon">
-                    <img src="./img/twitter.png" alt="" class="fIcon">
-                    <img src="./img/instagram.png" alt="" class="fIcon">
-                    <img src="./img/whatsapp.png" alt="" class="fIcon">
-                </div>
-            </div>
-            <div class="footerRightMenu">
-                <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
-            </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              No Matter How You Feel <br> Get Up ! Dress Up ! Show Up !  and Never Give Up ! </br>
+            </p>
+            <p>
+              Happy Shopping
+            </p>			
+          </div>
         </div>
-    </footer>
-    <script src="./app.js"></script>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="service.html">
+                Services
+              </a>
+              <a class="" href="products.html">
+                Services
+              </a>
+              <a class="" href="feedback.html">
+                Feedback
+              </a>				  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="">Carmen Fashion Boutique</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+    <!-- Script for Product apps js -->
+     <script type="text/javascript"  src="js/app.js"></script>
+    <!-- End Script for Product apps js -->
 </body>
 
 </html>
+
+
+    
+
