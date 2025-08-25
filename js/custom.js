@@ -65,3 +65,34 @@ function myJsonData() {
 
 myJsonData() ;
 
+function getImageURLs() {
+	const imageUrls = [
+					   'https://drive.google.com/thumbnail?id=1pPn_YYWGmTIA55u9Azo43qb7FiERJ2lC&sz=w1000',
+					   'https://drive.google.com/thumbnail?id=146ChejEIWL7jCTC9vk9gib7B4PEn-nlS&sz=w1000',
+					   'https://drive.google.com/thumbnail?id=1G9bRzYdcgbiNYflHxgnGcoB8qFZEhou7&sz=w1000',
+					   'https://drive.google.com/thumbnail?id=1z6MYDUao9MjEzoLIpucHcp630MTC8Uzm&sz=w1000',
+					   'https://drive.google.com/thumbnail?id=1OEQrW-MsxmAS__0vAK5mRbUn8Jo2c1RE&sz=w1000'
+					];
+
+	const sliderImage = document.getElementById('sliderImage');
+	//const ImageIndex = document.getElementById('ImageIndex');
+	const imageList = document.getElementById('imageList');
+	let currentIndex = 0;
+
+	// Function to change the image
+	function changeImage() {
+		sliderImage.src = imageUrls[currentIndex];
+		currentIndex = (currentIndex + 1) % imageUrls.length; // Loop through images
+		//document.getElementById('ImageIndex').innerHTML = currentIndex;
+		//return currentIndex;
+	}
+
+	// Initial image load and image list population
+	changeImage();
+
+	// Change image every 3 seconds (adjust as needed)
+	setInterval(changeImage, 5000);
+	//document.getElementById('ImageIndex').innerHTML = curIndex;
+}
+getImageURLs();
+
