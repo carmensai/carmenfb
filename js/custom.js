@@ -65,8 +65,7 @@ function myJsonData() {
 
 myJsonData() ;
 
-function getImageURLs() {
-	const imageUrls = [
+const imageUrls = [
 					   'https://drive.google.com/thumbnail?id=1pPn_YYWGmTIA55u9Azo43qb7FiERJ2lC&sz=w1000',
 					   'https://drive.google.com/thumbnail?id=146ChejEIWL7jCTC9vk9gib7B4PEn-nlS&sz=w1000',
 					   'https://drive.google.com/thumbnail?id=1G9bRzYdcgbiNYflHxgnGcoB8qFZEhou7&sz=w1000',
@@ -93,6 +92,6 @@ function getImageURLs() {
 	// Change image every 3 seconds (adjust as needed)
 	setInterval(changeImage, 5000);
 	//document.getElementById('ImageIndex').innerHTML = curIndex;
-}
-getImageURLs();
+
+
 
