@@ -32,7 +32,7 @@ function myFunction(xml) {
   let table="<tr><th>Product Id</th><th>Name</th>th>Price</th><th>Image</th></tr>";
   for (let i = 0; i <x.length; i++) { 
     table += "<tr>" +
-   "<td>" + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</td>" +
+   "<td>" + x.length + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</td>" +
    "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
    "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
    "</tr>"
@@ -44,3 +44,4 @@ function myFunction(xml) {
 
 </body>
 </html>
+
