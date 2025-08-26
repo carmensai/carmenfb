@@ -40,9 +40,9 @@ function myFunction(xml) {
     let ImagenodeIndex = -1;
 
   let table="<tr>";
-  for (let i = 0; i <VCol[0].childNodes[0].length; i++) { 
+  for (let i = 0; i < 10; i++) { 
     table += "<th>" +
-    VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue +
+    VRec[i].getElementsByTagName("Data")[i].childNodes[0].nodeValue +
     "</th>";
         if (VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue = targetNode) {
             ImagenodeIndex = i;
@@ -73,6 +73,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
