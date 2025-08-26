@@ -9,11 +9,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./productimages/air.png",
+        img: "./productimages/p1.jpeg",
       },
       {
         code: "darkblue",
-        img: "./productimages/air2.png",
+        img: "./productimages/p2.jpeg",
       },
     ],
   },
@@ -24,11 +24,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./productimages/jordan.png",
+        img: "./productimages/p3.jpeg",
       },
       {
         code: "green",
-        img: "./productimages/jordan2.png",
+        img: "./productimages/p4.jpeg",
       },
     ],
   },
@@ -39,11 +39,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./productimages/blazer.png",
+        img: "./productimages/p5.jpeg",
       },
       {
         code: "green",
-        img: "./productimages/blazer2.png",
+        img: "./productimages/p6.jpeg",
       },
     ],
   },
@@ -54,11 +54,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "./productimages/crater.png",
+        img: "./productimages/p1.jpeg",
       },
       {
         code: "lightgray",
-        img: "./productimages/crater2.png",
+        img: "./productimages/p1.jpeg",
       },
     ],
   },
@@ -69,11 +69,11 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "./productimages/hippie.png",
+        img: "./productimages/p1.jpeg",
       },
       {
         code: "black",
-        img: "./productimages/hippie2.png",
+        img: "./productimages/p1.jpeg",
       },
     ],
   },
