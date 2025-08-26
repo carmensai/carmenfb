@@ -23,7 +23,7 @@ function loadDoc() {
   xhttp.onload = function() {
     myFunction(this);
   }
-  xhttp.open("GET", "./cd_catalog.xml");
+  xhttp.open("GET", "https://carmensai.github.io/carmenfb/cd_catalog.xml", true);
   xhttp.send();
 }
 function myFunction(xml) {
@@ -43,3 +43,4 @@ function myFunction(xml) {
 
 </body>
 </html>
+
