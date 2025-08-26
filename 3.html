@@ -33,9 +33,9 @@ function myFunction(xml) {
   for (let i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "</td><td>" +
+    "</td><th>" +
     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td><img src=\"./productimage/p1.jpeg\"></img></tr>";
+    "</th><img src=\"./productimages/p1.jpeg\" border=3 height=100 width=300></img></th></tr>";
   }
   document.getElementById("demo").innerHTML = table;
 }
@@ -43,6 +43,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
