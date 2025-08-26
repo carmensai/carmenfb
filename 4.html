@@ -42,9 +42,9 @@ function myFunction(xml) {
   let table="<tr>";
   for (let i = 0; i <1; i++) { 
     table += "<th>" +
-    VRec[i].getElementsByTagName(VRec[1].childNodes[0].nodeName)[0].childNodes[0].nodeValue +
+    VRec[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue +
     "</th>";
-        if (titles[i] === targetNode) {
+        if (VRec[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue = targetNode) {
             ImagenodeIndex = i;
         }
   }
@@ -73,6 +73,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
