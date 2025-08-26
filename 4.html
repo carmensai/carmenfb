@@ -40,7 +40,7 @@ function myFunction(xml) {
     let ImagenodeIndex = -1;
 
   let table="<tr>";
-  for (let i = 0; i <1; i++) { 
+  for (let i = 0; i <VRec[0].childNodes[0].length; i++) { 
     table += "<th>" +
     VRec[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue +
     "</th>";
@@ -73,6 +73,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
