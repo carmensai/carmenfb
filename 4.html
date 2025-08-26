@@ -31,7 +31,7 @@ function myFunction(xml) {
   const Vhead = xmlDoc.getElementsByTagName("Row");
   const VRec = xmlDoc.getElementsByTagName("Row");
   const divElement = document.getElementById("Cell");
-  const VCol = xmlDoc.getElementsByTagName("Cell")[0];
+  const VFCol = xmlDoc.getElementsByTagName("Cell")[0];
   
   
   
@@ -40,9 +40,9 @@ function myFunction(xml) {
     let ImagenodeIndex = -1;
 
   let table="<tr>";
-  for (let i = 0; i < 10; i++) { 
+  for (let i = 0; i < VFCol.length; i++) { 
     table += "<th>" +
-    VRec[i].getElementsByTagName("Data")[i].childNodes[0].nodeValue +
+    VFCol[0].getElementsByTagName("Data")[i].nodeValue +
     "</th>";
         if (VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue = targetNode) {
             ImagenodeIndex = i;
@@ -73,6 +73,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
