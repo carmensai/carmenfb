@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction(this);
+  }
+  xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const Vhead = xmlDoc.getElementsByTagName("Row");
+  const VRec = xmlDoc.getElementsByTagName("Row");
+  const divElement = document.getElementById("Cell");
+  const VCol = xmlDoc.getElementsByTagName("Cell")[0];
+  
+  
+  
+  
+    const targetNode = "IMAGE PATH";
+    let ImagenodeIndex = -1;
+
+  let table="<tr>";
+  for (let i = 0; i <1; i++) { 
+    table += "<th>" +
+    VRec[i].getElementsByTagName(VRec[1].childNodes[0].nodeName)[0].childNodes[0].nodeValue +
+    "</th>";
+        if (titles[i] === targetNode) {
+            ImagenodeIndex = i;
+        }
+  }
+  table +="</tr>";
+  for (let i = 1; i <VRec.length; i++) { 
+    table += "<tr>";
+	for (let j = 1; i <VCol.length; i++) {
+			if (j = ImagenodeIndex) {
+			table += "<td><img src=\"" +
+					 VRec[i].getElementsByTagName(VRec[0].childNodes[1].nodeName)[0].childNodes[j].nodeValue +
+					"\" border=3 height=100 width=300></img>" +
+					 "</td>";
+			}
+			else {
+			table += "<td>" +
+			VRec[i].getElementsByTagName(VRec[0].childNodes[1].nodeName)[0].childNodes[j].nodeValue +
+			"</td>" ;
+			
+			}
+		}
+	table += "</tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+

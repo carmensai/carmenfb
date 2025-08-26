@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Harshavardhan N</Author>
+  <LastAuthor>Harshavardhan N</LastAuthor>
+  <Created>2025-08-26T20:04:02Z</Created>
+  <LastSaved>2025-08-26T20:32:11Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8196</WindowHeight>
+  <WindowWidth>21384</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="23" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:Index="2" ss:Width="204"/>
+   <Column ss:Width="328.79999999999995"/>
+   <Column ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="65.400000000000006" ss:Span="2"/>
+   <Column ss:Index="8" ss:Width="73.199999999999989"/>
+   <Column ss:AutoFitWidth="0" ss:Width="65.400000000000006"/>
+   <Column ss:Width="55.800000000000004"/>
+   <Column ss:Index="13" ss:AutoFitWidth="0" ss:Width="61.199999999999996"/>
+   <Column ss:AutoFitWidth="0" ss:Width="56.4"/>
+   <Row>
+    <Cell><Data ss:Type="String">PRODUCT ID</Data></Cell>
+    <Cell><Data ss:Type="String">NAME</Data></Cell>
+    <Cell><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell><Data ss:Type="String">IMAGE PATH</Data></Cell>
+    <Cell><Data ss:Type="String">DESIGN</Data></Cell>
+    <Cell><Data ss:Type="String">PRICE</Data></Cell>
+    <Cell><Data ss:Type="String">OFFER PRICE</Data></Cell>
+    <Cell><Data ss:Type="String">DISCOUNT ANY</Data></Cell>
+    <Cell><Data ss:Type="String">AVAILABILITY</Data></Cell>
+    <Cell><Data ss:Type="String">FABRIC</Data></Cell>
+    <Cell><Data ss:Type="String">TOP</Data></Cell>
+    <Cell><Data ss:Type="String">BOTTOM</Data></Cell>
+    <Cell><Data ss:Type="String">DUPPATTA</Data></Cell>
+    <Cell><Data ss:Type="String">COLORS</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR2</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR3</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR4</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR5</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR6</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR7</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR8</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR9</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR10</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P01</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P01.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
