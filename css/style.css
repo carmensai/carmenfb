@@ -1137,18 +1137,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-nav {
-  background-color: #111;
-  color: white;
-  padding: 20px 50px;
-}
-
 .navTop {
   display: flex;
   align-items: center;
@@ -1158,9 +1146,14 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  background-color: gray;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: #145990;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .searchInput {
@@ -1169,20 +1162,9 @@ nav {
 }
 
 .searchInput::placeholder {
-  color: lightgray;
+  color: white;
 }
 
-.limitedOffer {
-  font-size: 20px;
-  border-bottom: 2px solid green;
-  cursor: pointer;
-}
-
-.navBottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .menuItem {
   margin-right: 50px;
