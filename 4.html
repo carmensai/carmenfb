@@ -40,11 +40,11 @@ function myFunction(xml) {
     let ImagenodeIndex = -1;
 
   let table="<tr>";
-  for (let i = 0; i <VRec[0].childNodes[1].length; i++) { 
+  for (let i = 0; i <VCol[0].childNodes[0].length; i++) { 
     table += "<th>" +
-    VRec[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue +
+    VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue +
     "</th>";
-        if (VRec[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue = targetNode) {
+        if (VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue = targetNode) {
             ImagenodeIndex = i;
         }
   }
@@ -54,13 +54,13 @@ function myFunction(xml) {
 	for (let j = 1; i <VCol.length; i++) {
 			if (j = ImagenodeIndex) {
 			table += "<td><img src=\"" +
-					 VRec[i].getElementsByTagName(VRec[0].childNodes[1].nodeName)[0].childNodes[j].nodeValue +
+					 VRec[i].getElementsByTagName("Data")[0].childNodes[j].nodeValue +
 					"\" border=3 height=100 width=300></img>" +
 					 "</td>";
 			}
 			else {
 			table += "<td>" +
-			VRec[i].getElementsByTagName(VRec[0].childNodes[1].nodeName)[0].childNodes[j].nodeValue +
+			VRec[i].getElementsByTagName("Data")[0].childNodes[j].nodeValue +
 			"</td>" ;
 			
 			}
@@ -73,6 +73,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
