@@ -136,6 +136,3 @@ close.addEventListener("click", () => {
   payment.style.display = "none";
 });
 
-"user strict";
-import users from './data.json' assert{type: 'json'};
-console.log(users);
