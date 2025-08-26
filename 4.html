@@ -28,44 +28,15 @@ function loadDoc() {
 }
 function myFunction(xml) {
   const xmlDoc = xml.responseXML;
-  const Vhead = xmlDoc.getElementsByTagName("Row");
-  const VRec = xmlDoc.getElementsByTagName("Row");
-  const divElement = document.getElementById("Cell");
-  const VFCol = xmlDoc.getElementsByTagName("Cell")[0];
-  
-  
-  
-  
-    const targetNode = "IMAGE PATH";
-    let ImagenodeIndex = -1;
-
-  let table="<tr>";
-  for (let i = 0; i < VFCol.length; i++) { 
-    table += "<th>" +
-    VFCol[0].getElementsByTagName("Data")[i].nodeValue +
-    "</th>";
-        if (VRec[0].getElementsByTagName("Data")[0].childNodes[i].nodeValue = targetNode) {
-            ImagenodeIndex = i;
-        }
-  }
-  table +="</tr>";
-  for (let i = 1; i <VRec.length; i++) { 
-    table += "<tr>";
-	for (let j = 1; i <VCol.length; i++) {
-			if (j = ImagenodeIndex) {
-			table += "<td><img src=\"" +
-					 VRec[i].getElementsByTagName("Data")[0].childNodes[j].nodeValue +
-					"\" border=3 height=100 width=300></img>" +
-					 "</td>";
-			}
-			else {
-			table += "<td>" +
-			VRec[i].getElementsByTagName("Data")[0].childNodes[j].nodeValue +
-			"</td>" ;
-			
-			}
-		}
-	table += "</tr>";
+  const x = xmlDoc.getElementsByTagName("Row");
+  let table="<tr><th>Product Id</th><th>Name</th>th>Price</th><th>Image</th></tr>";
+  for (let i = 0; i <x.length; i++) { 
+    table += "<tr>" +
+   "<td>" + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</td>" +
+   "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
+   "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
+   "</tr>"
+    ;
   }
   document.getElementById("demo").innerHTML = table;
 }
@@ -73,14 +44,3 @@ function myFunction(xml) {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
