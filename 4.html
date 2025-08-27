@@ -336,11 +336,12 @@ function myFunction(xml) {
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
 		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
-		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>
-		"<p class=\"productDesc\">Top : " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue + "</p>
-		"<p class=\"productDesc\">Bottom : " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue + "</p>
-		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>
-		"<div class=\"colors\">";
+		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>" +
+		"<p class=\"productDesc\">Top : " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue + "</p>" +
+		"<p class=\"productDesc\">Bottom : " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue + "</p>" +
+		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>" +
+		"<div class=\"colors\">"
+		;
 	  for ( let c=0; c<=10; c++ { 
 			  if (x[i].getElementsByTagName("Data")[c+11].childNodes[0].nodeValue) != "") 
 		  		{ 
@@ -364,6 +365,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
