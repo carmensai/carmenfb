@@ -15,7 +15,7 @@ th,td {
 
 <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
 <br><br>
-<div id="demo"></div>
+<div id="demo"> </div>
 
 <script>
 function loadXMLProducts() {
@@ -42,7 +42,8 @@ function myFunction(xml) {
   const x = xmlDoc.getElementsByTagName("Row");
   let table="";
   for (let i = 0; i <x.length; i++) { 
-    table += "<div>" +
+    table += 
+      //"<div>" +
        //"<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
        //slidebg +
       //Title
@@ -53,8 +54,8 @@ function myFunction(xml) {
       // "</div>"
       "<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       "<h2>>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
-      "<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" +
-       "</div>"
+      "<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
+       //"</div>"
         ;
     
   }
@@ -65,6 +66,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
