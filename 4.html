@@ -114,7 +114,7 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	       <div class="product" id="product"> </div>
+	       <div id="productdet"> </div>
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
         <div class="payment">
@@ -304,7 +304,7 @@ function myFunction(xml) {
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
   let table = slidewrap;
-  let prod = "";
+  
 	
   for (let i = 1; i <x.length; i++) { 
     table += 
@@ -322,28 +322,34 @@ function myFunction(xml) {
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
       // "</div>"
         ;
-    prod +=
+     if ( i=1 ) {
+	  let prod = "<div class=\"product\" id=\"product\">";
+	  prod +=
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
+		proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
 		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
 		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>" +
 		"<p class=\"productDesc\">Top : " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue + "</p>" +
 		"<p class=\"productDesc\">Bottom : " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue + "</p>" +
-		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>" +
-		"<div class=\"colors\">"
+		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>" 
+		// +
+	//	"<div class=\"colors\">"
 		;
-	  for ( let c=0; c<=10; c++ { 
-			  if (x[i].getElementsByTagName("Data")[c+11].childNodes[0].nodeValue) != "") 
-		 		{ 
-					prod += "<div class=\"color\"></div>";
-		  		}
-	  }
+	 // for ( let c=0; c<=10; c++ { 
+	//		  if (x[i].getElementsByTagName("Data")[c+11].childNodes[0].nodeValue) != "") 
+	//	 		{ 
+	//				prod += "<div class=\"color\"></div>";
+	//	  		}
+	//  }
 	  prod += "</div/>";
-	  prod += "<button class=\"productButton\">BUY NOW!</button>";	
+	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
+	  prod += "</div>";
+	 }
   }
   table += "</div>";
   document.getElementById("productgroup").innerHTML = table;
-  document.getElementById("product").innerHTML = prod; 
+  document.getElementById("productdet").innerHTML = prod; 
   console.log(table);
   console.log(prod);
 }
@@ -352,6 +358,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
