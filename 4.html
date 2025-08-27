@@ -36,7 +36,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
-<body oncload="loadXMLProducts()>
+<body onload="loadXMLProducts()">
 
   <div class="hero_area">
 
@@ -45,7 +45,6 @@
         <img src="images/hero-bg1.png" alt="">
       </div>
     </div>
-
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -88,40 +87,37 @@
       </div>
     </header>
     <!-- end header section -->
+		<!-- Product section -->
+		<!-- section class="service_section layout_padding" -->
+		  <!--button type="button" onclick="loadXMLProducts()">Get my CD collection</button-->
+	  	   <div class="slider" id="demo" ></div>
+		    <div class="features">
+		        <div class="feature">
+		            <img src="./productimages/shipping.png" alt="" class="featureIcon">
+		            <span class="featureTitle">FREE SHIPPING</span>
+		            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+		        </div>
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/return.png" alt="">
+		            <span class="featureTitle">30 DAYS RETURN</span>
+		            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+		        </div>
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/gift.png" alt="">
+		            <span class="featureTitle">GIFT CARDS</span>
+		            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+		        </div>
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/contact.png" alt="">
+		            <span class="featureTitle">CONTACT US!</span>
+		            <span class="featureDesc">Keep in touch via email and support system.</span>
+		        </div>
+		    </div>
+		</div>      
+		<!--/section -->
   </div>
   <!-- class hero_area End -->
-
-<!-- Product section -->
-<!-- section class="service_section layout_padding" -->
-  <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
-   <br><br>
-   <div id="demo" ></div>
-    <div class="features">
-        <div class="feature">
-            <img src="./productimages/shipping.png" alt="" class="featureIcon">
-            <span class="featureTitle">FREE SHIPPING</span>
-            <span class="featureDesc">Free worldwide shipping on all orders.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./productimages/return.png" alt="">
-            <span class="featureTitle">30 DAYS RETURN</span>
-            <span class="featureDesc">No question return and easy refund in 14 days.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./productimages/gift.png" alt="">
-            <span class="featureTitle">GIFT CARDS</span>
-            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./productimages/contact.png" alt="">
-            <span class="featureTitle">CONTACT US!</span>
-            <span class="featureDesc">Keep in touch via email and support system.</span>
-        </div>
-    </div>
-  
-      
-<!--/section -->
-
+	
   <!-- info section -->
 
   <section class="info_section layout_padding2">
@@ -277,7 +273,7 @@ function myFunction(xml) {
   
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
-  let table = slide + slidewrap;
+  let table = slidewrap;
   for (let i = 1; i <x.length; i++) { 
     table += 
       slideitem +
@@ -296,14 +292,30 @@ function myFunction(xml) {
         ;
     
   }
-  table += "</div> </div>";
+  table += "</div>";
   document.getElementById("demo").innerHTML = table;
+	console.log(table);
 }
 </script>
-
+	
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
