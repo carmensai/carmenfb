@@ -36,6 +36,15 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg1.png" alt="">
+      </div>
+    </div>
 
     <!-- header section strats -->
     <header class="header_section">
@@ -93,8 +102,19 @@
 <!-- section class="service_section layout_padding" -->
   <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
    <br><br>
-   <div id="demo" height="2000" width="2000"></div>
-
+   <div id="demo" ></div>
+   <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./productimages/air.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+		</div></div>
     <div class="features">
         <div class="feature">
             <img src="./productimages/shipping.png" alt="" class="featureIcon">
@@ -303,6 +323,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
