@@ -1104,8 +1104,8 @@ img {
   text-align: center;
 }
 feedback_Container{
-    display:inline-block;
-    width:130px;
+  display:inline-block;
+  width:130px;
   list-style-type: none;
   text-align: center; 
   padding: 0;
@@ -1200,6 +1200,8 @@ html {
 }
 
 .sliderImg {
+  width: 100vw;
+  height: 140vw;
   z-index: 1;
 }
 
