@@ -178,3 +178,6 @@ function myFunction(xml) {
   table += "</div> </div>"
   document.getElementById("demo").innerHTML = table;
 }
+// Calling loadXMLProducts
+loadXMLProducts();
+
