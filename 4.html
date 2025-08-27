@@ -36,7 +36,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
-<body>
+<body oncload="loadXMLProducts()>
 
   <div class="hero_area">
 
@@ -84,13 +84,6 @@
               </li>
             </ul>
           </div>
-			<div class="navBottom">
-	            <h3 class="menuItem">AIR FORCE</h3>
-	            <h3 class="menuItem">JORDAN</h3>
-	            <h3 class="menuItem">BLAZER</h3>
-	            <h3 class="menuItem">CRATER</h3>
-	            <h3 class="menuItem">HIPPIE</h3>
-        	</div>
         </nav>
       </div>
     </header>
@@ -103,18 +96,6 @@
   <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
    <br><br>
    <div id="demo" ></div>
-   <div class="slider">
-        <div class="sliderWrapper">
-            <div class="sliderItem">
-                <img src="./productimages/air.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$119</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-		</div></div>
     <div class="features">
         <div class="feature">
             <img src="./productimages/shipping.png" alt="" class="featureIcon">
@@ -299,7 +280,7 @@ function myFunction(xml) {
   let table = slide + slidewrap;
   for (let i = 1; i <x.length; i++) { 
     table += 
-      "<div>" +
+      slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
        slidebg +
       //Title
@@ -323,6 +304,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
