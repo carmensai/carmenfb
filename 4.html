@@ -90,7 +90,7 @@
 		<!-- Product section -->
 		<!-- section class="service_section layout_padding" -->
 		  <!--button type="button" onclick="loadXMLProducts()">Get my CD collection</button-->
-	  	   <div class="slider" id="demo" ></div>
+	  	   <div class="slider" id="productgroup" ></div>
 		    <div class="features">
 		        <div class="feature">
 		            <img src="./productimages/shipping.png" alt="" class="featureIcon">
@@ -113,6 +113,34 @@
 		            <span class="featureDesc">Keep in touch via email and support system.</span>
 		        </div>
 		    </div>
+	      <!-- Add the Product Details -->
+	       <div class="product" id="product">
+			</div>
+		  <!-- Add the Product Details Ends -->
+	    <!-- Payment Division Staarts -->
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./productimages/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./productimages/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+	  <!-- Payment Division Ends -->
 		</div>      
 		<!--/section -->
   </div>
@@ -266,6 +294,9 @@ function myFunction(xml) {
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#product\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
+  // const prodcontainer = "<div class=\"product\" id=\"product\">";
+  // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
+  const proddetail = "<div class=\"productDetails\">";
   //<img src="./img/air.png" alt="" class="sliderImg">
   // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
   //<h2 class="sliderPrice">$119</h2>
@@ -274,10 +305,21 @@ function myFunction(xml) {
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
   let table = slidewrap;
+  let prod = slidewrap;
+
+    
+        
+        
+            
+            
+
+            
+        </div>
+	
   for (let i = 1; i <x.length; i++) { 
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
        slidebg +
       //Title
        "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
@@ -290,17 +332,39 @@ function myFunction(xml) {
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
       // "</div>"
         ;
-    
+    prod +=
+		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
+		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
+		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>
+		"<p class=\"productDesc\">Top : " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue + "</p>
+		"<p class=\"productDesc\">Bottom : " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue + "</p>
+		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>
+		"<div class=\"colors\">";
+	  for ( let c=0; c<=10; c++ { 
+			  if (x[i].getElementsByTagName("Data")[c+11].childNodes[0].nodeValue) != "") 
+		  		{ 
+					prod += "<div class=\"color\"></div>";
+		  		}
+	  }
+	  prod += "</div/>";
+	  prod += "<button class=\"productButton\">BUY NOW!</button>";
+	  
+		
+		
   }
   table += "</div>";
-  document.getElementById("demo").innerHTML = table;
-	console.log(table);
+  document.getElementById("productgroup").innerHTML = table;
+  document.getElementById("product").innerHTML = prod; 
+  console.log(table);
+  console.log(prod);
 }
 </script>
 	
 </body>
 
 </html>
+
 
 
 
