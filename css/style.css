@@ -1200,8 +1200,8 @@ html {
 }
 
 .sliderImg {
-  width: 100vw;
-  height: 140vw;
+  width: 20vh;
+  height: 20vh;
   z-index: 1;
 }
 
