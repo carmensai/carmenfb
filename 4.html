@@ -43,19 +43,19 @@ function myFunction(xml) {
   let table="";
   for (let i = 0; i <x.length; i++) { 
     table += 
-      //"<div>" +
-       //"<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
-       //slidebg +
+      "<div>" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+       slidebg +
       //Title
-      // "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
-      // "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + </h2> +
-      // prodref + butbuynow +
-      // "</a>" + 
-      // "</div>"
-      "<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
-      "<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
-      "<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
+       "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
+       "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + </h2> +
+       prodref + butbuynow +
+       "</a>" + 
        "</div>"
+      //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
+      //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
+      //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
+      // "</div>"
         ;
     
   }
@@ -66,6 +66,7 @@ function myFunction(xml) {
 
 </body>
 </html>
+
 
 
 
