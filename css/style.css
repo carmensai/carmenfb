@@ -1180,13 +1180,13 @@ html {
 
 .sliderWrapper {
   display: flex;
-  width: 20vh;
-  height: 20vh;
+  width: 500vw;
+  height: 500vw;
   transition: all 1.5s ease-in-out;
 }
 
 .sliderItem {
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1201,8 +1201,6 @@ html {
 }
 
 .sliderImg {
-  width: 20vh;
-  height: 20vh;
   z-index: 1;
 }
 
