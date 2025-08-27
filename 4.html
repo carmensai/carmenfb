@@ -30,7 +30,7 @@ function myFunction(xml) {
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
-  const slidebg = "<div class="sliderBg"></div>";
+  const slidebg = "<div class=\"sliderBg"></div>";
   const prodref = "<a href=\"#product\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
   //<img src="./img/air.png" alt="" class="sliderImg">
@@ -40,29 +40,31 @@ function myFunction(xml) {
   
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
-  let table += slide + slidewrap;
+  let table="<tr><th>Product</th><th>Title</th><th>Image</th></tr>";
   for (let i = 0; i <x.length; i++) { 
-    table += slideitem +
-       "<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
-       slidebg +
+    table += "<tr><td>" +
+       //"<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+       //slidebg +
       //Title
-       "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
-       "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + </h2> +
-       prodref + butbuynow +
-       "</a>" + 
-       "</div>"
-      // "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
-      // "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
-      // "</tr>"
+      // "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
+      // "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + </h2> +
+      // prodref + butbuynow +
+      // "</a>" + 
+      // "</div>"
+      "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
+       "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
+      "<td>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</td>" +
+       "</tr>"
         ;
     
   }
-  table += "</div> </div>"
+  //table += "</div> </div>"
   document.getElementById("demo").innerHTML = table;
 }
 </script>
 
 </body>
 </html>
+
 
 
