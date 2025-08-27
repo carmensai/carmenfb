@@ -249,7 +249,7 @@
   </script>
   <!-- End Google Map -->
     <!-- Script for Product apps js -->
-     <script type="text/javascript"  src="js/app.js"></script>
+  <script type="text/javascript"  src="js/app.js"></script>
 	
     <!-- End Script for Product apps js -->
   
@@ -279,7 +279,7 @@ function myFunction(xml) {
   let table = slide + slidewrap;
   for (let i = 0; i <x.length; i++) { 
     table += 
-      "<div>" +
+      slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
        slidebg +
       //Title
@@ -303,6 +303,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
