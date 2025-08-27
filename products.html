@@ -37,7 +37,7 @@
 
 </head>
 
-<body class="sub_page">
+<body class="sub_page" onload="loadXMLProducts()">
 
   <div class="hero_area">
 
@@ -102,9 +102,9 @@
   <!-- Product section -->
   <section class="service_section layout_padding">
 
-  <button type="button" onclick="loadDoc()">Get my CD collection</button>
+  <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
 	<br><br>
-    <table id="demo"></table>
+    <div id="demo"></div>
    
     <div class="features">
         <div class="feature">
@@ -342,25 +342,48 @@
     <!-- End Script for Product apps js -->
 	<script>
 <script>
-function loadDoc() {
+function loadXMLProducts() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     myFunction(this);
   }
-  xhttp.open("GET", "https://carmensai.github.io/carmenfb/cd_catalog.xml", true);
+  xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
   xhttp.send();
 }
 function myFunction(xml) {
+  const slide = "<div class=\"slider\">";
+  const slidewrap = "<div class=\"sliderWrapper\">";
+  const slideitem = "<div class=\"sliderItem\">";
+  const slidebg = "<div class=\"sliderBg\"></div>";
+  const prodref = "<a href=\"#product\">";
+  const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
+  //<img src="./img/air.png" alt="" class="sliderImg">
+  // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
+  //<h2 class="sliderPrice">$119</h2>
+                
+  
   const xmlDoc = xml.responseXML;
-  const x = xmlDoc.getElementsByTagName("CD");
-  let table="<tr><th>Artist</th><th>Title</th><th>Image</th></tr>";
+  const x = xmlDoc.getElementsByTagName("Row");
+  let table = slide + slidewrap;
   for (let i = 0; i <x.length; i++) { 
-    table += "<tr><td>" +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "</td> <td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td><td><img src=\"./productimages/p1.jpeg\" border=3 height=100 width=300></img></td></tr>";
+    table += 
+      "<div>" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+       slidebg +
+      //Title
+       "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
+       "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
+       prodref + butbuynow +
+       "</a>" + 
+       "</div>"
+      //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
+      //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
+      //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
+      // "</div>"
+        ;
+    
   }
+  table += "</div> </div>"
   document.getElementById("demo").innerHTML = table;
 }
 </script>
