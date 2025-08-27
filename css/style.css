@@ -1205,16 +1205,23 @@ html {
   z-index: 1;
 }
 .sliderNameCap {
-    font-size: 20px;
+    font-size: 12px;
     padding-left: 20px;
     padding-top: 20%;
     float: left;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
 }
 .sliderPriceCap {
     font-size: 20px;
     padding-left: 20px;
     padding-top: 20%;
     float: left;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+    border: 1px solid gray;
 }
 .sliderTitle {
   position: absolute;
@@ -1240,7 +1247,7 @@ html {
 }
 
 .buyButton {
-  position: absolute;
+  position: flex;
   top: 10%;
   right: 2%;
   font-size: 10px;
