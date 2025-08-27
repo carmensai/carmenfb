@@ -46,17 +46,7 @@
       </div>
     </div>
    <div class="slider">
-        <div class="sliderWrapper">
-            <div class="sliderItem">
-                <img src="./productimages/p1.jpeg" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$119</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-		</div>
+	<div id="demo" ></div>
    </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -104,9 +94,8 @@
 
 		<!-- Product section -->
 		<!-- section class="service_section layout_padding" -->
-		  <button type="button" onclick="loadXMLProducts()">Get my CD collection</button>
-		   <br><br>
-		   <div id="demo" ></div>
+		  <!-- button type="button" onclick="loadXMLProducts()">Get my CD collection</button -->
+		   <!-- div id="demo" ></div -->
 		    <div class="features">
 		        <div class="feature">
 		            <img src="./productimages/shipping.png" alt="" class="featureIcon">
@@ -289,7 +278,7 @@ function myFunction(xml) {
   
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
-  let table = slide + slidewrap;
+  let table = slidewrap;
   for (let i = 1; i <x.length; i++) { 
     table += 
       slideitem +
@@ -308,7 +297,7 @@ function myFunction(xml) {
         ;
     
   }
-  table += "</div> </div>";
+  table += "</div>";
   document.getElementById("demo").innerHTML = table;
 }
 </script>
@@ -316,6 +305,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
