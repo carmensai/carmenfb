@@ -363,7 +363,7 @@
 	  
 	  const xmlDoc = xml.responseXML;
 	  const x = xmlDoc.getElementsByTagName("Row");
-	  let table += slide + slidewrap;
+	  let table = slide + slidewrap;
 	  for (let i = 0; i <x.length; i++) { 
 		table += slideitem +
 		   "<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
