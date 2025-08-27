@@ -279,7 +279,7 @@ function myFunction(xml) {
   let table = slide + slidewrap;
   for (let i = 0; i <x.length; i++) { 
     table += 
-      slideitem +
+      "<div class=\"sliderItem\">" +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
        slidebg +
       //Title
@@ -295,7 +295,7 @@ function myFunction(xml) {
         ;
     
   }
-  table += "</div> </div>"
+  table += "</div> </div>";
   document.getElementById("demo").innerHTML = table;
 }
 </script>
@@ -303,6 +303,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
