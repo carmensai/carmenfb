@@ -18,7 +18,7 @@ th,td {
 <table id="demo"></table>
 
 <script>
-function loadDoc() {
+function loadXMLProducts() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     myFunction(this);
@@ -27,21 +27,42 @@ function loadDoc() {
   xhttp.send();
 }
 function myFunction(xml) {
+  const slide = "<div class=\"slider\">";
+  const slidewrap = "<div class=\"sliderWrapper\">";
+  const slideitem = "<div class=\"sliderItem\">";
+  const slidebg = "<div class="sliderBg"></div>";
+  const prodref = "<a href=\"#product\">";
+  const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
+  //<img src="./img/air.png" alt="" class="sliderImg">
+  // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
+  //<h2 class="sliderPrice">$119</h2>
+                
+  
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
-  let table="<tr><th>Product Id</th><th>Name</th>th>Price</th><th>Image</th></tr>";
+  let table += slide + slidewrap;
   for (let i = 0; i <x.length; i++) { 
-    table += "<tr>" +
-   "<td>" + x.length + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</td>" +
-   "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
-   "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
-   "</tr>"
-    ;
+    table += slideitem +
+       "<img src=\""+ x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" +
+       slidebg +
+      //Title
+       "<h1 class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</h1>" +
+       "<h2 class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + </h2> +
+       prodref + butbuynow +
+       "</a>" + 
+       "</div>"
+      // "<td>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</td>" + 
+      // "<td>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</td>" +
+      // "</tr>"
+        ;
+    
   }
+  table += "</div> </div>"
   document.getElementById("demo").innerHTML = table;
 }
 </script>
 
 </body>
 </html>
+
 
