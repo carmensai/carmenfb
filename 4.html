@@ -337,8 +337,8 @@ function myFunction(xml) {
 	  prodimg +=
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" ;
 	  prod +=
-		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
-		proddetail +
+		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
+		// proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
 		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
 		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>" +
@@ -354,7 +354,7 @@ function myFunction(xml) {
 	//				prod += "<div class=\"color\"></div>";
 	//	  		}
 	//  }
-	  prod += "</div/>";
+	//  prod += "</div/>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
 	 // prod += "</div>";
 	 }
@@ -371,6 +371,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
