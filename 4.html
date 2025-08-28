@@ -295,7 +295,7 @@ function myFunction(xml) {
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#prodimage\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
-  // const prodcontainer = "<div class=\"product\" id=\"product\">";
+  const prodcontainer = "<div class=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
   const proddetail = "<div class=\"productDetails\">";
   //<img src="./img/air.png" alt="" class="sliderImg">
@@ -334,16 +334,18 @@ function myFunction(xml) {
         ;
      if ( i <= 1 ) {
 
-	  prod += proddetail +
+	  prod +=  prodcontainer +
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
-		// proddetail +
-		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
+		 proddetail +
+		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" +
+		"<h1 class=\"productDesc\"> Product Id: " + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</h1>" +
+		"<h1 class=\"productDesc\"> Product Details " + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h1>" +
 		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
 		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>" +
 		"<p class=\"productDesc\">Top : " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue + "</p>" +
 		"<p class=\"productDesc\">Bottom : " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue + "</p>" +
-		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>" 
+		"<p class=\"productDesc\">Duppatta : " + x[i].getElementsByTagName("Data")[11].childNodes[0].nodeValue + "</p>" +
 		// +
 	//	"<div class=\"colors\">"
 		;
@@ -355,6 +357,7 @@ function myFunction(xml) {
 	//  }
 	//  prod += "</div>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
+	  prod += "</div>";
 	  prod += "</div>";
 	 }
   }
@@ -370,6 +373,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
