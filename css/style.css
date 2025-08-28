@@ -1229,12 +1229,12 @@ html {
 	text-align: right;
 }
 .sliderPriceCap {
-	position: absolute;
-	top: 90%;
-    right: 90%;
+	position: flex;
+	/*top: 90%;
+    right: 90%;*/
 	font-size: 20px;
 	font-weight: 200;
-	text-align: left;
+	text-align: center;
 	color: white;
     border: 3px solid red;
 }
@@ -1263,14 +1263,14 @@ html {
 
 .buyButton {
   position: absolute;
-  top: 10%;
+  top: 90%;
   right: 2%;
   font-size: 10px;
   font-weight: 200;
   color: white;
   border: 1px solid gray;
   background-color: black;
-  z-index: 1;
+  /*z-index: 1; */
   cursor: pointer;
 }
 
