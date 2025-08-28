@@ -1210,6 +1210,14 @@ html {
   height: 200px;
   z-index: 1;
 }
+.sliderWTitle {
+  text-align: center;
+  padding: 10px 20px;
+}
+.sliderWPrice {
+  text-align: center;
+  padding: 10px 20px;
+}
 .sliderNameCap {
 	position: flex;
     font-size: 12px;
