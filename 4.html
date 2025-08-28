@@ -90,60 +90,58 @@
 		<!-- Product section -->
 		<!-- section class="service_section layout_padding" -->
 		  <!--button type="button" onclick="loadXMLProducts()">Get my CD collection</button-->
-	  	    <div class="slider" id="productgroup" ></div>
-			<div class="features">
-				<div class="feature">
-					<img src="./productimages/shipping.png" alt="" class="featureIcon">
-					<span class="featureTitle">FREE SHIPPING</span>
-					<span class="featureDesc">Free worldwide shipping on all orders.</span>
-				</div>
-				<div class="feature">
-					<img class="featureIcon" src="./productimages/return.png" alt="">
-					<span class="featureTitle">30 DAYS RETURN</span>
-					<span class="featureDesc">No question return and easy refund in 14 days.</span>
-				</div>
-				<div class="feature">
-					<img class="featureIcon" src="./productimages/gift.png" alt="">
-					<span class="featureTitle">GIFT CARDS</span>
-					<span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-				</div>
-				<div class="feature">
-					<img class="featureIcon" src="./productimages/contact.png" alt="">
-					<span class="featureTitle">CONTACT US!</span>
-					<span class="featureDesc">Keep in touch via email and support system.</span>
-				</div>
-			</div>
-	       <!-- Add the Product Details -->
-	       <div class="product" id="product">
-			   <!-- img src="./productimages/air.png" alt="" class="productImg" -->
-			   <div class="productDetails" id="productdet"> </div>
-
-	    		<!-- Payment Division Staarts -->
-		        <div class="payment">
-		            <h1 class="payTitle">Personal Information</h1>
-		            <label>Name and Surname</label>
-		            <input type="text" placeholder="John Doe" class="payInput">
-		            <label>Phone Number</label>
-		            <input type="text" placeholder="+1 234 5678" class="payInput">
-		            <label>Address</label>
-		            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
-		            <h1 class="payTitle">Card Information</h1>
-		            <div class="cardIcons">
-		                <img src="./productimages/visa.png" width="40" alt="" class="cardIcon">
-		                <img src="./productimages/master.png" alt="" width="40" class="cardIcon">
-		            </div>
-		            <input type="password" class="payInput" placeholder="Card Number">
-		            <div class="cardInfo">
-		                <input type="text" placeholder="mm" class="payInput sm">
-		                <input type="text" placeholder="yyyy" class="payInput sm">
-		                <input type="text" placeholder="cvv" class="payInput sm">
-		            </div>
-		            <button class="payButton">Checkout!</button>
-		            <span class="close">X</span>
+	  	   <div class="slider" id="productgroup" ></div>
+		    <div class="features">
+		        <div class="feature">
+		            <img src="./productimages/shipping.png" alt="" class="featureIcon">
+		            <span class="featureTitle">FREE SHIPPING</span>
+		            <span class="featureDesc">Free worldwide shipping on all orders.</span>
 		        </div>
-	  		<!-- Payment Division Ends -->
-		   </div>
-	  	   <!-- Add the Product Details Ends -->
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/return.png" alt="">
+		            <span class="featureTitle">30 DAYS RETURN</span>
+		            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+		        </div>
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/gift.png" alt="">
+		            <span class="featureTitle">GIFT CARDS</span>
+		            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+		        </div>
+		        <div class="feature">
+		            <img class="featureIcon" src="./productimages/contact.png" alt="">
+		            <span class="featureTitle">CONTACT US!</span>
+		            <span class="featureDesc">Keep in touch via email and support system.</span>
+		        </div>
+		    </div>
+	      <!-- Add the Product Details -->
+	       <div class="product" id="product">
+			   <img src="./productimages/air.png" alt="" class="productImg">
+			   <div class="productDetails" id="productdet">
+		  <!-- Add the Product Details Ends -->
+	    <!-- Payment Division Staarts -->
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./productimages/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./productimages/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+	  <!-- Payment Division Ends -->
 		</div>      
 		<!--/section -->
   </div>
@@ -317,13 +315,13 @@ function myFunction(xml) {
       // slidebg +
       //Title
        // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
-		"<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
+		"<div> <p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
 		"<p class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
 	    "<p class=\"sliderNameCap\"> Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	    "<p class=\"sliderNameCap\"> Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	    "<p class=\"sliderNameCap\"> Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "</p>" +
 	    "<p class=\"sliderNameCap\"> Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</p>" +
-        "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+        "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p> </div>" +
 		// "</div" +
        prodref + butbuynow +
        "</a>" + 
@@ -369,11 +367,6 @@ function myFunction(xml) {
 </body>
 
 </html>
-
-
-
-
-
 
 
 
