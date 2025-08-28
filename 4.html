@@ -114,8 +114,9 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	       <div class="product" id="product">
-			<img src="./productimages/air.png" alt="" class="productImg" id="productdet">
+	       <div class="product" id="prodimage">
+		   <div class="productdetails" id="productdet"> </div>
+		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
         <div class="payment">
@@ -292,7 +293,7 @@ function myFunction(xml) {
   const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
-  const prodref = "<a href=\"#product\">";
+  const prodref = "<a href=\"#prodimage\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
   // const prodcontainer = "<div class=\"product\" id=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
@@ -314,8 +315,8 @@ function myFunction(xml) {
       // slidebg +
       //Title
        // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
-		"<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
-		"<p class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
+		"<li class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</li>" +
+		"<li class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "li" +
 	   "<p class=\"sliderNameCap\"> Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "</p>" +
@@ -332,6 +333,9 @@ function myFunction(xml) {
         ;
      if ( i<=1 ) {
 	  let prod = "";
+	  let prodimg ="";
+	  prodimg +=
+		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" ;
 	  prod +=
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
 		proddetail +
@@ -358,6 +362,7 @@ function myFunction(xml) {
   table += "</div>";
   document.getElementById("productgroup").innerHTML = table;
   document.getElementById("productdet").innerHTML = prod; 
+  document.getElementById("prodimage").innerHTML = prodimg;
   console.log(table);
   console.log(prod);
 }
@@ -366,6 +371,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
