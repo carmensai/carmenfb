@@ -1190,6 +1190,8 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
 }
 
 .sliderBg {
@@ -1198,7 +1200,11 @@ html {
   border-radius: 20%;
   position: absolute;
 }
-
+.sliderTextImg {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
 .sliderImg {
   width: 200px;
   height: 200px;
