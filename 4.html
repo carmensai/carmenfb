@@ -114,7 +114,8 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	       <div class="product" id="prodimage">
+	      <div class="product" id="prodimage">
+		   <img id="prodimage" class="productImg">
 		   <div class="productdetails" id="productdet"> </div>
 		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
@@ -315,8 +316,8 @@ function myFunction(xml) {
       // slidebg +
       //Title
        // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
-		"<li class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</li>" +
-		"<li class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "li" +
+	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
+	   "<p  class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "</p>" +
@@ -338,7 +339,7 @@ function myFunction(xml) {
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">" ;
 	  prod +=
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
-		// proddetail +
+		 proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h1>" +
 		"<h2 class=\"productPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</h2>" +
 		"<p class=\"productDesc\">Fabric : " + x[i].getElementsByTagName("Data")[8].childNodes[0].nodeValue + "</p>" +
@@ -356,7 +357,7 @@ function myFunction(xml) {
 	//  }
 	//  prod += "</div/>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
-	 // prod += "</div>";
+	  prod += "</div>";
 	 }
   }
   table += "</div>";
@@ -371,6 +372,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
