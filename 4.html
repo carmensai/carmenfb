@@ -114,7 +114,8 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	      <div class="product" id="prodimg">
+	      <div class="product" id="productref">
+			  <p id="prodimg"> </p> 
 			  <div class="productDetails" id = "productdet" > </div>
 		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
@@ -294,7 +295,7 @@ function myFunction(xml) {
   const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
-  const prodref = "<a href=\"#prodimage\">";
+  const prodref = "<a href=\"#productref\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
   const prodcontainer = "<div class=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
@@ -335,12 +336,12 @@ function myFunction(xml) {
         ;
      if ( i <= 1 ) {
 
-	  prodimg +=  "<div class=\"productImg\">" +
+	  prodimg +=  
 		  // prodcontainer +
-		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
-		"</div>" ;
+		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" 
+		 ;
 		  
-	  prod +=  proddetail +
+	  prod +=  
 		  // prodcontainer +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
@@ -364,7 +365,7 @@ function myFunction(xml) {
 	//  }
 	//  prod += "</div>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
-	  prod += "</div>";
+	 // prod += "</div>";
 	//  prod += "</div>";
 	 }
   }
@@ -380,6 +381,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
