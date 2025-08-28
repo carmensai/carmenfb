@@ -1190,7 +1190,7 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-bottom: 25px;
 }
 
@@ -1346,7 +1346,7 @@ html {
   height: 100vh;
   background-color: whitesmoke;
   position: relative;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); */
 }
 
 .payment {
