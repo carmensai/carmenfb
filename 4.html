@@ -114,7 +114,8 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	      <div class="product" id="productdet">
+	      <div class="product" id="prodimg">
+			  <div class="productDetails" id = "productdet" > </div>
 		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
@@ -142,7 +143,7 @@
             <span class="close">X</span>
   		</div -->
 	  <!-- Payment Division Ends -->
-		</div>      
+		</div> 
 		<!--/section -->
   </div>
   <!-- class hero_area End -->
@@ -334,11 +335,16 @@ function myFunction(xml) {
         ;
      if ( i <= 1 ) {
 
-	  prod +=  
+	  prodimg +=  "<div class=\"productImg\">" +
 		  // prodcontainer +
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
+		"</div>" ;
+		  
+	  prod +=  proddetail +
+		  // prodcontainer +
+		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
-		 proddetail +
+		// proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" +
 		"<h1 class=\"productDesc\"> Product Id: " + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</h1>" +
 		"<h1 class=\"productDesc\"> Product Details " + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h1>" +
@@ -374,6 +380,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
