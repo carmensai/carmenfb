@@ -334,7 +334,8 @@ function myFunction(xml) {
         ;
      if ( i <= 1 ) {
 
-	  prod +=  prodcontainer +
+	  prod +=  
+		  // prodcontainer +
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
 		 proddetail +
@@ -358,7 +359,7 @@ function myFunction(xml) {
 	//  prod += "</div>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
 	  prod += "</div>";
-	  prod += "</div>";
+	//  prod += "</div>";
 	 }
   }
   table += "</div>";
@@ -373,6 +374,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
