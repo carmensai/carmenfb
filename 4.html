@@ -312,8 +312,9 @@ function myFunction(xml) {
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
       // slidebg +
       //Title
-       "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
-       "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+       "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" class=\"productImg\">" +
+	   "<p class=\"sliderTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
+       "<p class=\"sliderPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
        prodref + butbuynow +
        "</a>" + 
        "</div>"
@@ -358,6 +359,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
