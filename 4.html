@@ -115,7 +115,6 @@
 		    </div>
 	      <!-- Add the Product Details -->
 	       <div class="product" id="product">
-	       	<div id="productdet"> </div>
 		   </div>
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
@@ -332,7 +331,8 @@ function myFunction(xml) {
       // "</div>"
         ;
      if ( i<=1 ) {
-	  let prod = "<div class=\"product\" id=\"product\">";
+	 // let prod = "<div class=\"product\" id=\"product\">";
+	let prod = "<div class=\"product\" id=\"product\">";
 	  prod +=
 		"<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
 		proddetail +
@@ -358,7 +358,7 @@ function myFunction(xml) {
   }
   table += "</div>";
   document.getElementById("productgroup").innerHTML = table;
-  document.getElementById("productdet").innerHTML = prod; 
+  document.getElementById("product").innerHTML = prod; 
   console.log(table);
   console.log(prod);
 }
@@ -367,6 +367,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
