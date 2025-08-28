@@ -114,8 +114,8 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	      <div class="product" id="productref">
-	      <div class="productDetails" id="productdet"> </div>
+	      <div class="product" id="productdet">
+	      
 		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
@@ -343,8 +343,8 @@ function myFunction(xml) {
 	  prod +=  
 		  // prodcontainer +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
-		 "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
-		// proddetail +
+		 "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">"  +
+		 proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" +
 		"<h1 class=\"productDesc\"> Product Id: " + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</h1>" +
 		"<h1 class=\"productDesc\"> Product Details " + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h1>" +
@@ -364,7 +364,7 @@ function myFunction(xml) {
 	//  }
 	//  prod += "</div>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
-	 // prod += "</div>";
+	  prod += "</div>";
 	//  prod += "</div>";
 	 }
   }
@@ -380,6 +380,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
