@@ -1205,6 +1205,7 @@ html {
   z-index: 1;
 }
 .sliderNameCap {
+	position: flex;
     font-size: 12px;
     padding-left: 20px;
     padding-top: 20%;
@@ -1214,14 +1215,14 @@ html {
 	text-align: right;
 }
 .sliderPriceCap {
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 20%;
-    float: left;
-    color: white;
-    font-weight: 100;
-	text-align: right;
-    border: 1px solid gray;
+	position: absolute;
+	top: 90%;
+    right: 90%;
+	font-size: 20px;
+	font-weight: 200;
+	text-align: left;
+	color: white;
+    border: 3px solid red;
 }
 .sliderTitle {
   position: absolute;
@@ -1247,7 +1248,7 @@ html {
 }
 
 .buyButton {
-  position: flex;
+  position: absolute;
   top: 10%;
   right: 2%;
   font-size: 10px;
