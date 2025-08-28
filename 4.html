@@ -114,9 +114,7 @@
 		        </div>
 		    </div>
 	      <!-- Add the Product Details -->
-	      <div class="product" id="productref">
-			  <p id="prodimg"> </p> 
-			  <div class="productDetails" id = "productdet" > </div>
+	      <div class="productDetails" id="productdet">
 		    <!-- img src="./productimages/air.png" alt="" class="productImg" id="productdet" -->
 		  <!-- Add the Product Details Ends -->
 	    <!-- Payment Division Staarts -->
@@ -344,7 +342,7 @@ function myFunction(xml) {
 	  prod +=  
 		  // prodcontainer +
 		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productImg\">" +
-		// "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
+		 "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"sliderImg\">"  +
 		// proddetail +
 		"<h1 class=\"productTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" +
 		"<h1 class=\"productDesc\"> Product Id: " + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue + "</h1>" +
@@ -381,6 +379,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
