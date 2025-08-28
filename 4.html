@@ -309,10 +309,10 @@ function myFunction(xml) {
   for (let i = 1; i <x.length; i++) { 
     table += 
       slideitem +
-       "<div class=\"productImg\"> <img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" class=\"productWImg\">" +
+       "<div class=\"productImg\"> <img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\" >" +
       // slidebg +
       //Title
-      // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
+       "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
 	   "<p class=\"sliderWTitle\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
        "<p class=\"sliderWPrice\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
 		"</div" +
@@ -360,6 +360,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
