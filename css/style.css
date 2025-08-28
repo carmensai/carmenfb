@@ -1441,24 +1441,24 @@ label {
   position: absolute;
   top: 10%;
   right: 0;
-  width: 40%;
+  width: 30%;
   padding: 50px;
 }
 
 .productTitle {
-  font-size: 45px;
+  font-size: 22px;
   font-weight: 900;
 }
 
 .productDesc {
-  font-style: 24px;
+  font-style: 18px;
   color: gray;
 }
 
 .colors,
 .sizes {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .color {
@@ -1479,7 +1479,7 @@ label {
   border: 1px solid black;
   margin-right: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .productButton {
