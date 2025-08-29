@@ -60,7 +60,7 @@ const currentProductPrice = document.querySelector(".productPrice");
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
-    wrapper.style.transform = `translateX(${-100 * index}vw)`;
+    wrapper.style.transform = `translateX(${-200 * index}vw)`;
 
     //change the choosen product
     choosenProduct = products[index];
