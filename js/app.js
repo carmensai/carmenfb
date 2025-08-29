@@ -45,9 +45,11 @@ function myArrayFunction(xml) {
   console.log(tmp_productArrayTable);
   const products =  tmp_productArrayTable;
 }
+
 loadXMLProductstoArray() ;
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
+const buttons = [];
 
 let choosenProduct = products[0];
 
@@ -56,6 +58,46 @@ const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
 //const currentProductColors = document.querySelectorAll(".color");
 //const currentProductSizes = document.querySelectorAll(".size");
+
+const sliderImages = document.querySelector(".sliderImg"); 
+
+function updateslider(){
+	const offset = -currentIndex * 100;
+	slider.style.transform = `translateX(${offset}%`;
+	buttons.foreach((button, imdex) => {
+		if (index == currentIndex) {
+			buttons[0].classList.add('active');
+		} else {
+			buttons[0].classList.remove('active');
+		}
+	})
+}
+
+function createpagination()
+{
+	sliderImages.foreach((_, index) =>{
+		const button = document.createElement('button');
+		button.addEventListener('click', () => {
+			currentIndex = index;
+			updateslider();
+		});
+		pagination.appendchild(button);
+		buttons.push(button);
+	});
+	buttons[0].classList.add('active');
+	if (index == currentIndex) {
+		
+	} else {}
+}
+updateslider();
+createpagination();
+
+
+function autoslide(){
+	currentIndex = (currentIndex + 1) % images.length;
+	updateslider();
+}
+setinterval(autoslide, 3000);
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
