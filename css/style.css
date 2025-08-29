@@ -1725,3 +1725,6 @@ footer {
 	border-radious: 50%;
 	cursor: pointer;
 }
+.pagination button.active{
+	background: #333;
+}
