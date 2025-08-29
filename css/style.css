@@ -1712,3 +1712,16 @@ footer {
     padding: 20px;
   }
 }
+.pagination{
+	marigin-top: 10px;
+	text-align: center;
+}
+.pagination button{
+	background: #ccc;
+	border: none;
+	margin: 5px;
+	width: 12px;
+	height: 12px;
+	border-radious: 50%;
+	cursor: pointer;
+}
