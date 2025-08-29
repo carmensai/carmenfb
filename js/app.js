@@ -47,7 +47,7 @@ function myArrayFunction(xml) {
 }
 loadXMLProductstoArray() ;
 const wrapper = document.querySelector(".sliderWrapper");
-const menuItems = document.querySelectorAll(".menuitem");
+const menuItems = document.querySelectorAll(".menuItem");
 
 let choosenProduct = products[0];
 
