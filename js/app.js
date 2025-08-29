@@ -1,91 +1,61 @@
-const wrapper = document.querySelector(".sliderWrapper");
-const menuItems = document.querySelectorAll(".menuItem");
+function AddProdArray(product_id,	name,	description,	image_path,	design,	price,	offer_price,	discount_any,	availability,	fabric,	top,	bottom,	duppatta
+) {
+this.product_id = product_id;
+this.name = name;
+this.description = description;
+this.image_path = image_path;
+this.design = design;
+this.price = price;
+this.offer_price = offer_price;
+this.discount_any = discount_any;
+this.availability = availability;
+this.fabric = fabric;
+this.top = top;
+this.bottom = bottom;
+this.duppatta = duppatta;
+}
+function loadXMLProductstoArray() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myArrayFunction(this);
+  };
+  xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
+  xhttp.send();
+}
+var products =[];
+function myArrayFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("Row");
+  let tmp_productArrayTable = [];
 
-const products = [
-  {
-    id: 1,
-    title: "Air Force",
-    price: 119,
-    colors: [
-      {
-        code: "black",
-        img: "./productimages/p1.jpeg",
-      },
-      {
-        code: "darkblue",
-        img: "./productimages/p2.jpeg",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Air Jordan",
-    price: 149,
-    colors: [
-      {
-        code: "lightgray",
-        img: "./productimages/p3.jpeg",
-      },
-      {
-        code: "green",
-        img: "./productimages/p4.jpeg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Blazer",
-    price: 109,
-    colors: [
-      {
-        code: "lightgray",
-        img: "./productimages/p5.jpeg",
-      },
-      {
-        code: "green",
-        img: "./productimages/p6.jpeg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Crater",
-    price: 129,
-    colors: [
-      {
-        code: "black",
-        img: "./productimages/p1.jpeg",
-      },
-      {
-        code: "lightgray",
-        img: "./productimages/p1.jpeg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Hippie",
-    price: 99,
-    colors: [
-      {
-        code: "gray",
-        img: "./productimages/p1.jpeg",
-      },
-      {
-        code: "black",
-        img: "./productimages/p1.jpeg",
-      },
-    ],
-  },
-];
+  for (let i = 1; i < x.length; i++) {
+    let prodCol = [];
+    for (let j = 0; j < 13; j++) {
+      prodCol[j] = x[i].getElementsByTagName("Data")[j].childNodes[0].nodeValue;
+    }
+
+    tmp_productArrayTable.push(new AddProdArray(
+      prodCol[0], prodCol[1], prodCol[2], prodCol[3], prodCol[4],
+      prodCol[5], prodCol[6], prodCol[7], prodCol[8], prodCol[9],
+      prodCol[10], prodCol[11], prodCol[12]
+    ));
+  }
+
+  document.getElementById("productdemo").innerHTML = "Loaded " + tmp_productArrayTable[0].product_id + " products.";
+  console.log(tmp_productArrayTable);
+  const products =  tmp_productArrayTable;
+}
+loadXMLProductstoArray() ;
+const wrapper = document.querySelector(".sliderWrapper");
+const menuItems = document.querySelectorAll(".sliderItem");
 
 let choosenProduct = products[0];
 
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
-const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelectorAll(".size");
+//const currentProductColors = document.querySelectorAll(".color");
+//const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -96,14 +66,16 @@ menuItems.forEach((item, index) => {
     choosenProduct = products[index];
 
     //change texts of currentProduct
-    currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "$" + choosenProduct.price;
-    currentProductImg.src = choosenProduct.colors[0].img;
+    currentProductTitle.textContent = choosenProduct.name;
+    currentProductPrice.textContent = "Rs" + choosenProduct.price;
+    currentProductImg.src = choosenProduct.image_path;
+	//currentProductImg.src = choosenProduct.image_path;
+	//currentProductImg.src = choosenProduct.image_path;
 
     //assing new colors
-    currentProductColors.forEach((color, index) => {
-      color.style.backgroundColor = choosenProduct.colors[index].code;
-    });
+   // currentProductColors.forEach((color, index) => {
+   //   color.style.backgroundColor = choosenProduct.colors[index].code;
+   // });
   });
 });
 
