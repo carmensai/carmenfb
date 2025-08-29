@@ -318,6 +318,14 @@ function myFunction(xml) {
       // slidebg +
       //Title
        // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
+	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "" +
+	   "Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "" +
+	   "Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "" +
+	   "Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "" +
+	   "Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "" +
+	   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</p>" +
+       "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
 	   "<p  class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "</p>" +
@@ -325,6 +333,7 @@ function myFunction(xml) {
 	   "<p class=\"sliderNameCap\"> Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "</p>" +
 	   "<p class=\"sliderNameCap\"> Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</p>" +
        "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+	   */
 		// "</div" +
        prodref + butbuynow +
        "</a>" + 
@@ -381,6 +390,7 @@ function myFunction(xml) {
 </body>
 
 </html>
+
 
 
 
