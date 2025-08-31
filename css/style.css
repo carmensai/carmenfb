@@ -1713,18 +1713,22 @@ footer {
   }
 }
 .pagination{
-	marigin-top: 10px;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 0;
+  border-radius: 0.25rem;
 }
 .pagination button{
-	background: #ccc;
-	border: none;
-	margin: 5px;
-	width: 12px;
-	height: 12px;
-	border-radious: 50%;
-	cursor: pointer;
+  background-color: #fff;
+  border: none;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .pagination button.active{
-	background: #333;
+  background-color: #231a6f;
+  color: #fff;
 }
