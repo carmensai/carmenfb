@@ -63,7 +63,7 @@ const sliderImages = document.querySelector(".sliderImg");
 
 function updateslider(){
 	const offset = -currentIndex * 100;
-	slider.style.transform = `translateX(${offset}%`;
+	slider.style.transform = `translateX(${offset}%)`;
 	buttons.foreach((button, imdex) => {
 		if (index == currentIndex) {
 			buttons[0].classList.add('active');
