@@ -59,7 +59,11 @@ const currentProductPrice = document.querySelector(".productPrice");
 //const currentProductColors = document.querySelectorAll(".color");
 //const currentProductSizes = document.querySelectorAll(".size");
 
-const sliderImages = document.querySelector(".sliderImg"); 
+
+let currentIndex = 0;
+const slider = document.querySelector(".slider");
+const sliderImages = document.querySelectorAll(".sliderImg");
+const pagination = document.querySelector(".pagination");
 
 function updateslider(){
 	const offset = -currentIndex * 100;
