@@ -64,7 +64,7 @@ const sliderImages = document.querySelector(".sliderImg");
 function updateslider(){
 	const offset = -currentIndex * 100;
 	slider.style.transform = `translateX(${offset}%)`;
-	buttons.foreach((button, imdex) => {
+	buttons.forEach((button, index) => {
 		if (index == currentIndex) {
 			buttons[0].classList.add('active');
 		} else {
@@ -75,7 +75,7 @@ function updateslider(){
 
 function createpagination()
 {
-	sliderImages.foreach((_, index) =>{
+	sliderImages.forEach((_, index) =>{
 		const button = document.createElement('button');
 		button.addEventListener('click', () => {
 			currentIndex = index;
