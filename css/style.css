@@ -1185,7 +1185,7 @@ html {
 }
 
 .sliderItem {
-  width: 200vw;
+  width: 400vw;
   display: flex;
   align-items: center;
   justify-content: center;
