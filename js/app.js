@@ -261,4 +261,5 @@ function myFunction(xml) {
   console.log(table);
   console.log(prod);
 }
+loadXMLProducts();
 
