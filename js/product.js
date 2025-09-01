@@ -56,7 +56,10 @@ function myFunction(xml) {
        prodref + butbuynow +
        "</a>" + 
 		"<li> </li>" + 
-       "</div>"
+       "</div>" +
+	   "<ol class=\"carousel-indicators\">" +
+  	   "<li  data-target=\"#customCarousel1\" data-slide-to=\"" + i + "\" class=\"active\">" +
+ 		"</li> </ol>"
       //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
