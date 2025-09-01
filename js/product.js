@@ -55,6 +55,7 @@ function myFunction(xml) {
 		// "</div" +
        prodref + butbuynow +
        "</a>" + 
+		"<li> </li>" + 
        "</div>"
       //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
