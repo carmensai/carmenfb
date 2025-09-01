@@ -103,6 +103,7 @@ function autoslide(){
 }
 setinterval(autoslide, 3000);
 
+/* 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
@@ -124,6 +125,7 @@ menuItems.forEach((item, index) => {
    // });
   });
 });
+*/
 
 currentProductColors.forEach((color, index) => {
   color.addEventListener("click", () => {
