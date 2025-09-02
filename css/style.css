@@ -1732,3 +1732,17 @@ footer {
   background-color: #231a6f;
   color: #fff;
 }
+
+.sliderItem .carousel-indicators li {
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.sliderItem .carousel-indicators li.active {
+  width: 30px;
+  height: 30px;
+  background-color: #00bbf0;
+}
