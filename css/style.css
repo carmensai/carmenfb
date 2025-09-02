@@ -1184,7 +1184,7 @@ html {
   transition: all 1.5s ease-in-out;
 }
 .slidergrid-content {
-	width: 100%;
+	width: 500vw;
 	height: 100vh;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -1193,7 +1193,7 @@ html {
 
 .sliderItem {
   width: 400vw;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   position: relative;
