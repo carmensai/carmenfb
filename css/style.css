@@ -1746,3 +1746,39 @@ footer {
   height: 30px;
   background-color: #00bbf0;
 }
+
+.nivo-controlNav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 8;
+}
+
+.nivo-directionNav {
+  display: block;
+}
+
+.nivo-controlNav a {
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #fff;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 0;
+  height: 2px;
+  margin: 5px 3px;
+  opacity: 1;
+  text-align: center;
+  text-indent: inherit;
+  vertical-align: top;
+  width: 20px;
+}
+
+.nivo-controlNav a:hover, .nivo-controlNav a.active {
+  background: #fff none repeat scroll 0 0;
+  border-color: #3EC1D5;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
