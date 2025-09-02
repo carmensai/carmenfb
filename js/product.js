@@ -22,7 +22,6 @@ function myFunction(xml) {
   // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
   //<h2 class="sliderPrice">$119</h2>
                 
-  
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
   let table = slidewrap;
