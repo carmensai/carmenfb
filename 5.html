@@ -32,17 +32,51 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+<style>
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
 </head>
 <body onload="javascript:loadXMLProducts()">
   <div class="slidergrid-content" id="productgroup" ></div>
-  <div class="nivo-controlNav">
-    <a class="nav-control" rel="0"> 1 </a>
-    <a class="nav-control" rel="1"> 2 </a>
-    <a class="nav-control" rel="2"> 3 </a>
-    <a class="nav-control" rel="3"> 4 </a>
+  <div class="center">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
   </div>
+</div>
   <script type="text/javascript"  src="./js/product.js"></script>
   <!-- End Script for Product apps js -->
+
 </body>
 </html>
 
