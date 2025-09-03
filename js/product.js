@@ -34,8 +34,8 @@ function myFunction(xml) {
 	  //  "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
       //Title
-       // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
-	   "<a class=\"slidergrid-item\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "<br />" +
+       "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" class=\"slidergrid-image\">" +
+	   "<li class=\"sliderPriceCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</li>" +
 	   "Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "<br />" +
 	   "Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
 	   "Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
