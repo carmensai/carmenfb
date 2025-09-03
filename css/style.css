@@ -1186,8 +1186,8 @@ html {
   transition: all 1.5s ease-in-out;
 }
 .slidergrid-content {
-	width: 100%;
-	height: 100vh;
+	width: 100vw;
+	height: 33%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
