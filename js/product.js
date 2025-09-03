@@ -30,12 +30,13 @@ function myFunction(xml) {
 	
   for (let i = 1; i <x.length; i++) { 
     table += 
-      slideitem +
+     // slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"productImg\">" +
+	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
       //Title
        // "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" >" +
-	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "<br />" +
+	   "<p class=\"sliderPrice\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "<br />" +
 	   "Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "<br />" +
 	   "Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
 	   "Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
@@ -53,9 +54,9 @@ function myFunction(xml) {
 	   */
 		// "</div" +
        prodref + butbuynow +
-       "</a>" + 
-		"<li> </li>" + 
-       "</div>" 
+       "</a>"  
+		//"<li> </li>" + 
+      // "</div>" 
       //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
@@ -92,7 +93,7 @@ function myFunction(xml) {
 	//  }
 	//  prod += "</div>";
 	  prod += "<button class=\"productButton\">BUY NOW!</button>" ;	
-	  table += "<div class=\"pagination\"> Inside Pagination </div>"
+	//  table += "<div class=\"pagination\"> Inside Pagination </div>"
 	  prod += "</div>";
 	//  prod += "</div>";
 	 }
