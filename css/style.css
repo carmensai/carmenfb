@@ -1186,18 +1186,24 @@ html {
   transition: all 1.5s ease-in-out;
 }
 .slidergrid-content {
-	width: 100vw;
+	width: 90%;
 	height: 33%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
 }
 .slidergrid-image {
-            width: 80%;
-		    z-index: 1;
+            width: 70%;
+		   /* z-index: 1; */
         }
 .slidergrid-Item {
   text-align: center;
+  font-size: 0.8em;
+  padding: 10px 20px;
+}
+.slidergrid-Item  a{
+  text-align: center;
+  font-size: 0.8em;
   padding: 10px 20px;
 }
 .sliderItem {
