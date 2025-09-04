@@ -1182,11 +1182,13 @@ html {
 }
 .sliderWrapper {
   display: flex;
-  width: 500vw;
+  /* width: 500vw; */
+   width: 300vw;
+   height: fit-content;
   transition: all 1.5s ease-in-out;
 }
 .slidergrid-content {
-	width: 90%;
+	width: 99%;
 	height: 33%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -1207,7 +1209,7 @@ html {
   padding: 10px 20px;
 }
 .sliderItem {
-  width: 400vw;
+  width: 45%;
   display: grid;
   align-items: center;
   justify-content: center;
