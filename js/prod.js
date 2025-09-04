@@ -30,11 +30,11 @@ function myFunction(xml) {
   for (let i = 1; i <x.length; i++) { 
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"sliderimage\">" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
 	  //  "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
       //Title
-       "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" class=\"sliderimage\">" +
+       "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" class=\"slidergrid-image\">" +
 	   "<a class=\"sliderPriceCap\"> <li>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</li>" +
 	   "Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "<br />" +
 	   "Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
