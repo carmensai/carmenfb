@@ -8,7 +8,7 @@ function loadXMLProducts() {
   xhttp.send();
 }
 function myFunction(xml) {
-  const slide = "<div class=\"slider\">";
+  const slide = "<div class=\"slidergrid-content\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
