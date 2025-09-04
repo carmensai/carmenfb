@@ -9,7 +9,7 @@ function loadXMLProducts() {
 }
 function myFunction(xml) {
   const slide = "<div class=\"slider\">";
-  const slidewrap = "<div class=\"slidergrid-content\">";
+  const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
@@ -29,7 +29,7 @@ function myFunction(xml) {
 	
   for (let i = 1; i <x.length; i++) { 
     table += 
-     // slideitem +
+      slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
 	  //  "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
@@ -40,7 +40,7 @@ function myFunction(xml) {
 	   "Design: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
 	   "Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
 	   "Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "<br />" +
-	   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" 
+	   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
       // "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" 
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
@@ -59,7 +59,7 @@ function myFunction(xml) {
       //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
-      // "</div>"
+       "</div>"
         ;
      if ( i <= 1 ) {
 
