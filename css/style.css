@@ -1241,7 +1241,7 @@ html {
   text-align: center;
   padding: 10px 20px;
 }
-.sliderItem sliderNameCap {
+.sliderNameCap {
     position: absolute;
     font-size: 14px;
     top: 75%;
@@ -1253,7 +1253,7 @@ html {
     z-index: 1;
     background-color: unset;
 }
-.sliderItem sliderPriceCap {
+.sliderPriceCap {
     position: absolute;
     top: 86%;
     left: 60%;
@@ -1268,12 +1268,12 @@ html {
     z-index: 1;
     cursor: pointer;
 }
-.sliderItem sliderPriceCap:hover {
+.sliderPriceCap:hover {
   background-color: white;
   color: black;
 }
 
-.sliderItem sliderSize {
+.sliderSizeCap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1289,11 +1289,11 @@ html {
     z-index: 1;
     cursor: pointer;
 }
-.sliderItem sliderSize:hover {
+.sliderSizeCap:hover {
   background-color: white;
   color: black;
 }
-.sliderItem buyButton {
+.buyButton {
     position: absolute;
     top: 95%;
     left: 62%;
@@ -1307,11 +1307,11 @@ html {
     /* border-radius: 5px; */
     transition: .2s linear;
 }
-.sliderItem buyButton:hover {
+.buyButton:hover {
   background-color: white;
   color: black;
 }
-.sliderItem addcartbutton {
+.addcartbutton {
     position: absolute;
     display: inline-block;
     background-color: #368b44;
@@ -1327,7 +1327,7 @@ html {
     transition: .2s linear;
 }
 
-.sliderItem addcartbutton:hover {
+.addcartbutton:hover {
   background-color: white;
   color: black;
 }
