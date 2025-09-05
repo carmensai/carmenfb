@@ -46,6 +46,7 @@ function myFunction(xml) {
      "</p>" +
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
+	  "<p> <button class=\"addCartButton\">Add to Cart/button> </p>" + 
 	 "</a>" +
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
