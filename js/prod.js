@@ -44,7 +44,15 @@ function myFunction(xml) {
 	//   "Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "<br />" +
 	//   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
      "</p>" +
+	 "<p class=\"sliderSizeCap\">" + "S" + "</p>" +
+	 "<p class=\"sliderSizeCap\">" + "M" + "</p>" +
+	"<p class=\"sliderSizeCap\">" + "L" + "</p>" +
+	"<p class=\"sliderSizeCap\">" + "XL" + "</p>" +
+	"<p class=\"sliderSizeCap\">" + "XXL" + "</p>" +
+	"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
+	"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+	 "<p> <button class=\"addcartbutton\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	 "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
