@@ -1272,6 +1272,27 @@ html {
   background-color: white;
   color: black;
 }
+
+.sliderItem sliderSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 0;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 86%;
+    left: 10%;
+    color: red;
+    border: 1px solid gray;
+    background-color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+.sliderItem sliderSize:hover {
+  background-color: white;
+  color: black;
+}
 .sliderItem buyButton {
     position: absolute;
     top: 95%;
