@@ -1313,6 +1313,23 @@ html {
   background-color: white;
   color: black;
 }
+.sliderItem addCartButton {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.sliderItem addCartButton:hover {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+}
 
 .sliderItem:nth-child(1) .sliderBg {
   background-color: #369e62;
