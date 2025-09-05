@@ -1242,28 +1242,28 @@ html {
   padding: 10px 20px;
 }
 .sliderNameCap {
-	position: absolute;
-    font-size: 20px;
-    top: 100%;
+    position: absolute;
+    font-size: 16px;
+    top: 80%;
     left: 15%;
     width: 50%;
     text-align: -webkit-left;
-    color: white;
+    color: darkred;
     border: 3px solid gray;
     z-index: 1;
     background-color: unset;
 }
 .sliderPriceCap {
-	position: absolute;
-    top: 100%;
+    position: absolute;
+    top: 85%;
     left: 65%;
     width: fit-content;
     text-align: -webkit-right;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
     color: white;
     border: 1px solid gray;
-    background-color: unset;
+    background-color: crimson;
     z-index: 1;
     cursor: pointer;
 }
