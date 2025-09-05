@@ -35,7 +35,7 @@ function myFunction(xml) {
       // slidebg +
       //Title
      //  "<img src =\"./productimages/OffWhite.jpg\" alt=\"\" class=\"slidergrid-image\">" +
-	   "<a class=\"sliderNameCap\"> <p>" + 
+	   "<a> <p class=\"sliderNameCap\">" + 
 		x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue  + " - " +
 		x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue +
 	 //  "Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "<br />" +
