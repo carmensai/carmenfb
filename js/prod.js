@@ -45,7 +45,7 @@ function myFunction(xml) {
 	//   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
      "</p>" +
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
-	 "<p class=\"buyButton\">Buy Now</p>" +
+	 "<button class=\"buyButton\">Buy Now</button>" +
 	 "</a>" +
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
