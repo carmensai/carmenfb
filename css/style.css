@@ -1361,25 +1361,6 @@ html {
   border: 1px solid gray;
   z-index: 1;
 }
-
-.buyButton {
-    position: absolute;
-    top: 93%;
-    left: 65%;
-    width: fit-content;
-    font-size: 16px;
-    font-weight: 200;
-    color: white;
-    border: 1px solid gray;
-    background-color: yellowgreen;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.buyButton:hover {
-  background-color: white;
-  color: black;
-}
 .sliderItem addCartButton {
   border: none;
   outline: 0;
