@@ -44,7 +44,13 @@ function myFunction(xml) {
 	//   "Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "<br />" +
 	//   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
      "</p>" +
-	 "<p class=\"sliderSizeCap\">" + "S" + "</p>" +
+	 "<div class=\"sliderSizeCap\">" + 
+	 "<a>S</a>" + 
+	 "<a>M</a>" + 
+	 "<a>L</a>" + 
+	 "<a>XL</a>" + 
+	 "</div>" +
+	// "</p>" +
 	// "<p class=\"sliderSizeCap\">" + "M" + "</p>" +
 	//"<p class=\"sliderSizeCap\">" + "L" + "</p>" +
 	//"<p class=\"sliderSizeCap\">" + "XL" + "</p>" +
