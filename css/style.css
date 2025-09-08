@@ -1185,7 +1185,7 @@ html {
   /* width: 500vw; */
    width: 300vw;
    height: fit-content;
-  transition: all 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 .slidergrid-content {
 	width: 99%;
