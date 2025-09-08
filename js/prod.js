@@ -18,7 +18,7 @@ function loadXMLProducts() {
 }
 function myFunction(xml) {
   const slide = "<div class=\"slider\">";
-  const slidewrap = "<div class=\"sliderWrapper\" style=\"transform: trasnlateX(-0vw)\">";
+  const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
