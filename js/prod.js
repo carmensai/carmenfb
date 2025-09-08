@@ -127,6 +127,7 @@ function myFunction(xml) {
   console.log(prod);
 }
 loadXMLProducts();
+  });
 
 const wrapper = document.querySelector(".sliderWrapper");
 const pageItems = document.querySelectorAll(".pagination");
