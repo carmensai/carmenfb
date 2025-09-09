@@ -1183,9 +1183,9 @@ html {
 .sliderWrapper {
   display: flex;
   /* width: 500vw; */
-   width: 300vw;
+   width: 100vw;
    height: fit-content;
-  transition: transform 1.5s ease-in-out; 
+  transition: all 1.5s ease-in-out; 
 }
 .slidergrid-content {
 	width: 99%;
