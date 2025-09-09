@@ -3,7 +3,7 @@ const pageItems = document.querySelectorAll(".pagination");
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
-    wrapper.style.transform = `translateX(${-100 * index}vw)`;
+    wrapper.style.transform = `translateX(${-100 * 1}vw)`;
 	  console.log("index" + index);
     });
   });
