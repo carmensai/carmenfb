@@ -1,11 +1,4 @@
-const wrapper = document.querySelector(".sliderWrapper");
-const pageItems = document.querySelectorAll(".pagination");
-pageItems.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    //change the current slide
-    wrapper.style.transform = `translateX(${-100 * index}vw)`;
-    });
-  });
+
 
 // Calling loadXMLProducts
 function loadXMLProducts() {
