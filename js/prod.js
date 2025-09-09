@@ -136,6 +136,5 @@ pageItems.forEach((item, index) => {
     wrapper.transform = `translateX(${-100 * index}vw)`;
     });
   });
-</script>
 
 
