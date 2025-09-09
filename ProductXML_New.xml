@@ -9,7 +9,7 @@
   <Author>Harshavardhan N</Author>
   <LastAuthor>Harshavardhan N</LastAuthor>
   <Created>2025-08-26T20:04:02Z</Created>
-  <LastSaved>2025-08-26T20:32:11Z</LastSaved>
+  <LastSaved>2025-08-29T02:06:40Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -37,8 +37,11 @@
    <NumberFormat ss:Format="0%"/>
   </Style>
  </Styles>
+ <Names>
+  <NamedRange ss:Name="_xleta.SMALL" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+ </Names>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="23" ss:ExpandedRowCount="13" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="23" ss:ExpandedRowCount="29" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="14.4">
    <Column ss:Index="2" ss:Width="204"/>
    <Column ss:Width="328.79999999999995"/>
@@ -78,9 +81,9 @@
     <Cell><Data ss:Type="String">P01</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P1.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P01.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1145</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -101,9 +104,9 @@
     <Cell><Data ss:Type="String">P02</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P2.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P02.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1245</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -124,9 +127,9 @@
     <Cell><Data ss:Type="String">P03</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P3.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P03.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1345</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -147,9 +150,9 @@
     <Cell><Data ss:Type="String">P04</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P4.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P04.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1445</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -170,7 +173,7 @@
     <Cell><Data ss:Type="String">P05</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P5.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P05.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1545</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
@@ -193,9 +196,9 @@
     <Cell><Data ss:Type="String">P06</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P6.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P06.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1645</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -216,9 +219,9 @@
     <Cell><Data ss:Type="String">P07</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P7.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P07.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1745</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -239,9 +242,9 @@
     <Cell><Data ss:Type="String">P08</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P8.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P08.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1845</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -262,9 +265,9 @@
     <Cell><Data ss:Type="String">P09</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
-    <Cell><Data ss:Type="String">./productimages/P9.jpeg</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P09.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -287,7 +290,7 @@
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P10.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2045</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -310,7 +313,7 @@
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P11.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2145</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -333,7 +336,7 @@
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2245</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -350,13 +353,13 @@
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
    </Row>
-    <Row>
+   <Row>
     <Cell><Data ss:Type="String">P13</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2345</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -373,13 +376,13 @@
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
    </Row>
-     <Row>
+   <Row>
     <Cell><Data ss:Type="String">P14</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2445</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -396,13 +399,13 @@
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
    </Row>
-    <Row>
+   <Row>
     <Cell><Data ss:Type="String">P15</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2545</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -419,13 +422,289 @@
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
    </Row>
-     <Row>
+   <Row>
     <Cell><Data ss:Type="String">P16</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
     <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
-    <Cell><Data ss:Type="Number">1545</Data></Cell>
+    <Cell><Data ss:Type="Number">2645</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P17</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">2745</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P18</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">2845</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P19</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">2945</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P20</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3045</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P21</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3145</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P22</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3245</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P23</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3345</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P24</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3445</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P25</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3545</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P26</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3645</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P27</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3745</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Anarkali Style Dress With Jari And Sequence Work On Vichitra Silk</Data></Cell>
+    <Cell><Data ss:Type="String">Vichitra Silk Pant With Pocket And Inner Fabrics</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">PINK</Data></Cell>
+    <Cell><Data ss:Type="String">YELLOW</Data></Cell>
+    <Cell><Data ss:Type="String">GREEN</Data></Cell>
+    <Cell><Data ss:Type="String">ASH</Data></Cell>
+    <Cell><Data ss:Type="String">GREY</Data></Cell>
+    <Cell><Data ss:Type="String">LAVENDER</Data></Cell>
+    <Cell><Data ss:Type="String">BABY PINK</Data></Cell>
+    <Cell><Data ss:Type="String">RED</Data></Cell>
+    <Cell><Data ss:Type="String">BLUE</Data></Cell>
+    <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">P28</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
+    <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="Number">3845</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
     <Cell><Data ss:Type="String">Vichitra Silk</Data></Cell>
@@ -450,11 +729,12 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Selected/>
+   <TopRowVisible>21</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>20</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveRow>33</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
