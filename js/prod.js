@@ -1,5 +1,5 @@
 const wrapper = document.querySelector(".sliderWrapper");
-const pageItems = document.querySelectorAll(".paginationText");
+const pageItems = document.querySelectorAll(".pagination a");
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
