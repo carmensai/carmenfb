@@ -1,5 +1,3 @@
-
-
 // Calling loadXMLProducts
 function loadXMLProducts() {
   const xhttp = new XMLHttpRequest();
