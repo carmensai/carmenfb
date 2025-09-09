@@ -18,6 +18,7 @@ function loadXMLProducts() {
   xhttp.send();
 }
 function myFunction(xml) {
+  const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
   const slideitem = "<div class=\"sliderItem\">";
@@ -36,8 +37,12 @@ function myFunction(xml) {
   let table = slidewrap;
   let prod = "";
   let prodimg ="";
+  let pagecount ="";
 	
   for (let i = 1; i <x.length; i++) { 
+	if ( i % noofimg = 1 && i > 1 && i != x.length - 1 ) {
+		table += "</div>" + slidewrap;
+	}
     table += 
       slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
