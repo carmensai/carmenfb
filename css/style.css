@@ -1815,7 +1815,7 @@ footer {
 }
 
 .pagination{
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
