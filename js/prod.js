@@ -40,7 +40,7 @@ function myFunction(xml) {
   let pagecount ="";
 	
   for (let i = 1; i <x.length; i++) { 
-	if ( i % noofimg = 1 && i > 1 && i != x.length - 1 ) {
+	if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
 		table += "</div>" + slidewrap;
 	}
     table += 
