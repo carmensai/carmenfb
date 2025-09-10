@@ -38,7 +38,8 @@ function myFunction(xml) {
   let prod = "";
   let prodimg ="";
   const pagecount = Math.floor(x.length - 1 / noofimg);
-  wrapper.style.width = `${100 * pagecount}vw`;
+  wrapper.style.setproperty('--sliderwrapperwidth', `${100 * pagecount}vw`);
+	sliderwrapperwidth
 	
   for (let i = 1; i <x.length; i++) { 
 	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
