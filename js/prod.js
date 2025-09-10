@@ -38,7 +38,7 @@ function myFunction(xml) {
   let prod = "";
   let prodimg ="";
   const pagecount = Math.floor(13/3);
-  wrapper.style.width = `${-100 * pagecount }vw)`;
+  wrapper.style.width = `${100 * pagecount}vw`;
 	
   for (let i = 1; i <x.length; i++) { 
 	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
