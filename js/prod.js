@@ -37,7 +37,7 @@ function myFunction(xml) {
   let table = slidewrap;
   let prod = "";
   let prodimg ="";
-  const pagecount = Math.floor(13/3);
+  const pagecount = Math.floor(x.length - 1 / noofimg);
   wrapper.style.width = `${100 * pagecount}vw`;
 	
   for (let i = 1; i <x.length; i++) { 
