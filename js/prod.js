@@ -37,12 +37,13 @@ function myFunction(xml) {
   let table = slidewrap;
   let prod = "";
   let prodimg ="";
-  let pagecount ="";
+  const pagecount = Math.floor(13/3);
+  wrapper.style.width = `${-100 * pagecount }vw)`;
 	
   for (let i = 1; i <x.length; i++) { 
-	if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
-		table += "</div>" + slidewrap;
-	}
+	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
+	//	table += "</div>" + slidewrap;
+	// }
     table += 
       slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
