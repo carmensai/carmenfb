@@ -1,3 +1,6 @@
+:root {
+  --sliderwrapperwidth: 200vw;
+}
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
@@ -1183,7 +1186,7 @@ html {
 .sliderWrapper {
   display: flex;
   /* width: 500vw; */
-   width: 100vw;
+   width: var(--sliderwrapperwidth);
    height: fit-content;
   transition: all 1.5s ease-in-out; 
 }
