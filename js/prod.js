@@ -14,9 +14,10 @@ pageItems.forEach((item, index) => {
 
 // Calling loadXMLProducts
 function loadXMLProducts() {
+  let pg = 0;
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    const pg = myFunction(this);
+   pg = myFunction(this);
   }
   xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
   xhttp.send();
@@ -162,6 +163,7 @@ lastpage.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
 	wrapper.style.transform = `translateX(${TotalPages * 100}vw`;
+	  console.log("TotalPages" + TotalPages);
     });
   });
 
