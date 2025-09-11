@@ -1310,7 +1310,7 @@ html {
     margin: 0 4px;
 }
 .sliderSizeText:hover {
-  background-color: white;
+  background-color: green;
   color: black;
 }
 .buyButton {
