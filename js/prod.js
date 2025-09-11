@@ -145,8 +145,9 @@ function myFunction(xml) {
   document.getElementById("prodimage").innerHTML = prodimg;
   console.log(table);
   console.log(prod);
+	return pageCount;
 }
-loadXMLProducts();
+const TotalPages = loadXMLProducts();
 
 
 firstpage.forEach((item, index) => {
@@ -159,7 +160,7 @@ firstpage.forEach((item, index) => {
 lastpage.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
-	wrapper.style.transform = `translateX(${pageCount * 100}vw`;
+	wrapper.style.transform = `translateX(${TotalPages * 100}vw`;
     });
   });
 
