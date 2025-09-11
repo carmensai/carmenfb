@@ -1276,17 +1276,8 @@ html {
   color: black;
 }
 
-.sliderSizeCap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    padding-left: 0;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 86%;
-    left: 15%;
-    width: 70%;
+.sliderSizeText {
+    display: inline-block;
     color: red;
     border: 1px solid gray;
     background-color: white;
@@ -1302,7 +1293,7 @@ html {
     border: 1px solid #ddd;
     margin: 0 4px;
 }
-.sliderSizeCap:hover {
+.sliderSizeCap a:hover {
   background-color: white;
   color: black;
 }
