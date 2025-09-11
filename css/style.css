@@ -1247,7 +1247,7 @@ html {
 .sliderNameCap {
     position: absolute;
     font-size: 14px;
-    top: 75%;
+    top: 70%;
     left: 16%;
     width: 68%;
     text-align: -webkit-left;
@@ -1258,7 +1258,7 @@ html {
 }
 .sliderPriceCap {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 60%;
     width: fit-content;
     text-align: -webkit-right;
@@ -1287,8 +1287,8 @@ html {
     left: 15%;
     /* height: 90%; */
     color: red;
-    border: 1px solid gray;
-    background-color: black;
+   /* border: 1px solid gray;*/
+    background-color: url("url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
     z-index: 1;
    /* cursor: pointer; */
 }
