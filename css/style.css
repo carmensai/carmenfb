@@ -1288,7 +1288,7 @@ html {
     /* height: 90%; */
     color: red;
     border: 1px solid gray;
-    background-color: black;
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
     z-index: 1;
    /* cursor: pointer; */
 }
@@ -1310,7 +1310,7 @@ html {
     margin: 0 4px;
 }
 .sliderSizeText:hover {
-  background-color: white;
+  background-color: green;
   color: black;
 }
 .buyButton {
