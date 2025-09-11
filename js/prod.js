@@ -16,7 +16,8 @@ pageItems.forEach((item, index) => {
 function loadXMLProducts() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    myFunction(this);
+    const pg = myFunction(this);
+	  return pg;
   }
   xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
   xhttp.send();
