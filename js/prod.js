@@ -1,11 +1,16 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const pageItems = document.querySelectorAll(".paginationText");
+const firstpage = document.querySelectorAll(".pagefirst");
+const lastpage = document.querySelectorAll(".pagelast");
+const nextpage = document.querySelectorAll(".pagenext");
+const previouspage = document.querySelectorAll(".pageprevious");
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
     });
   });
+
 
 // Calling loadXMLProducts
 function loadXMLProducts() {
@@ -143,4 +148,17 @@ function myFunction(xml) {
 loadXMLProducts();
 
 
+firstpage.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //change the current slide
+    wrapper.style.transform = `translateX(${-0}vw)`;
+    });
+  });
+
+lastpage.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //change the current slide
+	wrapper.style.transform = `translateX(${pageCount * 100}vw`;
+    });
+  });
 
