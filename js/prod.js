@@ -149,7 +149,7 @@ function myFunction(xml) {
 	return pageCount;
 }
 const TotalPages = loadXMLProducts();
-
+console.log("TotalPages" + TotalPages)
 
 firstpage.forEach((item, index) => {
   item.addEventListener("click", () => {
