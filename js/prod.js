@@ -17,10 +17,10 @@ function loadXMLProducts() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     const pg = myFunction(this);
-	  return pg;
   }
   xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
   xhttp.send();
+  return pg;
 }
 function myFunction(xml) {
   const noofimg = 4;
