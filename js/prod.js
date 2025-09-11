@@ -65,10 +65,11 @@ function myFunction(xml) {
      "</p>" +
 	"</a>" +
 	 "<div class=\"sliderSizeCap\">" + 
-	 "<a>S</a>" + 
-	 "<a>M</a>" + 
-	 "<a>L</a>" + 
-	 "<a>XL</a>" + 
+	 "<a class=\"sliderSizeText\">S</a>" + 
+	 "<a class=\"sliderSizeText\">M</a>" + 
+	 "<a class=\"sliderSizeText\">L</a>" + 
+	 "<a class=\"sliderSizeText\">XL</a>" +  
+	 "<a class=\"sliderSizeText\">XXL</a>" + 
 	 "</div>" +
 	// "</p>" +
 	// "<p class=\"sliderSizeCap\">" + "M" + "</p>" +
