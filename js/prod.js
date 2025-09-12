@@ -4,12 +4,11 @@ const firstpage = document.querySelectorAll(".pagefirst");
 const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
-let currentIndex = 0;
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
-	currentIndex = index; 
+	//currentIndex = index; 
 	pageItems.forEach(el => el.classList.remove("active"));
 	item.classList.add("active");
     });
