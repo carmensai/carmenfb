@@ -169,7 +169,6 @@ firstpage.forEach((item, index) => {
 	item.classList.add("active");
     });
     });
-  });
 
 lastpage.forEach((item, index) => {
   item.addEventListener("click", () => {
