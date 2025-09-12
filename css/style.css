@@ -1225,6 +1225,7 @@ html {
 }
 .sliderItem a {
   width: 100%;
+  margin-left: 15%;
 }
 .sliderBg {
   width: 1000px;
