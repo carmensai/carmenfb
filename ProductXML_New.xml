@@ -9,15 +9,15 @@
   <Author>Harshavardhan N</Author>
   <LastAuthor>Harshavardhan N</LastAuthor>
   <Created>2025-08-26T20:04:02Z</Created>
-  <LastSaved>2025-08-29T02:06:40Z</LastSaved>
+  <LastSaved>2025-09-10T13:09:11Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8196</WindowHeight>
-  <WindowWidth>21384</WindowWidth>
+  <WindowHeight>9540</WindowHeight>
+  <WindowWidth>23040</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -41,8 +41,8 @@
   <NamedRange ss:Name="_xleta.SMALL" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
  </Names>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="23" ss:ExpandedRowCount="29" x:FullColumns="1"
-   x:FullRows="1" ss:DefaultRowHeight="14.4">
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="29" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.55">
    <Column ss:Index="2" ss:Width="204"/>
    <Column ss:Width="328.79999999999995"/>
    <Column ss:Width="120"/>
@@ -52,7 +52,8 @@
    <Column ss:Width="55.800000000000004"/>
    <Column ss:Index="13" ss:AutoFitWidth="0" ss:Width="61.199999999999996"/>
    <Column ss:AutoFitWidth="0" ss:Width="56.4"/>
-   <Row>
+   <Column ss:Index="23" ss:AutoFitWidth="0" ss:Width="56.4"/>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">PRODUCT ID</Data></Cell>
     <Cell><Data ss:Type="String">NAME</Data></Cell>
     <Cell><Data ss:Type="String">DESCRIPTION</Data></Cell>
@@ -66,7 +67,7 @@
     <Cell><Data ss:Type="String">TOP</Data></Cell>
     <Cell><Data ss:Type="String">BOTTOM</Data></Cell>
     <Cell><Data ss:Type="String">DUPPATTA</Data></Cell>
-    <Cell><Data ss:Type="String">COLORS</Data></Cell>
+    <Cell><Data ss:Type="String">COLOR1</Data></Cell>
     <Cell><Data ss:Type="String">COLOR2</Data></Cell>
     <Cell><Data ss:Type="String">COLOR3</Data></Cell>
     <Cell><Data ss:Type="String">COLOR4</Data></Cell>
@@ -76,13 +77,19 @@
     <Cell><Data ss:Type="String">COLOR8</Data></Cell>
     <Cell><Data ss:Type="String">COLOR9</Data></Cell>
     <Cell><Data ss:Type="String">COLOR10</Data></Cell>
+    <Cell><Data ss:Type="String">SSIZE</Data></Cell>
+    <Cell><Data ss:Type="String">MSIZE</Data></Cell>
+    <Cell><Data ss:Type="String">LSIZE</Data></Cell>
+    <Cell><Data ss:Type="String">XLSIZE</Data></Cell>
+    <Cell><Data ss:Type="String">XXLSIZE</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P01</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P1.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1145</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -99,13 +106,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P02</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P2.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1245</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -122,13 +135,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P03</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P3.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1345</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -145,13 +164,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P04</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P4.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1445</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -168,13 +193,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P05</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P5.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1545</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -191,13 +222,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P06</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P6.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1645</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -214,13 +251,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P07</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P7.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1745</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -237,13 +280,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P08</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P8.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1845</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -260,13 +309,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P09</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P9.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -283,13 +338,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P10</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P10.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2045</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -306,13 +367,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P11</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P11.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2145</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -329,13 +396,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P12</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2245</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -352,13 +425,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P13</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2345</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -375,13 +454,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P14</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2445</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -398,13 +483,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P15</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2545</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -421,13 +512,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P16</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2645</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -444,13 +541,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P17</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2745</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -467,13 +570,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P18</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2845</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -490,13 +599,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P19</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">2945</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -513,13 +628,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P20</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3045</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -536,13 +657,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P21</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3145</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -559,13 +686,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P22</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3245</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -582,13 +715,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P23</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3345</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -605,13 +744,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P24</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3445</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -628,13 +773,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P25</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3545</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -651,13 +802,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P26</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3645</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -674,13 +831,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P27</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3745</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -697,13 +860,19 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">P28</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">Mallikajaan Lily Lali Vichitra Silk Sequence Work Readymade Anarkali Suits</Data></Cell>
     <Cell><Data ss:Type="String">./productimages/P12.jpeg</Data></Cell>
-    <Cell ss:Index="6"><Data ss:Type="Number">1945</Data></Cell>
+    <Cell><Data ss:Type="String">NA</Data></Cell>
+    <Cell><Data ss:Type="Number">1945</Data></Cell>
     <Cell><Data ss:Type="Number">3845</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="Number">0.2</Data></Cell>
     <Cell><Data ss:Type="String">Yes</Data></Cell>
@@ -720,6 +889,11 @@
     <Cell><Data ss:Type="String">RED</Data></Cell>
     <Cell><Data ss:Type="String">BLUE</Data></Cell>
     <Cell><Data ss:Type="String">MUSTARD YELLOW</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -728,13 +902,13 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Unsynced/>
    <Selected/>
-   <TopRowVisible>21</TopRowVisible>
+   <LeftColumnVisible>2</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>33</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveCol>13</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -742,4 +916,3 @@
   </WorksheetOptions>
  </Worksheet>
 </Workbook>
-
