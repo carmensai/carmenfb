@@ -302,6 +302,8 @@ productItem.forEach((item, index) => {
     //change the Product Info
 	  choosenProduct = products[index];
 	  currentProductImg.src = choosenProduct.image_path;
+	  console.log("choosenProduct.image_path" + choosenProduct.image_path + ":" + products[index].product_id);
+	  products[index]
     });
   });
 
