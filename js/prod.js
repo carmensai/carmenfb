@@ -295,7 +295,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-function updateproductdetails{
+function updateproductdetails() {
 let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 productItem.forEach((item, index) => {
