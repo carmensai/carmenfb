@@ -1223,14 +1223,8 @@ html {
  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-bottom: 25px;
 }
-.sliderWrapper a {
-  width: 45%;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  position: relative;
- /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  margin-bottom: 25px;
+.sliderItem a {
+  width: 100%;
 }
 .sliderBg {
   width: 1000px;
