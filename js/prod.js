@@ -71,7 +71,7 @@ function myFunction(xml) {
   const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
-  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\">";
+  const slideitem = "<div> <a class=\"sliderItem\" href=\"#productdet\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
