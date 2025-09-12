@@ -1,5 +1,7 @@
 :root {
   --sliderwrapperwidth: 200vw;
+  --outofstockbg: linear-gradient(to top left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) calc(50% - .8px), rgb(255 0 0) 50%, rgba(0, 0, 0, 0) calc(50% + .8px), rgba(0, 0, 0, 0) 100%), linear-gradient(to top right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) calc(50% - .8px), rgb(255 0 0) 50%, rgba(0, 0, 0, 0) calc(50% + .8px), rgba(0, 0, 0, 0) 100%);
+  --instockbg: white;
 }
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
@@ -1292,14 +1294,23 @@ html {
     z-index: 1;
    /* cursor: pointer; */
 }
-.sliderSizeText {
+.sliderSizeTextinstock {
     display: inline-block;
     color: red;
     border: 1px solid gray;
-    background-color: white;
+    background-color: var(--instockbg);
     z-index: 1;
     cursor: pointer;
 }
+.sliderSizeTextoutofstock {
+    display: inline-block;
+    color: red;
+    border: 1px solid gray;
+    background: var(--outofstockbg);
+    z-index: 1;
+   /* cursor: pointer; */
+}
+
 .sliderSizeCap a{
     color: darkred;
     float: left;
@@ -1309,7 +1320,7 @@ html {
     border: 1px solid #ddd;
     margin: 0 4px;
 }
-.sliderSizeText:hover {
+.sliderSizeTextinstock:hover {
   background-color: green;
   color: black;
 }
