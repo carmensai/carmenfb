@@ -73,7 +73,7 @@ function myFunction(xml) {
   const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
-  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\">";
+  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\" onclick=\"updateproductdetails()\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
@@ -295,6 +295,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
+function updateproductdetails{
 let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 productItem.forEach((item, index) => {
@@ -307,5 +308,5 @@ productItem.forEach((item, index) => {
     console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
   });
 });
-
+}
 
