@@ -50,7 +50,7 @@ function myFunction(xml) {
   let prod = "";
   let prodimg ="";
   	const pageCount = Math.ceil((x.length - 1) / noofimg);
-    TotalPages = pageCount;
+    TotalPages = pageCount - 1;
 	wrapper.style.setProperty('--sliderwrapperwidth', `${pageCount * 100}vw`);
   for (let i = 1; i <x.length; i++) { 
 	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
