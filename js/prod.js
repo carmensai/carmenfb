@@ -10,8 +10,6 @@ pageItems.forEach((item, index) => {
     //change the current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 	currentIndex = index; 
-	pageItems.forEach(el => el.classList.remove("active"));
-	item.classList.add("active");
     });
   });
 
