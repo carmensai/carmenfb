@@ -116,7 +116,7 @@ function myFunction(xml) {
     table += 
       slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
-		"</a>" +
+		//"</a>" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
       //Title
@@ -181,7 +181,7 @@ function myFunction(xml) {
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
 	 "<p> <button class=\"addcartbutton\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
-	 // "</a>" +
+	 "</a>" +
 	// "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
