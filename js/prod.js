@@ -71,7 +71,7 @@ function myFunction(xml) {
   const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
-  const slideitem = "<div class=\"sliderItem\">";
+  const slideitem = "<a class=\"sliderItem\" href=\"#productdet\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
@@ -115,7 +115,7 @@ function myFunction(xml) {
 	  
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\" href=\"#product\">" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
       //Title
@@ -199,7 +199,7 @@ function myFunction(xml) {
       //"<h1>" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue + "</h1>" + 
       //"<h2>" + x[i].getElementsByTagName("Data")[2].childNodes[0].nodeValue + "</h2>" +
       //"<h3>" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "</h3>" 
-       "</div>"
+       "</a>"
         ;
      if ( i <= 1 ) {
 
