@@ -1948,3 +1948,179 @@ footer {
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
+
+.cart-dropdown .mobile-cart {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 300px;
+    margin: 0;
+    transform: translate(340px);
+    transition: transform .2s ease-in-out;
+    background-color: #fff;
+    z-index: 1050;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,.15)
+}
+
+.cart-opened .cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 1050;
+    overflow: hidden
+}
+
+.cart-dropdown .mobile-cart .btn-close {
+    position: absolute;
+    left: -44px;
+    top: 0;
+    font-size: 3.3rem;
+    color: #fff;
+    font-weight: 300;
+    background: 0 0;
+    padding: 0;
+    text-align: center;
+    opacity: 1
+}
+.dropdownmenu-wrapper {
+    position: relative;
+    background-color: #fff
+}
+
+.dropdown-cart-header,.dropdown-cart-total {
+    font-weight: 500;
+    line-height: 38px
+}
+
+.mini-products-list {
+    padding: 7px 5px 0;
+    height: calc(100vh - 207px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0
+}
+
+.mini-products-list li .product-image {
+    width: 25%;
+    float: left
+}
+
+.cart-dropdown .product-details {
+    margin-bottom: 3px;
+    font-size: 1.3rem
+}
+
+.mini-products-list li .product-details {
+    float: left;
+    width: 75%;
+    padding-left: 15px;
+    text-align: left
+}
+
+
+.mini-products-list li .remove {
+    color: #5c5c5c;
+    float: right;
+    font-size: 14px;
+    padding: 0 2px 0 7px;
+    margin-top: 0;
+    text-decoration: none
+}
+
+.mini-products-list li .remove:hover {
+    color: #000
+}
+
+.mini-products-list li .edit-i.remove {
+    font-size: 11px;
+    padding-top: 1px
+}
+
+.dropdown-cart-total {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.3rem
+}
+
+.dropdown-cart-total .cart-total-price {
+    margin-left: auto;
+    font-size: 1.5rem
+}
+
+.mini-products-list li .pName {
+    font-family: var(--font-1);
+    letter-spacing: 0;
+    font-weight: 500;
+    color: #767676;
+    font-size: 13px;
+    white-space: normal;
+    text-decoration: none;
+    display: block;
+    line-height: normal;
+    margin-right: 18px;
+    margin-bottom: 0
+}
+
+.mini-products-list li .pName:hover {
+    color: #222
+}
+
+.mini-products-list li .product-details {
+    float: left;
+    width: 75%;
+    padding-left: 15px;
+    text-align: left
+}
+
+.mini-products-list li .remove {
+    color: #5c5c5c;
+    float: right;
+    font-size: 14px;
+    padding: 0 2px 0 7px;
+    margin-top: 0;
+    text-decoration: none
+}
+
+.mini-products-list li .remove:hover {
+    color: #000
+}
+
+.mini-products-list li .edit-i.remove {
+    font-size: 11px;
+    padding-top: 1px
+}
+
+.mini-products-list li .priceRow {
+    margin: 10px 0 0
+}
+
+.mini-products-list li .priceRow .prodMulti {
+    display: inline-block;
+    font-size: 10px
+}
+
+.mini-products-list li .priceRow .product-price {
+    display: inline-block
+}
+
+.mini-products-list li .qtyField {
+    display: inline-block;
+    padding-left: 2px
+}
+
+.mini-products-list li .qtyField span {
+    display: inline-block;
+    padding: 0;
+    border: 0
+}
