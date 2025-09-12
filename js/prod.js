@@ -291,7 +291,17 @@ lastpage.forEach((item, index) => {
 	firstpage.forEach(el => el.classList.remove("active"));
 	lastpage.forEach(el => el.classList.remove("active"));
 	item.classList.add("active");
-	  console.log("TotalPages" + TotalPages);
+	console.log("TotalPages" + TotalPages);
+	
+	let choosenProduct = products[0];
+	const currentProductImg = document.querySelector(".productImg");
+    // Update the chosen product
+    choosenProduct = products[index];
+    // Update the product image
+    currentProductImg.src = choosenProduct.image_path;
+    // Log useful info
+    console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
+  })
     });
   });
 
