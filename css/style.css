@@ -1192,6 +1192,13 @@ html {
    height: fit-content;
   transition: all 1.5s ease-in-out; 
 }
+.sliderWrapper a{
+  display: flex;
+  /* width: 500vw; */
+   width: var(--sliderwrapperwidth);
+   height: fit-content;
+  transition: all 1.5s ease-in-out; 
+}
 .slidergrid-content {
 	width: 99%;
 	height: 33%;
