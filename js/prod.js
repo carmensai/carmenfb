@@ -177,7 +177,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "XXL" + "</p>" +
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
-	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
+	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
 	 "<p> <button class=\"addcartbutton\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 // "</a>" +
