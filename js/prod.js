@@ -263,7 +263,7 @@ firstpage.forEach((item, index) => {
 lastpage.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
-	wrapper.style.transform = `translateX(${TotalPages * 100}vw`;
+	wrapper.style.transform = `translateX(${TotalPages * -100}vw`;
 	pageItems.forEach(el => el.classList.remove("active"));
 	firstpage.forEach(el => el.classList.remove("active"));
 	lastpage.forEach(el => el.classList.remove("active"));
