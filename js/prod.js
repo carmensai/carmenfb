@@ -301,7 +301,6 @@ lastpage.forEach((item, index) => {
     currentProductImg.src = choosenProduct.image_path;
     // Log useful info
     console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
-  })
     });
   });
 
