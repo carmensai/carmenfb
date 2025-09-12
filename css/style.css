@@ -1288,6 +1288,8 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 5px;
+	margin-left: 15%;
+	margin-right: 15%;
     padding-left: 0;
     border-radius: unset;
     top: 86%;
