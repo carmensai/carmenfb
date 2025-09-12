@@ -299,12 +299,13 @@ let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 productItem.forEach((item, index) => {
   item.addEventListener("click", () => {
-    //change the Product Info
-	  choosenProduct = products[index];
-	  currentProductImg.src = choosenProduct.image_path;
-	  console.log("choosenProduct.image_path" + choosenProduct.image_path + ":" + products[index].product_id);
-	  products[index]
-    });
+    // Update the chosen product
+    choosenProduct = products[index];
+    // Update the product image
+    currentProductImg.src = choosenProduct.image_path;
+    // Log useful info
+    console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
   });
+});
 
 
