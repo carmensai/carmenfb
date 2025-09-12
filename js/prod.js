@@ -5,6 +5,8 @@ const firstpage = document.querySelectorAll(".pagefirst");
 const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
+const productItem = document.querySelectorAll(".sliderItem");
+const productInfo = document.querySelectorAll(".product");
 let TotalPages = 0;
 let productinfo = [];
 pageItems.forEach((item, index) => {
@@ -98,6 +100,14 @@ function myFunction(xml) {
       prodCol[j] = x[i].getElementsByTagName("Data")[j].childNodes[0].nodeValue;
     }
 	tmp_productArrayTable.push(new AddProdArray(
+      prodCol[0], prodCol[1], prodCol[2], prodCol[3], prodCol[4],
+      prodCol[5], prodCol[6], prodCol[7], prodCol[8], prodCol[9],
+      prodCol[10], prodCol[11], prodCol[12], prodCol[13], prodCol[14],
+	  prodCol[15], prodCol[16], prodCol[17], prodCol[18], prodCol[19],
+	  prodCol[20], prodCol[21], prodCol[22], prodCol[23], prodCol[24],
+	  prodCol[25], prodCol[26], prodCol[27]
+    ));
+	 products.push(new AddProdArray(
       prodCol[0], prodCol[1], prodCol[2], prodCol[3], prodCol[4],
       prodCol[5], prodCol[6], prodCol[7], prodCol[8], prodCol[9],
       prodCol[10], prodCol[11], prodCol[12], prodCol[13], prodCol[14],
@@ -272,4 +282,27 @@ lastpage.forEach((item, index) => {
 	  console.log("TotalPages" + TotalPages);
     });
   });
+
+lastpage.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //change the current slide
+	wrapper.style.transform = `translateX(${TotalPages * -100}vw`;
+	pageItems.forEach(el => el.classList.remove("active"));
+	firstpage.forEach(el => el.classList.remove("active"));
+	lastpage.forEach(el => el.classList.remove("active"));
+	item.classList.add("active");
+	  console.log("TotalPages" + TotalPages);
+    });
+  });
+
+let choosenProduct = products[0];
+const currentProductImg = document.querySelector(".productImg");
+productItem.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //change the Product Info
+	  choosenProduct = products[index];
+	  currentProductImg.src = choosenProduct.image_path;
+    });
+  });
+
 
