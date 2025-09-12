@@ -90,7 +90,7 @@ function myFunction(xml) {
   let prodimg ="";
   	const pageCount = Math.ceil((x.length - 1) / noofimg);
     TotalPages = pageCount - 1;
-	wrapper.style.setProperty('--sliderwrapperwidth', `${TotalPages * 100}vw`);
+	wrapper.style.setProperty('--sliderwrapperwidth', `${pageCount * 100}vw`);
   for (let i = 1; i <x.length; i++) { 
     let prodCol = [];
 	let tmp_productArrayTable = [];
