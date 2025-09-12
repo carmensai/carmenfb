@@ -1,3 +1,4 @@
+const noofcol = 28;
 const wrapper = document.querySelector(".sliderWrapper");
 const pageItems = document.querySelectorAll(".paginationText");
 const firstpage = document.querySelectorAll(".pagefirst");
@@ -5,6 +6,7 @@ const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
 let TotalPages = 0;
+let productinfo = [];
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
@@ -17,8 +19,44 @@ pageItems.forEach((item, index) => {
     });
   });
 
+//
+function AddProdArray(product_id, name,	description, image_path, design, price,	
+					  offer_price, discount_any, availability, fabric, top, bottom,
+					  duppatta, color1,	color2,	color3,	color4,	color5,	color6,	color7,	
+					  color8, color9, color10, ssize, msize, lsize, xlsize, xxlsize
+) {
+this.product_id = product_id;
+this.name = name;
+this.description = description;
+this.image_path = image_path;
+this.design = design;
+this.price = price;
+this.offer_price = offer_price;
+this.discount_any = discount_any;
+this.availability = availability;
+this.fabric = fabric;
+this.top = top;
+this.bottom = bottom;
+this.duppatta = duppatta;
+this.color1 = color1;
+this.color2 = color2;
+this.color3 = color3;
+this.color4 = color4;
+this.color5 = color5;
+this.color6 = color6;
+this.color7 = color7;
+this.color8 = color8;
+this.color9 = color9;
+this.color10 = color10;
+this.ssize = ssize;
+this.msize = msize;
+this.lsize = lsize;
+this.xlsize = xlsize;
+this.xxlsize = xxlsize;
+}
 
 // Calling loadXMLProducts
+var products =[];
 function loadXMLProducts() {
  // let pg = 0;
   const xhttp = new XMLHttpRequest();
@@ -46,6 +84,7 @@ function myFunction(xml) {
                 
   const xmlDoc = xml.responseXML;
   const x = xmlDoc.getElementsByTagName("Row");
+ // let tmp_productArrayTable = [];
   let table = slidewrap;
   let prod = "";
   let prodimg ="";
@@ -53,9 +92,27 @@ function myFunction(xml) {
     TotalPages = pageCount - 1;
 	wrapper.style.setProperty('--sliderwrapperwidth', `${pageCount * 100}vw`);
   for (let i = 1; i <x.length; i++) { 
+    let prodCol = [];
+	let tmp_productArrayTable = [];
+    for (let j = 0; j < noofcol; j++) {
+      prodCol[j] = x[i].getElementsByTagName("Data")[j].childNodes[0].nodeValue;
+    }
+	tmp_productArrayTable.push(new AddProdArray(
+      prodCol[0], prodCol[1], prodCol[2], prodCol[3], prodCol[4],
+      prodCol[5], prodCol[6], prodCol[7], prodCol[8], prodCol[9],
+      prodCol[10], prodCol[11], prodCol[12], prodCol[13], prodCol[14],
+	  prodCol[15], prodCol[16], prodCol[17], prodCol[18], prodCol[19],
+	  prodCol[20], prodCol[21], prodCol[22], prodCol[23], prodCol[24],
+	  prodCol[25], prodCol[26], prodCol[27]
+    ));
 	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
 	//	table += "</div>" + slidewrap;
 	// }
+	//prodid = x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue;
+	//prodname = x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue;
+	//proddesc = x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue;
+	sprodsize = x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue;
+	  
     table += 
       slideitem +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
@@ -71,15 +128,48 @@ function myFunction(xml) {
 	//   "Top: " + x[i].getElementsByTagName("Data")[10].childNodes[0].nodeValue  + "<br />" +
 	//   "Bottom: " + x[i].getElementsByTagName("Data")[12].childNodes[0].nodeValue  + "<br />" +
 	//   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
-     "</p>" +
-	"</a>" +
-	 "<div class=\"sliderSizeCap\">" + 
-	 "<a class=\"sliderSizeText\">S</a>" + 
-	 "<a class=\"sliderSizeText\">M</a>" + 
-	 "<a class=\"sliderSizeText\">L</a>" + 
-	 "<a class=\"sliderSizeText\">XL</a>" +  
-	 "<a class=\"sliderSizeText\">XXL</a>" + 
-	 "</div>" +
+     "</p>" + "</a>" ;
+	  let sizehtml = "<div class=\"sliderSizeCap\">";
+	  if ( tmp_productArrayTable[0].ssize >0 ) {
+		sizehtml += "<a class=\"sliderSizeTextinstock\">S</a>";  
+	  }
+	  else {
+		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">S</a>";  
+	  }
+	  if ( tmp_productArrayTable[0].msize >0 ) {
+		sizehtml += "<a class=\"sliderSizeTextinstock\">M</a>";  
+	  }
+	  else {
+		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">M</a>"; 
+	  }
+	  if ( tmp_productArrayTable[0].lsize >0 ) {
+		sizehtml += "<a class=\"sliderSizeTextinstock\">L</a>";  
+	  }
+	  else {
+		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">L</a>"; 
+	  }
+	  if ( tmp_productArrayTable[0].xlsize >0 ) {
+		sizehtml += "<a class=\"sliderSizeTextinstock\">XL</a>";  
+	  }
+	  else {
+		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">XL</a>"; 
+	  }
+	  if ( tmp_productArrayTable[0].xxlsize >0 ) {
+		sizehtml += "<a class=\"sliderSizeTextinstock\">XXL</a>";  
+	  }
+	  else {
+		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">XXL</a>"; 
+	  }
+	 sizehtml += "</div>"; 
+	 table += sizehtml + 
+	//"</a>" +
+	// "<div class=\"sliderSizeCap\">" + 
+	// "<a class=\"sliderSizeText\">S</a>" + 
+	// "<a class=\"sliderSizeText\">M</a>" + 
+	// "<a class=\"sliderSizeText\">L</a>" + 
+	// "<a class=\"sliderSizeText\">XL</a>" +  
+	// "<a class=\"sliderSizeText\">XXL</a>" + 
+	// "</div>" +
 	// "</p>" +
 	// "<p class=\"sliderSizeCap\">" + "M" + "</p>" +
 	//"<p class=\"sliderSizeCap\">" + "L" + "</p>" +
@@ -90,7 +180,7 @@ function myFunction(xml) {
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[5].childNodes[0].nodeValue + "</p>" +
 	 "<p> <button class=\"addcartbutton\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
-	 "</a>" +
+	 // "</a>" +
 	// "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
