@@ -152,7 +152,7 @@ function myFunction(xml) {
   console.log(prod);
 	return pageCount;
 }
-const TotalPages = loadXMLProducts();
+let TotalPages = loadXMLProducts();
 console.log("TotalPages" + TotalPages);
 
 firstpage.forEach((item, index) => {
