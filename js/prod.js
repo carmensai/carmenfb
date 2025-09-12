@@ -252,7 +252,7 @@ function myFunction(xml) {
 //  table += "<div class=\"pagination\"> </div>"
   document.getElementById("productgroup").innerHTML = table;
   document.getElementById("productdet").innerHTML = prod; 
-  document.getElementById("prodimage").innerHTML = prodimg;
+ // document.getElementById("prodimage").innerHTML = prodimg;
   console.log(table);
   console.log(prod);
 	//return pageCount;
