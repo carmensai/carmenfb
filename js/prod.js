@@ -11,6 +11,8 @@ pageItems.forEach((item, index) => {
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 	//currentIndex = index; 
 	pageItems.forEach(el => el.classList.remove("active"));
+	firstpage.forEach(el => el.classList.remove("active"));
+	lastpage.forEach(el => el.classList.remove("active"));
 	item.classList.add("active");
     });
   });
@@ -161,6 +163,11 @@ firstpage.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
     wrapper.style.transform = `translateX(${-0}vw)`;
+	pageItems.forEach(el => el.classList.remove("active"));
+	firstpage.forEach(el => el.classList.remove("active"));
+	lastpage.forEach(el => el.classList.remove("active"));
+	item.classList.add("active");
+    });
     });
   });
 
@@ -168,6 +175,10 @@ lastpage.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
 	wrapper.style.transform = `translateX(${TotalPages * 100}vw`;
+	pageItems.forEach(el => el.classList.remove("active"));
+	firstpage.forEach(el => el.classList.remove("active"));
+	lastpage.forEach(el => el.classList.remove("active"));
+	item.classList.add("active");
 	  console.log("TotalPages" + TotalPages);
     });
   });
