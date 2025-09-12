@@ -4,6 +4,7 @@ const firstpage = document.querySelectorAll(".pagefirst");
 const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
+let TotalPages = 0;
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
@@ -17,14 +18,14 @@ pageItems.forEach((item, index) => {
 
 // Calling loadXMLProducts
 function loadXMLProducts() {
-  let pg = 0;
+ // let pg = 0;
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-   pg = myFunction(this);
+   myFunction(this);
   }
   xhttp.open("GET", "https://carmensai.github.io/carmenfb/ProductXML_New.xml", true);
   xhttp.send();
-  return pg;
+ // return pg;
 }
 function myFunction(xml) {
   const noofimg = 4;
@@ -47,6 +48,7 @@ function myFunction(xml) {
   let prod = "";
   let prodimg ="";
   	const pageCount = Math.ceil((x.length - 1) / noofimg);
+    TotalPages = pageCount;
 	wrapper.style.setProperty('--sliderwrapperwidth', `${pageCount * 100}vw`);
   for (let i = 1; i <x.length; i++) { 
 	// if (i % noofimg === 1 && i > 1 && i !== x.length - 1) {
@@ -150,9 +152,9 @@ function myFunction(xml) {
   document.getElementById("prodimage").innerHTML = prodimg;
   console.log(table);
   console.log(prod);
-	return pageCount;
+	//return pageCount;
 }
-let TotalPages = loadXMLProducts();
+loadXMLProducts();
 console.log("TotalPages" + TotalPages);
 
 firstpage.forEach((item, index) => {
