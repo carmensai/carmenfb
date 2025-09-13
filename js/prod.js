@@ -158,6 +158,7 @@ function myFunction(xml) {
 	  else {
 		  sizehtml += "<a class=\"sliderSizeTextoutofstock\">L</a>"; 
 	  }
+	  
 	  if ( tmp_productArrayTable[0].xlsize >0 ) {
 		sizehtml += "<a class=\"sliderSizeTextinstock\">XL</a>";  
 	  }
