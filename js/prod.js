@@ -308,18 +308,8 @@ lastpage.forEach((item, index) => {
 function updateProductDetails() {
   let chosenProduct = products[0];
   const currentProductImg = document.querySelector(".productimg");
-  console.log(`currentProductImg.length : ${currentProductImg.length}`);
-  if (!currentProductImg) {
-    console.warn("Product image element not found.");
-   // return;
-  }
   console.log(`productItems.length : ${productItems.length}`);
   productItems.forEach((item, index) => {
-    if (!item.img) {
-      console.warn(`Missing image element for product at index ${index}`);
-      //return;
-    }
-
     item.addEventListener("click", () => {
       chosenProduct = products[index];
       currentProductImg.src = chosenProduct.image_path;
