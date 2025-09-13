@@ -5,7 +5,7 @@ const firstpage = document.querySelectorAll(".pagefirst");
 const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
-const productItem = document.querySelectorAll(".sliderItem img");
+const productItem = document.querySelectorAll(".sliderItem");
 const productInfo = document.querySelectorAll(".product");
 let TotalPages = 0;
 let productinfo = [];
@@ -309,7 +309,7 @@ function updateproductdetails() {
 let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 productItem.forEach((item, index) => {
-  item.addEventListener("click", () => {
+  item.img.addEventListener("click", () => {
     // Update the chosen product
     choosenProduct = products[index];
     // Update the product image
