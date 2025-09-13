@@ -307,12 +307,13 @@ lastpage.forEach((item, index) => {
 
 function updateproductdetails() {
   const currentProductImg = document.querySelector(".productImg");
-
+	console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
     item.img.addEventListener("click", () => {
       const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
       const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
-
+	  console.log(`currentProductDesc : ${currentProductDesc}`);
+	  console.log(`foundIndex : ${foundIndex}`);
       if (foundIndex !== -1) {
         const choosenProduct = products[foundIndex];
         currentProductImg.src = choosenProduct.image_path;
