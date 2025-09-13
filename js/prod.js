@@ -307,14 +307,14 @@ lastpage.forEach((item, index) => {
 
 
 function updateProductDetails() {
-const productItem = document.querySelectorAll(".sliderItem a");
+const productItem = document.querySelectorAll(".sliderItem img");
 const currentProductImg = document.querySelector(".productImg");
 const productInfo = document.querySelectorAll(".product");
   let chosenProduct = products[0];
  console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
 	//console.log(`index : ${index} `);
-    item.img.addEventListener("click", () => {
+    item.addEventListener("click", () => {
 	  console.log(`Click index : ${index} `);
       chosenProduct = products[index];
       currentProductImg.src = chosenProduct.image_path;
