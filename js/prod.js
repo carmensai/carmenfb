@@ -310,7 +310,7 @@ function updateproductdetails() {
 	document.getElementById("productgroup").innerHTML
 	
 	console.log(`productItem.length : ${productItem.length}`);
-  document.querySelectorAll(".slidergrid-image").forEach((item, index) => {
+  productItem.forEach((item, index) => {
     item.addEventListener("click", () => {
       const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
       const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
