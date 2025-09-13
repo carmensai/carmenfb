@@ -9,6 +9,7 @@ const productItem = document.querySelectorAll(".sliderItem a");
 const productInfo = document.querySelectorAll(".product");
 let TotalPages = 0;
 let productinfo = [];
+let products =[];
 pageItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     //change the current slide
@@ -58,7 +59,7 @@ this.xxlsize = xxlsize;
 }
 
 // Calling loadXMLProducts
-var products =[];
+
 function loadXMLProducts() {
  // let pg = 0;
   const xhttp = new XMLHttpRequest();
@@ -296,11 +297,11 @@ lastpage.forEach((item, index) => {
 	let choosenProduct = products[0];
 	const currentProductImg = document.querySelector(".productImg");
     // Update the chosen product
-    choosenProduct = products[index];
+    choosenProduct = products[7];
     // Update the product image
     currentProductImg.src = choosenProduct.image_path;
     // Log useful info
-    console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
+    console.log(`Index : ${index} Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
     });
   });
 
