@@ -1204,6 +1204,10 @@ html {
             width: 70%;
 		   /* z-index: 1; */
         }
+.slidergrid-image-offwhite {
+            width: 70%;
+		   /* z-index: 1; */
+        }
 .slidergrid-Item {
   text-align: center;
   font-size: 0.8em;
