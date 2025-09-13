@@ -309,7 +309,7 @@ function updateproductdetails() {
   const currentProductImg = document.querySelector(".slidergrid-image");
 	console.log(`productItem.length : ${productItem.length}`);
   document.querySelectorAll(".slidergrid-image").forEach((item, index) => {
-    item.img.addEventListener("click", () => {
+    item.addEventListener("click", () => {
       const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
       const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
 	  console.log(`currentProductDesc : ${currentProductDesc}`);
