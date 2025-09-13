@@ -305,15 +305,16 @@ lastpage.forEach((item, index) => {
     });
   });
 
+const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
-const productItem = document.querySelectorAll(".sliderItem");
 const productInfo = document.querySelectorAll(".product");
 
 function updateProductDetails() {
   let chosenProduct = products[0];
  console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
-    item.img.addEventListener("click", () => {
+	console.log(`index : ${index} `);
+    item.addEventListener("click", () => {
 	  console.log(`index : ${index} `);
       chosenProduct = products[index];
       currentProductImg.src = chosenProduct.image_path;
