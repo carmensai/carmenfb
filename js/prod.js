@@ -306,17 +306,21 @@ lastpage.forEach((item, index) => {
   });
 
 function updateproductdetails() {
-const currentProductImg = document.querySelector(".productImg");
-productItem.forEach((item, index) => {
-  let choosenProduct = products[index];
-  item.img.addEventListener("click", () => {
-    // Update the chosen product
-    // choosenProduct = products[index];
-    // Update the product image
-    currentProductImg.src = choosenProduct.image_path;
-    // Log useful info
-    console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
+  const currentProductImg = document.querySelector(".productImg");
+
+  productItem.forEach((item, index) => {
+    item.img.addEventListener("click", () => {
+      const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
+      const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
+
+      if (foundIndex !== -1) {
+        const choosenProduct = products[foundIndex];
+        currentProductImg.src = choosenProduct.image_path;
+        console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
+      } else {
+        console.warn("Product not found for description:", currentProductDesc);
+      }
+    });
   });
-});
 }
 
