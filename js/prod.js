@@ -92,6 +92,8 @@ function myFunction(xml) {
   	const pageCount = Math.ceil((x.length - 1) / noofimg);
     TotalPages = pageCount - 1;
 	wrapper.style.setProperty('--sliderwrapperwidth', `${pageCount * 100}vw`);
+ //  Empty the Products
+	products.splice(0, products.length);
   for (let i = 1; i <x.length; i++) { 
     let prodCol = [];
 	let tmp_productArrayTable = [];
@@ -309,15 +311,23 @@ lastpage.forEach((item, index) => {
 function updateProductDetails() {
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
-const productInfo = document.querySelectorAll(".product");
+const currentproductInfo = document.querySelectorAll(".productDetails");
   let chosenProduct = products[0];
- console.log(`productItem.length : ${productItem.length}`);
+// console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
 	//console.log(`index : ${index} `);
     item.addEventListener("click", () => {
-	  console.log(`Click index : ${index} `);
+//	  console.log(`Click index : ${index} `);
       chosenProduct = products[index];
-      currentProductImg.src = chosenProduct.image_path;
+	  currentProductImg.src = chosenProduct.image_path;
+	  currentproductInfo.h1 = chosenProduct.name;
+	  currentproductInfo.p[0] = "Product Id: "+ chosenProduct.name;
+	  currentproductInfo.p[1] = "Product Details: "+ chosenProduct.description;
+	  currentproductInfo.p[2] = "Product Price: "+ chosenProduct.offer_price;
+	  currentproductInfo.p[3] = "Fabric Details: "+ chosenProduct.fabric;
+	  currentproductInfo.p[4] = "Top Info: "+ chosenProduct.top;
+	  currentproductInfo.p[5] = "Bottom Info: "+ chosenProduct.bottom;
+	  currentproductInfo.p[6] = "Duppatta Info: "+ chosenProduct.duppatta;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
     });
   });
