@@ -78,7 +78,7 @@ function myFunction(xml) {
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
   const prodcontainer = "<div class=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
-  const proddetail = "<div class=\"productDetails\">";
+  const proddetail = "<div class=\"productdetails\">";
   //<img src="./img/air.png" alt="" class="sliderImg">
   // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
   //<h2 class="sliderPrice">$119</h2>
@@ -313,9 +313,9 @@ lastpage.forEach((item, index) => {
 function updateProductDetails() {
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
-const productDetails = document.querySelectorAll(".productDetails");
-const productName = productDetails.querySelector("h1");
-const productParagraphs = productDetails.querySelectorAll("p");
+const productInfoDetails = document.querySelectorAll(".productdetails");
+const productName = productInfoDetails.querySelector("h1");
+const productParagraphs = productInfoDetails.querySelectorAll("p");
  // let chosenProduct = products[0];
 // console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
