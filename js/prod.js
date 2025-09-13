@@ -142,6 +142,7 @@ function myFunction(xml) {
 	//   "Duppatta: " + x[i].getElementsByTagName("Data")[13].childNodes[0].nodeValue  + "</a>" +
      "</p>" + "</a>" ;
 	  let sizehtml = "<div class=\"sliderSizeCap\">";
+	  
 	  if ( tmp_productArrayTable[0].ssize >0 ) {
 		sizehtml += "<a class=\"sliderSizeTextinstock\">S</a>";  
 	  }
