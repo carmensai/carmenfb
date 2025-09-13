@@ -305,11 +305,11 @@ lastpage.forEach((item, index) => {
     });
   });
 
+
+function updateProductDetails() {
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfo = document.querySelectorAll(".product");
-
-function updateProductDetails() {
   let chosenProduct = products[0];
  console.log(`productItem.length : ${productItem.length}`);
   productItem.forEach((item, index) => {
