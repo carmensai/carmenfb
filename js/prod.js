@@ -5,7 +5,7 @@ const firstpage = document.querySelectorAll(".pagefirst");
 const lastpage = document.querySelectorAll(".pagelast");
 const nextpage = document.querySelectorAll(".pagenext");
 const previouspage = document.querySelectorAll(".pageprevious");
-const productItem = document.querySelectorAll(".sliderItem a");
+const productItem = document.querySelectorAll(".sliderItem img");
 const productInfo = document.querySelectorAll(".product");
 let TotalPages = 0;
 let productinfo = [];
@@ -126,7 +126,7 @@ function myFunction(xml) {
 	  
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\" >" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\"  onclick=\"updateproductdetails();\">" +
 		//"</a>" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
