@@ -307,7 +307,7 @@ lastpage.forEach((item, index) => {
 
 function updateProductDetails() {
   let chosenProduct = products[0];
-  const currentProductImg = document.querySelector(".slidergrid-image");
+  const currentProductImg = document.querySelector(".productimg");
   console.log(`currentProductImg.length : ${currentProductImg.length}`);
   if (!currentProductImg) {
     console.warn("Product image element not found.");
