@@ -306,14 +306,14 @@ lastpage.forEach((item, index) => {
   });
 
 function updateproductdetails() {
-  const currentProductImg = document.querySelector(".productImg");
+  const currentProductImg = document.querySelector(".slidergrid-image");
 	console.log(`productItem.length : ${productItem.length}`);
-  productItem.forEach((item, index) => {
+  document.querySelectorAll(".slidergrid-image").forEach((item, index) => {
     item.img.addEventListener("click", () => {
       const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
       const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
 	  console.log(`currentProductDesc : ${currentProductDesc}`);
-	  console.log(`foundIndex : ${foundIndex}`);
+	  console.log(`foundIndex : ${foundIndex} Index : ${index}`);
       if (foundIndex !== -1) {
         const choosenProduct = products[foundIndex];
         currentProductImg.src = choosenProduct.image_path;
