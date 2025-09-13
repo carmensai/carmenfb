@@ -257,7 +257,7 @@ function myFunction(xml) {
 	//return pageCount;
 }
 loadXMLProducts();
-const productItem = document.querySelectorAll(".sliderItem");
+const productItem = document.querySelectorAll(".slidergrid-image");
 const productInfo = document.querySelectorAll(".product");
 console.log("TotalPages" + TotalPages);
 
@@ -320,7 +320,7 @@ function updateProductDetails() {
       return;
     }
 
-    item.img.addEventListener("click", () => {
+    item.addEventListener("click", () => {
       chosenProduct = products[index];
       currentProductImg.src = chosenProduct.image_path;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
