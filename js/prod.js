@@ -313,7 +313,7 @@ lastpage.forEach((item, index) => {
 function updateProductDetails() {
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
-const productInfoDetails = document.querySelectorAll(".productdetails");
+const productInfoDetails = document.querySelector(".productdetails");
 const productName = productInfoDetails.querySelector("h1");
 const productParagraphs = productInfoDetails.querySelectorAll("p");
  // let chosenProduct = products[0];
