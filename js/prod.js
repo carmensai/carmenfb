@@ -124,7 +124,7 @@ function myFunction(xml) {
 	  
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\"  onclick=\"updateproductdetails();\">" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\"  onclick=\"updateProductDetails();\">" +
 		//"</a>" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
