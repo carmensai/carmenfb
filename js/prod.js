@@ -306,12 +306,12 @@ lastpage.forEach((item, index) => {
   });
 
 function updateproductdetails() {
-let choosenProduct = products[0];
 const currentProductImg = document.querySelector(".productImg");
 productItem.forEach((item, index) => {
+  let choosenProduct = products[index];
   item.img.addEventListener("click", () => {
     // Update the chosen product
-    choosenProduct = products[index];
+    // choosenProduct = products[index];
     // Update the product image
     currentProductImg.src = choosenProduct.image_path;
     // Log useful info
