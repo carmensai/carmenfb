@@ -305,24 +305,25 @@ lastpage.forEach((item, index) => {
     });
   });
 
-function updateproductdetails() {
+function updateProductDetails() {
+  let chosenProduct = products[0];
   const currentProductImg = document.querySelector(".slidergrid-image");
-	document.getElementById("productgroup").innerHTML
-	
-	console.log(`productItem.length : ${productItem.length}`);
-  productItem.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      const currentProductDesc = document.querySelector(".sliderNameCap").textContent;
-      const foundIndex = products.findIndex(el => `${el.product_id} - ${el.description}` === currentProductDesc);
-	  console.log(`currentProductDesc : ${currentProductDesc}`);
-	  console.log(`foundIndex : ${foundIndex} Index : ${index}`);
-      if (foundIndex !== -1) {
-        const choosenProduct = products[foundIndex];
-        currentProductImg.src = choosenProduct.image_path;
-        console.log(`Image Path: ${choosenProduct.image_path}, Product ID: ${choosenProduct.product_id}`);
-      } else {
-        console.warn("Product not found for description:", currentProductDesc);
-      }
+  console.log(`currentProductImg.length : ${currentProductImg.length}`);
+  if (!currentProductImg) {
+    console.warn("Product image element not found.");
+    return;
+  }
+  console.log(`productItems.length : ${productItems.length}`);
+  productItems.forEach((item, index) => {
+    if (!item.img) {
+      console.warn(`Missing image element for product at index ${index}`);
+      return;
+    }
+
+    item.img.addEventListener("click", () => {
+      chosenProduct = products[index];
+      currentProductImg.src = chosenProduct.image_path;
+      console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
     });
   });
 }
