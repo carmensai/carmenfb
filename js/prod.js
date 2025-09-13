@@ -74,7 +74,7 @@ function myFunction(xml) {
   const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
-  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\" onclick=\"updateproductdetails()\">";
+  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\">";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
@@ -126,7 +126,7 @@ function myFunction(xml) {
 	  
     table += 
       slideitem +
-       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\">" +
+       "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\" onclick=\"return updateproductdetails();\">" +
 		//"</a>" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image\">" +
       // slidebg +
