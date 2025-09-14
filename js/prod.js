@@ -78,7 +78,7 @@ function myFunction(xml) {
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
   const prodcontainer = "<div class=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
-  const proddetail = "<div class=\"productdetails\">";
+  const proddetail = "<div class=\"productDetails\">";
   //<img src="./img/air.png" alt="" class="sliderImg">
   // const slidehead = "<h1 class=\"sliderTitle\"> </br> NEW</br> SEASON</h1>
   //<h2 class="sliderPrice">$119</h2>
@@ -313,7 +313,8 @@ lastpage.forEach((item, index) => {
 function updateProductDetails() {
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
-const productInfoDetails = document.querySelector(".productdetails");
+const productInfoDetails = document.querySelector(".productDetails");
+const productSizeDetails = document.querySelector(".sliderSizeCap");
 const productName = productInfoDetails.querySelector("h1");
 const productParagraphs = productInfoDetails.querySelectorAll("p");
  // let chosenProduct = products[0];
@@ -333,7 +334,8 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productParagraphs[5].textContent = "Bottom Info: " + chosenProduct.bottom;
       productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
-    });
+      productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
+	});
   });
 }
 
