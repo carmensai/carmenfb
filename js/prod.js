@@ -339,3 +339,87 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
   });
 }
 
+function handleProductClick(event) {
+    const clickedProduct = event.currentTarget;
+    const ProductId = clickedProduct.querySelector('.sliderNameCap').textContent;
+    const ProductName = ProductId; // Assuming name and ID are the same
+    const ProductPrice = parseFloat(clickedProduct.querySelector('.sliderPriceCap').textContent);
+    const imagePath = clickedProduct.querySelector('.productImg').src;
+
+    if (selectedItems[ProductId]) {
+        selectedItems[ProductId].count++;
+    } else {
+        selectedItems[ProductId] = {
+            product_id: ProductId,
+            name: ProductName,
+            price: ProductPrice,
+            count: 1,
+            image_path: imagePath,
+        };
+    }
+
+    updateCart();
+}
+
+function updateCart() {
+	cart.innerHTML = '';
+	let total = 0; 
+
+	for (const ProductId in selectedItems) {
+		const item = selectedItems[ProductId];
+		const listItem = document.createElement('li');
+		const quantityContainer = document.createElement('div'); 
+		const quantityText = document.createElement('span'); 
+		const addButton = document.createElement('button');
+		const subtractButton = document.createElement('button');
+
+		addButton.textContent = '+';
+		subtractButton.textContent = '-';
+
+		quantityText.textContent = item.count; 
+
+		addButton.addEventListener('click', () => {
+			addItem(ProductId);
+		});
+
+		subtractButton.addEventListener('click', () => {
+			removeItem(ProductId);
+		});
+
+		const hr = document.createElement('hr');
+
+		quantityContainer.appendChild(subtractButton); 
+		quantityContainer.appendChild(quantityText); 
+		quantityContainer.appendChild(addButton); 
+		quantityContainer.appendChild(hr); 
+
+		listItem.textContent = `${item.name} - $${item.price * item.count}`;
+		listItem.appendChild(quantityContainer); 
+		cart.appendChild(listItem);
+
+		total += item.price * item.count; 
+	}
+
+	totalElement.textContent = `Общая сумма: $${total.toFixed(2)}`; 
+}
+
+function addItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].count++;
+	}
+	updateCart();
+}
+
+function removeItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].count--;
+		if (selectedItems[ProductId].count <= 0) {
+			delete selectedItems[ProductId];
+		}
+	}
+	updateCart();
+}
+
+AllProducts.forEach((prd) => {
+	prd.addEventListener('click', handleProductClick);
+});
