@@ -339,12 +339,19 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
   });
 }
 
+const AllProducts = document.querySelectorAll('.addcartbutton'); 
+const cart = document.getElementById('cart');
+const totalElement = document.getElementById('total'); 
+const selectedItems = {};
+
 function handleProductClick(event) {
     const clickedProduct = event.currentTarget;
-    const ProductId = clickedProduct.querySelector('.sliderNameCap').textContent;
-    const ProductName = ProductId; // Assuming name and ID are the same
-    const ProductPrice = parseFloat(clickedProduct.querySelector('.sliderPriceCap').textContent);
-    const imagePath = clickedProduct.querySelector('.productImg').src;
+    const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
+
+    const ProductId = products[index].product_id;
+    const ProductName = products[index].name;
+    const ProductPrice = parseFloat(products[index].offer_price);
+    const imagePath = products[index].image_path;
 
     if (selectedItems[ProductId]) {
         selectedItems[ProductId].count++;
@@ -420,6 +427,6 @@ function removeItem(ProductId) {
 	updateCart();
 }
 
-AllProducts.forEach((prd) => {
-	prd.addEventListener('click', handleProductClick);
+AllProducts.forEach((btn) => {
+	btn.addEventListener('click', handleProductClick);
 });
