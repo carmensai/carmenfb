@@ -72,7 +72,7 @@ function myFunction(xml) {
   const noofimg = 4;
   const slide = "<div class=\"slider\">";
   const slidewrap = "<div class=\"sliderWrapper\">";
-  const slideitem = "<div class=\"sliderItem\"> <a href=\"#productdet\">";
+  const slideitem = "<div class=\"sliderItem\" id=\"";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
   const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
@@ -125,7 +125,8 @@ function myFunction(xml) {
 	sprodsize = x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue;
 	  
     table += 
-      slideitem +
+      slideitem + x[i].getElementsByTagName("Data")[0].childNodes[0].nodeValue +
+		"\"> <a href=\"#productdet\">" +
        "<img src=\"" + x[i].getElementsByTagName("Data")[3].childNodes[0].nodeValue + "\" alt=\"\"  class=\"slidergrid-image\"  onclick=\"updateProductDetails();\">" +
 		//"</a>" +
 	    "<img src=\"./productimages/OffWhite.jpg\" " + "\" alt=\"\"  class=\"slidergrid-image-offwhite\">" +
@@ -309,36 +310,6 @@ lastpage.forEach((item, index) => {
     });
   });
 
-
-function updateProductDetails() {
-const productItem = document.querySelectorAll(".slidergrid-image");
-const currentProductImg = document.querySelector(".productImg");
-const productInfoDetails = document.querySelector(".productDetails");
-const productSizeDetails = document.querySelector(".sliderSizeCap");
-const productName = productInfoDetails.querySelector("h1");
-const productParagraphs = productInfoDetails.querySelectorAll("p");
- // let chosenProduct = products[0];
-// console.log(`productItem.length : ${productItem.length}`);
-  productItem.forEach((item, index) => {
-	//console.log(`index : ${index} `);
-    item.addEventListener("click", () => {
-//	  console.log(`Click index : ${index} `);
-      const chosenProduct = products[index];
-	  currentProductImg.src = chosenProduct.image_path;
-	  productName.textContent = chosenProduct.name;
-	  productParagraphs[0].textContent = "Product Id: " + chosenProduct.product_id;
-      productParagraphs[1].textContent = "Product Details: " + chosenProduct.description;
-      productParagraphs[2].textContent = "Product Price: " + chosenProduct.offer_price;
-      productParagraphs[3].textContent = "Fabric Details: " + chosenProduct.fabric;
-      productParagraphs[4].textContent = "Top Info: " + chosenProduct.top;
-      productParagraphs[5].textContent = "Bottom Info: " + chosenProduct.bottom;
-      productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
-      console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
-      productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
-	});
-  });
-}
-
 const AllProducts = document.querySelectorAll('.addcartbutton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
@@ -427,6 +398,36 @@ function removeItem(ProductId) {
 	updateCart();
 }
 
-AllProducts.forEach((btn) => {
+function updateProductDetails() {
+const productItem = document.querySelectorAll(".slidergrid-image");
+const currentProductImg = document.querySelector(".productImg");
+const productInfoDetails = document.querySelector(".productDetails");
+const productSizeDetails = document.querySelector(".sliderSizeCap");
+const productName = productInfoDetails.querySelector("h1");
+const productParagraphs = productInfoDetails.querySelectorAll("p");
+ // let chosenProduct = products[0];
+// console.log(`productItem.length : ${productItem.length}`);
+  productItem.forEach((item, index) => {
+	//console.log(`index : ${index} `);
+    item.addEventListener("click", () => {
+//	  console.log(`Click index : ${index} `);
+      const chosenProduct = products[index];
+	  currentProductImg.src = chosenProduct.image_path;
+	  productName.textContent = chosenProduct.name;
+	  productParagraphs[0].textContent = "Product Id: " + chosenProduct.product_id;
+      productParagraphs[1].textContent = "Product Details: " + chosenProduct.description;
+      productParagraphs[2].textContent = "Product Price: " + chosenProduct.offer_price;
+      productParagraphs[3].textContent = "Fabric Details: " + chosenProduct.fabric;
+      productParagraphs[4].textContent = "Top Info: " + chosenProduct.top;
+      productParagraphs[5].textContent = "Bottom Info: " + chosenProduct.bottom;
+      productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
+      console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
+      productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
+	AllProducts.forEach((btn) => {
 	btn.addEventListener('click', handleProductClick);
 });
+	});
+  });
+}
+
+
