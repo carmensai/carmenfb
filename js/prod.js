@@ -320,28 +320,29 @@ function handleProductClick(event) {
     const clickedProduct = event.currentTarget;
     const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
 
-    const ProductId = products[index].product_id;
-	console.log(`ProductId Index: ${index}`);
-    const ProductName = products[index].name;
-    const ProductPrice = parseFloat(products[index].offer_price);
-    const imagePath = products[index].image_path;
-	console.log(`ProductId : ${ProductId}`);
-	console.log(`ProductName : ${ProductName}`);
-	console.log(`ProductPrice : ${ProductPrice}`);
 
-    if (selectedItems[ProductId]) {
-        selectedItems[ProductId].count++;
-    } else {
-        selectedItems[ProductId] = {
-            product_id: ProductId,
-            name: ProductName,
-            price: ProductPrice,
-            count: 1,
-            image_path: imagePath,
-        };
-    }
-    console.log(selectedItems[ProductId] );
-    updateCart();
+const ProductId = products[index].product_id;
+console.log(`ProductId Index: ${index}`);
+const ProductName = products[index].name;
+const ProductPrice = parseFloat(products[index].offer_price);
+const imagePath = products[index].image_path;
+console.log(`ProductId : ${ProductId}`);
+console.log(`ProductName : ${ProductName}`);
+console.log(`ProductPrice : ${ProductPrice}`);
+
+if (selectedItems[ProductId]) {
+    selectedItems[ProductId].count++;
+} else {
+    selectedItems[ProductId] = {
+        product_id: ProductId,
+        name: ProductName,
+        price: ProductPrice,
+        count: 1,
+        image_path: imagePath,
+    };
+}
+console.log(selectedItems[ProductId] );
+updateCart();
 }
 
 function updateCart() {
@@ -404,9 +405,12 @@ function removeItem(ProductId) {
 }
 
 //function addcart() {
-AllProducts.forEach((button) => {
-	button.addEventListener('click', handleProductClick); 
-});	
+AllProducts.forEach((btn) => {
+	btn.addEventListener('click', (event) => {
+		event.preventDefault(); // ✅ This is the correct way
+		handleProductClick(event);
+	});
+});
 //}
 
 function updateProductDetails() {
