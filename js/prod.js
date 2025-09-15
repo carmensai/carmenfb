@@ -434,7 +434,9 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
-
+	AllProducts.forEach((button) => {
+		button.addEventListener('click', handleProductClick); 
+	});	
 	});
   });
 }
