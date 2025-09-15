@@ -310,7 +310,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.sliderItem'); 
+const AllProducts = document.querySelectorAll('.addcartbutton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
