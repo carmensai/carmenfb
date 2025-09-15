@@ -320,9 +320,13 @@ function handleProductClick(event) {
     const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
 
     const ProductId = products[index].product_id;
+	console.log(`ProductId Index: ${index}`);
     const ProductName = products[index].name;
     const ProductPrice = parseFloat(products[index].offer_price);
     const imagePath = products[index].image_path;
+	console.log(`ProductId : ${ProductId}`);
+	console.log(`ProductName : ${ProductName}`);
+	console.log(`ProductPrice : ${ProductPrice}`);
 
     if (selectedItems[ProductId]) {
         selectedItems[ProductId].count++;
@@ -335,7 +339,7 @@ function handleProductClick(event) {
             image_path: imagePath,
         };
     }
-
+    console.log(selectedItems[ProductId] );
     updateCart();
 }
 
