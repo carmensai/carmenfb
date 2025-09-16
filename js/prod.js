@@ -303,19 +303,18 @@ const AllProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
+
 function handleProductClick(event) {
     const clickedProduct = event.currentTarget;
     const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
-
-
-const ProductId = products[index].product_id;
-console.log(`ProductId Index: ${index}`);
-const ProductName = products[index].name;
-const ProductPrice = parseFloat(products[index].offer_price);
-const imagePath = products[index].image_path;
-console.log(`ProductId : ${ProductId}`);
-console.log(`ProductName : ${ProductName}`);
-console.log(`ProductPrice : ${ProductPrice}`);
+	const ProductId = products[index].product_id;
+	console.log(`ProductId Index: ${index}`);
+	const ProductName = products[index].name;
+	const ProductPrice = parseFloat(products[index].offer_price);
+	const imagePath = products[index].image_path;
+	console.log(`ProductId : ${ProductId}`);
+	console.log(`ProductName : ${ProductName}`);
+	console.log(`ProductPrice : ${ProductPrice}`);
 
 if (selectedItems[ProductId]) {
     selectedItems[ProductId].count++;
@@ -428,7 +427,6 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
 		});
 	});
-  });
 		InpProducts.forEach(btn => {
 			btn.addEventListener('click', (event) => {
 				event.preventDefault(); // ✅ This is the correct way
