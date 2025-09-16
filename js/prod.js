@@ -299,7 +299,7 @@ lastpage.forEach((item, index) => {
   });
 
 //const AllProducts = document.querySelectorAll('.addcartbutton'); 
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
+const BtnProducts = document.querySelectorAll('.addcartbutton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
@@ -390,17 +390,9 @@ function removeItem(ProductId) {
 	updateCart();
 }
 
-function addcart() {
-AllProducts.forEach(btn => {
-	btn.button.addEventListener('click', (event) => {
-		event.preventDefault(); // ✅ This is the correct way
-		handleProductClick(event);
-	});
-});
-}
+const InpProducts = document.querySelectorAll('.addcartbutton'); 
 
 function updateProductDetails() {
-const InpProducts = document.querySelectorAll('.addcartbutton'); 
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfoDetails = document.querySelector(".productDetails");
@@ -435,6 +427,14 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 		});
 }
 
+function addcart() {
+BtnProducts.forEach(btn => {
+	btn.button.addEventListener('click', (event) => {
+		event.preventDefault(); // ✅ This is the correct way
+		handleProductClick(event);
+	});
+});
+}
 
 function openCartPopup() {
   document.querySelector(".cart-overlay").style.display = "flex"; // Show the cart-overlay
