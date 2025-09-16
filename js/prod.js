@@ -419,22 +419,16 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
 		});
 	});
-		InpProducts.forEach(btn => {
-			btn.addEventListener('click', (event) => {
-				event.preventDefault(); // ✅ This is the correct way
-				handleProductClick(event);
-			});
-		});
 }
 
-function addcart() {
-BtnProducts.forEach(btn => {
-	btn.button.addEventListener('click', (event) => {
+//function addcart() {
+BtnProducts.forEach(button => {
+	button.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
 		handleProductClick(event);
 	});
 });
-}
+// }
 
 function openCartPopup() {
   document.querySelector(".cart-overlay").style.display = "flex"; // Show the cart-overlay
