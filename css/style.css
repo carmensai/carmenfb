@@ -1971,16 +1971,17 @@ footer {
     box-shadow: 0 5px 8px rgba(0,0,0,.15)
 }
 
-.cart-opened .cart-overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,.4);
-    z-index: 1050;
-    overflow: hidden
+.cart-overlay {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
 }
+
+.cart-opened .cart-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 .cart-dropdown .mobile-cart .btn-close {
     position: absolute;
