@@ -444,3 +444,15 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 }
 
 
+function openCartPopup() {
+  document.querySelector(".cart-overlay").style.display = "flex"; // Show the cart-overlay
+}
+
+function closeCartPopup() {
+  document.querySelector(".cart-overlay").style.display = "none"; // Hide the cart-overlay
+}
+document.querySelector('.cart-overlay').addEventListener('click', function(event) {
+  event.preventDefault();
+  openCartPopup();
+});
+
