@@ -233,11 +233,11 @@
 
 <script>
 function openCartPopup() {
-  document.getElementById("cart-overlay").style.display = "flex"; // Show the cart-overlay
+  document.querySelector(".cart-overlay").style.display = "flex"; // Show the cart-overlay
 }
 
 function closeCartPopup() {
-  document.getElementById("cart-overlay").style.display = "none"; // Hide the cart-overlay
+  document.querySelector(".cart-overlay").style.display = "none"; // Hide the cart-overlay
 }
 document.getElementById('cartLink').addEventListener('click', function(event) {
   event.preventDefault();
