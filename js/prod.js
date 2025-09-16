@@ -456,3 +456,14 @@ document.querySelector('.cart-overlay').addEventListener('click', function(event
   openCartPopup();
 });
 
+const cartNav = document.getElementById('cartlink');
+const closeBtn = document.querySelector('.cart-close-button');
+
+cartNav.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.body.classList.add('cart-opened');
+});
+
+closeBtn.addEventListener('click', () => {
+  document.body.classList.remove('cart-opened');
+});
