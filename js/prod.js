@@ -302,8 +302,6 @@ const AllProducts = document.querySelectorAll('.sliderItem');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
-
-		
 function handleProductClick(event) {
     const clickedProduct = event.currentTarget;
     const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
@@ -402,7 +400,7 @@ AllProducts.forEach(btn => {
 //}
 
 function updateProductDetails() {
-// const AllProducts = document.querySelectorAll('.addCartButton'); 
+const InpProducts = document.querySelectorAll('.addCartButton'); 
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfoDetails = document.querySelector(".productDetails");
@@ -428,8 +426,8 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
 
-		AllProducts.forEach(btn => {
-			btn.button.addEventListener('click', (event) => {
+		InpProducts.forEach(btn => {
+			btn.addEventListener('click', (event) => {
 				event.preventDefault(); // ✅ This is the correct way
 				handleProductClick(event);
 			});
