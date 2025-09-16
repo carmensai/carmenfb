@@ -193,10 +193,10 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addCartButton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
-	// "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
+	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
 	   "<p  class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
@@ -285,18 +285,6 @@ lastpage.forEach((item, index) => {
 	firstpage.forEach(el => el.classList.remove("active"));
 	lastpage.forEach(el => el.classList.remove("active"));
 	item.classList.add("active");
-	  console.log("TotalPages" + TotalPages);
-    });
-  });
-
-lastpage.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    //change the current slide
-	wrapper.style.transform = `translateX(${TotalPages * -100}vw`;
-	pageItems.forEach(el => el.classList.remove("active"));
-	firstpage.forEach(el => el.classList.remove("active"));
-	lastpage.forEach(el => el.classList.remove("active"));
-	item.classList.add("active");
 	console.log("TotalPages" + TotalPages);
 	
 	let choosenProduct = products[0];
@@ -310,7 +298,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.addCartButton'); 
+const AllProducts = document.querySelectorAll('.addcartbutton');  
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
@@ -405,7 +393,6 @@ function removeItem(ProductId) {
 }
 
 function addcart() {
-//const AllProducts = document.querySelectorAll('.addCartButton'); 
 AllProducts.forEach((btn) => {
 	btn.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
