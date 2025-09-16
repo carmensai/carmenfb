@@ -400,7 +400,7 @@ AllProducts.forEach(btn => {
 //}
 
 function updateProductDetails() {
-const InpProducts = document.querySelectorAll('.addCartButton'); 
+const InpProducts = document.querySelectorAll('.addcartbutton'); 
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfoDetails = document.querySelector(".productDetails");
