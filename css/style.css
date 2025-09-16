@@ -1980,6 +1980,7 @@ footer {
 .cart-opened .cart-overlay {
     opacity: 1;
     pointer-events: auto;
+	display: none;
 }
 
 
