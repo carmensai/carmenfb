@@ -393,8 +393,8 @@ function removeItem(ProductId) {
 }
 
 //function addcart() {
-AllProducts.forEach((item,index) => {
-	item.addEventListener('click', (event) => {
+AllProducts.forEach(button => {
+	button.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
 		handleProductClick(event);
 	});
