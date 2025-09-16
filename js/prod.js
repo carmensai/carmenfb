@@ -298,7 +298,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.addcartbutton');  
+const AllProducts = document.querySelectorAll('.sliderItem');  
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
