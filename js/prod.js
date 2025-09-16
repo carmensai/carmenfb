@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addtocart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -298,11 +298,14 @@ lastpage.forEach((item, index) => {
     });
   });
 
+
 const BtnProducts = document.querySelectorAll('.addcartbutton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
 
+function addtocart()
+{
 // Attach click listeners to product buttons
 BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
@@ -310,6 +313,7 @@ BtnProducts.forEach(button => {
         handleProductClick(event);
     });
 });
+}
 
 function handleProductClick(event) {
     const index = parseInt(event.currentTarget.dataset.index);
