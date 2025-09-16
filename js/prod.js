@@ -405,6 +405,7 @@ function removeItem(ProductId) {
 }
 
 function addcart() {
+const AllProducts = document.querySelectorAll('.addcartbutton'); 
 AllProducts.forEach((btn) => {
 	btn.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
