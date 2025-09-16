@@ -434,6 +434,7 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 				event.preventDefault(); // ✅ This is the correct way
 				handleProductClick(event);
 			});
+		});
 }
 
 
