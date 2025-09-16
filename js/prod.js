@@ -298,7 +298,8 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.sliderItem');  
+//const AllProducts = document.querySelectorAll('.addcartbutton'); 
+const AllProducts = document.querySelectorAll('.addcartbutton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
@@ -390,14 +391,14 @@ function removeItem(ProductId) {
 	updateCart();
 }
 
-//function addcart() {
+function addcart() {
 AllProducts.forEach(btn => {
 	btn.button.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
 		handleProductClick(event);
 	});
 });
-//}
+}
 
 function updateProductDetails() {
 const InpProducts = document.querySelectorAll('.addcartbutton'); 
@@ -425,15 +426,14 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
-
+		});
+	});
+  });
 		InpProducts.forEach(btn => {
 			btn.addEventListener('click', (event) => {
 				event.preventDefault(); // ✅ This is the correct way
 				handleProductClick(event);
 			});
-		});
-	});
-  });
 }
 
 
