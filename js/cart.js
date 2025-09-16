@@ -66,4 +66,4 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Initialize
-document.addEventListener('DOMContentLoaded',  addtocart);
+//document.addEventListener('DOMContentLoaded',  addtocart);
