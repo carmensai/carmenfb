@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addCartButton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
@@ -310,7 +310,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
+const AllProducts = document.querySelectorAll('.addCartButton'); 
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total'); 
 const selectedItems = {};
@@ -405,7 +405,7 @@ function removeItem(ProductId) {
 }
 
 function addcart() {
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
+//const AllProducts = document.querySelectorAll('.addCartButton'); 
 AllProducts.forEach((btn) => {
 	btn.addEventListener('click', (event) => {
 		event.preventDefault(); // ✅ This is the correct way
@@ -415,7 +415,7 @@ AllProducts.forEach((btn) => {
 }
 
 function updateProductDetails() {
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
+const AllProducts = document.querySelectorAll('.addCartButton'); 
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfoDetails = document.querySelector(".productDetails");
