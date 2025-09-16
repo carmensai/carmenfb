@@ -456,7 +456,7 @@ document.querySelector('.cart-overlay').addEventListener('click', function(event
   openCartPopup();
 });
 
-const cartNav = document.getElementById('cartlink');
+const cartNav = document.getElementById('cartLink');
 const closeBtn = document.querySelector('.cart-close-button');
 
 cartNav.addEventListener('click', (e) => {
