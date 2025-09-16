@@ -107,7 +107,7 @@
                 <a class="nav-link" href="feedback.html">Feedback</a>
               </li>
 			 <li class="nav-item">
-			 <a class="nav-link" href="#MyCart">My Cart
+			 <a class="nav-link" id="cartLink" href="#">My Cart
 				 <i class="fa fa-cart-arrow-down"> </i>
 			 </a>
 			 </li>
@@ -175,8 +175,7 @@
 </aside>
 		  
 <div class="dropdown cart-dropdown">
-	<a>  I am in side the Cart </a>
-    <div class="cart-overlay">
+	<div class="cart-overlay">
 		<div class="dropdown-menu mobile-cart ">
 			<a href="#" title="Close (Esc)" class="btn-close">
 			×
@@ -184,13 +183,12 @@
 			<div class="dropdownmenu-wrapper custom-scrollbar">
 				<div class="dropdown-cart-header">Your Cart</div>
 					<div class="dropdown-cart-products dropdown-cart-products">
-						<ul class="mini-products-list">
-						<li> Item 1 </li>>
+						<ul id="cart" class="mini-products-list">
 						</ul>
 						<div class="total">
 							<div class="total">
 								<div class="mb-3 mt-3 total-in">
-									<span class="label h4 text-black-50">Cart Subtotal:</span><span class="font-weight-bold product-price text-dark"><span class="money1 text-price font-3"> ₹2049.00</span></span>
+									<span id="total" class="label h4 text-black-50">Cart Subtotal:</span><span class="font-weight-bold product-price text-dark"><span class="money1 text-price font-3"> ₹2049.00</span></span>
 								</div>
 								<div class="f4 buttonSet text-center d-flex justify-content-between cart-dropdown-footer">
 									<a href="#" class="btn btn-outline-secondary btn-sm">
@@ -232,7 +230,21 @@
   <!-- End Google Map -->
     <!-- Script for Product apps js -->
   <script type="text/javascript"  src="./js/prod.js"></script>
-	
+
+<script>
+function openCartPopup() {
+  document.getElementById("cart-overlay").style.display = "flex"; // Show the cart-overlay
+}
+
+function closeCartPopup() {
+  document.getElementById("cart-overlay").style.display = "none"; // Hide the cart-overlay
+}
+document.getElementById('cartLink').addEventListener('click', function(event) {
+  event.preventDefault();
+  openCartPopup();
+});
+
+</script>
     <!-- End Script for Product apps js -->
 
 </body>
