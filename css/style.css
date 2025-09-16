@@ -1972,15 +1972,18 @@ footer {
 }
 
 .cart-overlay {
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    pointer-events: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
 }
 
 .cart-opened .cart-overlay {
-    opacity: 1;
-    pointer-events: auto;
-	display: none;
+  display: block;
 }
 
 
