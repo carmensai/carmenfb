@@ -7,7 +7,7 @@ const cartNav = document.getElementById('cartLink');
 
 const selectedItems = {};
 
-function addtocart() {
+//function addtocart() {
   BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
@@ -15,7 +15,7 @@ function addtocart() {
       document.body.classList.add('cart-opened');
     });
   });
-}
+//}
 
 function handleProductClick(event) {
   const button = event.target;
