@@ -383,8 +383,29 @@ function updateCartDisplay() {
   for (const id in selectedItems) {
     const item = selectedItems[id];
     const itemElement = document.createElement('div');
-    itemElement.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
-    cartlist.appendChild(itemElement);
+	const quantityContainer = document.createElement('div'); 
+	const quantityText = document.createElement('span'); 
+	const addButton = document.createElement('button');
+	const subtractButton = document.createElement('button');
+	addButton.textContent = '+';
+	subtractButton.textContent = '-';
+	quantityText.textContent = item.count; 
+	  
+		addButton.addEventListener('click', () => {
+			addItem(ProductId);
+		});
+		subtractButton.addEventListener('click', () => {
+			removeItem(ProductId);
+		});
+	const hr = document.createElement('hr');
+		quantityContainer.appendChild(subtractButton); 
+		quantityContainer.appendChild(quantityText); 
+		quantityContainer.appendChild(addButton); 
+		quantityContainer.appendChild(hr); 
+	  
+    itemElement.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.appendChild(quantityContainer); 
+	cartlist.appendChild(itemElement);
   }
 }
 
@@ -395,6 +416,23 @@ function updateTotal() {
     total += selectedItems[id].price * selectedItems[id].quantity;
   }
   totalElement.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+function addItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].count++;
+	}
+	updateCart();
+}
+
+function removeItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].count--;
+		if (selectedItems[ProductId].count <= 0) {
+			delete selectedItems[ProductId];
+		}
+	}
+	updateCart();
 }
 
 const cartNav = document.getElementById('cartLink');
