@@ -329,6 +329,21 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 
 
 
+function addtocart() {
+const BtnProducts = document.querySelectorAll('.addcartbutton');
+const cart = document.getElementById('cart');
+const totalElement = document.getElementById('total');
+const cartOverlay = document.querySelector('.cart-overlay');
+
+	BtnProducts.forEach(button => {
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      handleProductClick(event);
+      document.body.classList.add('cart-opened');
+    });
+  });
+
+
 //const closeBtn = document.querySelector('.cart-close-button');
 //const cartNav = document.getElementById('cartLink');
 
@@ -391,10 +406,13 @@ function openCartPopup() {
 function closeCartPopup() {
   document.querySelector(".cart-overlay").style.display = "none"; // Hide the cart-overlay
 }
+}
+
 document.querySelector('.cart-overlay').addEventListener('click', function(event) {
   event.preventDefault();
   openCartPopup();
 });
+
 
 const cartNav = document.getElementById('cartLink');
 const closeBtn = document.querySelector('.cart-close-button');
@@ -407,18 +425,3 @@ cartNav.addEventListener('click', (e) => {
 closeBtn.addEventListener('click', () => {
   document.body.classList.remove('cart-opened');
 });
-
-function addtocart() {
-const BtnProducts = document.querySelectorAll('.addcartbutton');
-const cart = document.getElementById('cart');
-const totalElement = document.getElementById('total');
-const cartOverlay = document.querySelector('.cart-overlay');
-  BtnProducts.forEach(button => {
-    button.addEventListener('click', event => {
-      event.preventDefault();
-      handleProductClick(event);
-      document.body.classList.add('cart-opened');
-    });
-  });
-}
-
