@@ -394,10 +394,10 @@ function updateCartDisplay() {
 	quantityText.textContent = item.quantity; 
 	  
 		addButton.addEventListener('click', () => {
-			addItem(ProductId);
+			addItem(id);
 		});
 		subtractButton.addEventListener('click', () => {
-			removeItem(ProductId);
+			removeItem(id);
 		});
 	const hr = document.createElement('hr');
 		quantityContainer.appendChild(subtractButton); 
@@ -416,7 +416,7 @@ function updateTotal() {
   const totalElement = document.getElementById('carttotal');
   let total = 0;
   for (const id in selectedItems) {
-    total += selectedItems[product_id].price * selectedItems[product_id].quantity;
+    total += selectedItems[id].price * selectedItems[id].quantity;
   }
   totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
 }
