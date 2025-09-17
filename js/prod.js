@@ -342,6 +342,7 @@ const closeBtn = document.querySelector('.cart-close-button');
 	
 	BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
+	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(event);
       document.body.classList.add('cart-opened');
