@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -335,7 +335,7 @@ function addcart()
 function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
-const totalElement = document.getElementById('total');
+const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartNav = document.getElementById('cartLink');
 const closeBtn = document.querySelector('.cart-close-button');
