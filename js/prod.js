@@ -332,8 +332,8 @@ const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total');
 const cartOverlay = document.querySelector('.cart-overlay');
-const closeBtn = document.querySelector('.cart-close-button');
-const cartNav = document.getElementById('cartLink');
+//const closeBtn = document.querySelector('.cart-close-button');
+//const cartNav = document.getElementById('cartLink');
 
 const selectedItems = {};
 
