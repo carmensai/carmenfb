@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addtocart()\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -327,11 +327,19 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 	});
 }
 
+function addcart()
+(
+	addtocart();
+)
+
+function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total');
 const cartOverlay = document.querySelector('.cart-overlay');
-function addtocart() {
+const cartNav = document.getElementById('cartLink');
+const closeBtn = document.querySelector('.cart-close-button');
+	
 	BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
@@ -410,9 +418,6 @@ document.querySelector('.cart-overlay').addEventListener('click', function(event
 });
 
 
-const cartNav = document.getElementById('cartLink');
-const closeBtn = document.querySelector('.cart-close-button');
-
 cartNav.addEventListener('click', (e) => {
   e.preventDefault();
   document.body.classList.add('cart-opened');
@@ -422,5 +427,3 @@ closeBtn.addEventListener('click', () => {
   document.body.classList.remove('cart-opened');
 });
 
-
-addtocart();
