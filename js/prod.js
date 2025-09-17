@@ -327,12 +327,10 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 	});
 }
 
-document.addEventListener("DOMContentLoaded", () => {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total');
 const cartOverlay = document.querySelector('.cart-overlay');
-});
 
 
 function addtocart() {
