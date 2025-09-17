@@ -379,6 +379,7 @@ function handleProductClick(event) {
 }
 
 function updateCartDisplay() {
+  const totalElement = document.getElementById('carttotal');
   cartlist.innerHTML = '';
   let total = 0; 
   for (const id in selectedItems) {
@@ -410,6 +411,7 @@ function updateCartDisplay() {
 	cartlist.appendChild(listItem);
 	total += item.price * item.quantity; 
   }
+  totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
 }
 
 function updateTotal() {
