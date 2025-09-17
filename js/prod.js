@@ -262,7 +262,7 @@ function myFunction(xml) {
   console.log(prod);
 	//return pageCount;
 }
-loadXMLProducts();
+// loadXMLProducts();
 
 console.log("TotalPages" + TotalPages);
 
