@@ -355,9 +355,9 @@ console.log(`BtnProducts : ${BtnProducts.length}, cart : ${cart.length} , totalE
 const selectedItems = {};
 
 function handleProductClick(event) {
+  const button = event.target;
   const idx = Number(button.dataset.index);
   const chosenProduct = products[idx];
-  const button = event.target;
   const productId = chosenProduct.product_id;
   const productName = chosenProduct.name;
   const productPrice = chosenProduct.offer_price;
