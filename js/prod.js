@@ -328,9 +328,9 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 }
 
 function addcart()
-(
+{
 	addtocart();
-)
+}
 
 function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
