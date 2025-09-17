@@ -391,7 +391,7 @@ function updateCartDisplay() {
 	const subtractButton = document.createElement('button');
 	addButton.textContent = '+';
 	subtractButton.textContent = '-';
-	quantityText.textContent = item.count; 
+	quantityText.textContent = item.quantity; 
 	  
 		addButton.addEventListener('click', () => {
 			addItem(ProductId);
@@ -408,7 +408,7 @@ function updateCartDisplay() {
     listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
     listItem.appendChild(quantityContainer); 
 	cartlist.appendChild(listItem);
-	total += item.price * item.count; 
+	total += item.price * item.quantity; 
   }
 }
 
@@ -416,22 +416,22 @@ function updateTotal() {
   const totalElement = document.getElementById('carttotal');
   let total = 0;
   for (const id in selectedItems) {
-    total += selectedItems[id].price * selectedItems[id].quantity;
+    total += selectedItems[product_id].price * selectedItems[product_id].quantity;
   }
   totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
 }
 
 function addItem(ProductId) {
 	if (selectedItems[ProductId]) {
-		selectedItems[ProductId].count++;
+		selectedItems[ProductId].quantity++;
 	}
 	updateCart();
 }
 
 function removeItem(ProductId) {
 	if (selectedItems[ProductId]) {
-		selectedItems[ProductId].count--;
-		if (selectedItems[ProductId].count <= 0) {
+		selectedItems[ProductId].quantity--;
+		if (selectedItems[ProductId].quantity <= 0) {
 			delete selectedItems[ProductId];
 		}
 	}
