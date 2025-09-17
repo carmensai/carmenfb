@@ -1056,6 +1056,7 @@ button {
 	width: 25%; 
 	font-size: 15px; 
 	transition: .2s linear; 
+	cursor: ponter;
 } 
 
 button:hover { 
@@ -1973,13 +1974,14 @@ footer {
 
 .cart-overlay {
   position: absolute;
-  top: 100%;
+  top: 0;
   right: 0;
   width: 300px;
-  background: white;
+  background-color: inherit;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: none;
+  z-index: 1000;
 }
 
 .cart-opened .cart-overlay {
