@@ -382,8 +382,9 @@ function updateCartDisplay() {
   cartlist.innerHTML = '';
   for (const id in selectedItems) {
     const item = selectedItems[id];
-    const itemElement = document.createElement('div');
-	const quantityContainer = document.createElement('div'); 
+	const itemElement = document.createElement('div');
+	const listItem = document.createElement('li');
+    const quantityContainer = document.createElement('div'); 
 	const quantityText = document.createElement('span'); 
 	const addButton = document.createElement('button');
 	const subtractButton = document.createElement('button');
@@ -403,9 +404,10 @@ function updateCartDisplay() {
 		quantityContainer.appendChild(addButton); 
 		quantityContainer.appendChild(hr); 
 	  
-    itemElement.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
     listItem.appendChild(quantityContainer); 
-	cartlist.appendChild(itemElement);
+	cartlist.appendChild(listItem);
+	total += item.price * item.count; 
   }
 }
 
@@ -415,7 +417,7 @@ function updateTotal() {
   for (const id in selectedItems) {
     total += selectedItems[id].price * selectedItems[id].quantity;
   }
-  totalElement.textContent = `Total: $${total.toFixed(2)}`;
+  totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
 }
 
 function addItem(ProductId) {
