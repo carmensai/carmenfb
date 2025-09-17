@@ -425,7 +425,7 @@ function addItem(ProductId) {
 	if (selectedItems[ProductId]) {
 		selectedItems[ProductId].quantity++;
 	}
-	updateCart();
+	updateCartDisplay();
 }
 
 function removeItem(ProductId) {
@@ -435,7 +435,7 @@ function removeItem(ProductId) {
 			delete selectedItems[ProductId];
 		}
 	}
-	updateCart();
+	updateCartDisplay();
 }
 
 const cartNav = document.getElementById('cartLink');
