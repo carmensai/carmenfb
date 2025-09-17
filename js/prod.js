@@ -335,9 +335,9 @@ function addcart()
 function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cartlist');
-const totalElement = document.getElementById('carttotal');
+// const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
-console.log(`BtnProducts : ${BtnProducts.length}, cart : ${cart.length} , totalElement : ${totalElement.length} , cartOverlay : ${cartOverlay.length}`);
+console.log(`BtnProducts : ${BtnProducts.length} , cartOverlay : ${cartOverlay.length}`);
 
 	BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
@@ -389,6 +389,7 @@ function updateCartDisplay() {
 }
 
 function updateTotal() {
+  const totalElement = document.getElementById('carttotal');
   let total = 0;
   for (const id in selectedItems) {
     total += selectedItems[id].price * selectedItems[id].quantity;
@@ -421,11 +422,15 @@ function closeCartPopup() {
   document.querySelector(".cart-overlay").style.display = "none"; // Hide the cart-overlay
 }
 
-document.querySelector('.cart-overlay').addEventListener('click', function(event) {
+document.getElementById('cartLink').addEventListener('click', function(event) {
   event.preventDefault();
   openCartPopup();
 });
 
+document.querySelector('.cart-close-button').addEventListener('click', function(event) {
+  event.preventDefault();
+  closeCartPopup();
+});
 
 cartNav.addEventListener('click', (e) => {
   e.preventDefault();
