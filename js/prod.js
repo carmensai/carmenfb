@@ -337,16 +337,14 @@ const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
-const cartNav = document.getElementById('cartLink');
-const closeBtn = document.querySelector('.cart-close-button');
-
+console.log(`BtnProducts : ${BtnProducts.length}, cart : ${cart.length} , totalElement : ${totalElement.length} , cartOverlay : ${cartOverlay.length}`);
 
 	BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
 	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(event);
-      document.body.classList.add('cart-opened');
+      // document.body.classList.add('cart-opened');
     });
   });
 }
@@ -356,16 +354,19 @@ const closeBtn = document.querySelector('.cart-close-button');
 
 const selectedItems = {};
 
-
 function handleProductClick(event) {
+  const idx = Number(button.dataset.index);
+  const chosenProduct = products[idx];
   const button = event.target;
-  const productId = button.dataset.id;
-  const productName = button.dataset.name;
-  const productPrice = parseFloat(button.dataset.price);
+  const productId = chosenProduct.product_id;
+  const productName = chosenProduct.name;
+  const productPrice = chosenProduct.offer_price;
+  const productImg = chosenProduct.image_path;
 
   if (!selectedItems[productId]) {
     selectedItems[productId] = {
       name: productName,
+	  image_path: productImg,
       price: productPrice,
       quantity: 1
     };
@@ -394,6 +395,10 @@ function updateTotal() {
   }
   totalElement.textContent = `Total: $${total.toFixed(2)}`;
 }
+
+const cartNav = document.getElementById('cartLink');
+const closeBtn = document.querySelector('.cart-close-button');
+console.log(`cartNav : ${cartNav.length} , closeBtn : ${closeBtn.length}`);
 
 // Show cart on nav click
 cartNav.addEventListener('click', () => {
