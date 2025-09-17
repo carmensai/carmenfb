@@ -193,10 +193,10 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i} - 1` + "\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
-	// "<a> <p> <button class=\"addCartButton\">Add to Cart </button> </p> </a>" + 
+	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
 		/*
 	   "<p class=\"sliderNameCap\">" + x[i].getElementsByTagName("Data")[1].childNodes[0].nodeValue  + "</p>" +
 	   "<p  class=\"sliderNameCap\"> Fabric: " + x[i].getElementsByTagName("Data")[9].childNodes[0].nodeValue  + "</p>" +
@@ -262,7 +262,7 @@ function myFunction(xml) {
   console.log(prod);
 	//return pageCount;
 }
-loadXMLProducts();
+ loadXMLProducts();
 
 console.log("TotalPages" + TotalPages);
 
@@ -285,18 +285,6 @@ lastpage.forEach((item, index) => {
 	firstpage.forEach(el => el.classList.remove("active"));
 	lastpage.forEach(el => el.classList.remove("active"));
 	item.classList.add("active");
-	  console.log("TotalPages" + TotalPages);
-    });
-  });
-
-lastpage.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    //change the current slide
-	wrapper.style.transform = `translateX(${TotalPages * -100}vw`;
-	pageItems.forEach(el => el.classList.remove("active"));
-	firstpage.forEach(el => el.classList.remove("active"));
-	lastpage.forEach(el => el.classList.remove("active"));
-	item.classList.add("active");
 	console.log("TotalPages" + TotalPages);
 	
 	let choosenProduct = products[0];
@@ -310,111 +298,7 @@ lastpage.forEach((item, index) => {
     });
   });
 
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
-const cart = document.getElementById('cart');
-const totalElement = document.getElementById('total'); 
-const selectedItems = {};
-
-		
-function handleProductClick(event) {
-    const clickedProduct = event.currentTarget;
-    const index = parseInt(clickedProduct.dataset.index); // Get index from data attribute
-
-
-const ProductId = products[index].product_id;
-console.log(`ProductId Index: ${index}`);
-const ProductName = products[index].name;
-const ProductPrice = parseFloat(products[index].offer_price);
-const imagePath = products[index].image_path;
-console.log(`ProductId : ${ProductId}`);
-console.log(`ProductName : ${ProductName}`);
-console.log(`ProductPrice : ${ProductPrice}`);
-
-if (selectedItems[ProductId]) {
-    selectedItems[ProductId].count++;
-} else {
-    selectedItems[ProductId] = {
-        product_id: ProductId,
-        name: ProductName,
-        price: ProductPrice,
-        count: 1,
-        image_path: imagePath,
-    };
-}
-console.log(selectedItems[ProductId] );
-updateCart();
-}
-
-function updateCart() {
-	cart.innerHTML = '';
-	let total = 0; 
-
-	for (const ProductId in selectedItems) {
-		const item = selectedItems[ProductId];
-		const listItem = document.createElement('li');
-		const quantityContainer = document.createElement('div'); 
-		const quantityText = document.createElement('span'); 
-		const addButton = document.createElement('button');
-		const subtractButton = document.createElement('button');
-
-		addButton.textContent = '+';
-		subtractButton.textContent = '-';
-
-		quantityText.textContent = item.count; 
-
-		addButton.addEventListener('click', () => {
-			addItem(ProductId);
-		});
-
-		subtractButton.addEventListener('click', () => {
-			removeItem(ProductId);
-		});
-
-		const hr = document.createElement('hr');
-
-		quantityContainer.appendChild(subtractButton); 
-		quantityContainer.appendChild(quantityText); 
-		quantityContainer.appendChild(addButton); 
-		quantityContainer.appendChild(hr); 
-
-		listItem.textContent = `${item.name} - $${item.price * item.count}`;
-		listItem.appendChild(quantityContainer); 
-		cart.appendChild(listItem);
-
-		total += item.price * item.count; 
-	}
-
-	totalElement.textContent = `Общая сумма: $${total.toFixed(2)}`; 
-}
-
-function addItem(ProductId) {
-	if (selectedItems[ProductId]) {
-		selectedItems[ProductId].count++;
-	}
-	updateCart();
-}
-
-function removeItem(ProductId) {
-	if (selectedItems[ProductId]) {
-		selectedItems[ProductId].count--;
-		if (selectedItems[ProductId].count <= 0) {
-			delete selectedItems[ProductId];
-		}
-	}
-	updateCart();
-}
-
-//function addcart() {
-AllProducts.forEach((btn) => {
-	btn.addEventListener('click', (event) => {
-		event.preventDefault(); // ✅ This is the correct way
-		handleProductClick(event);
-	});
-});
-//}
-
 function updateProductDetails() {
-const AllProducts = document.querySelectorAll('.addcartbutton'); 
 const productItem = document.querySelectorAll(".slidergrid-image");
 const currentProductImg = document.querySelector(".productImg");
 const productInfoDetails = document.querySelector(".productDetails");
@@ -439,13 +323,164 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
       productParagraphs[6].textContent = "Duppatta Info: " + chosenProduct.duppatta;
       console.log(`Image Path: ${chosenProduct.image_path}, Product ID: ${chosenProduct.product_id}`);
       productSizeDetails.style.backgroundColor = "#ffffff"; // Set background White
+		});
+	});
+}
 
-	AllProducts.forEach((btn) => {
-	btn.addEventListener('click', (event) => {
-		event.preventDefault(); // ✅ This is the correct way
-		handleProductClick(event);
-	});
-});
-	});
+function addcart()
+{
+	addtocart();
+}
+
+function addtocart() {
+const BtnProducts = document.querySelectorAll('.addcartbutton');
+const cart = document.getElementById('cartlist');
+// const totalElement = document.getElementById('carttotal');
+const cartOverlay = document.querySelector('.cart-overlay');
+console.log(`BtnProducts : ${BtnProducts.length} , cartOverlay : ${cartOverlay.length}`);
+
+	BtnProducts.forEach(button => {
+    button.addEventListener('click', event => {
+	  console.log("Button clicked");
+      event.preventDefault();
+      handleProductClick(event);
+      // document.body.classList.add('cart-opened');
+    });
   });
 }
+
+//const closeBtn = document.querySelector('.cart-close-button');
+//const cartNav = document.getElementById('cartLink');
+
+const selectedItems = {};
+
+function handleProductClick(event) {
+  const button = event.target;
+  const idx = Number(button.dataset.index);
+  const chosenProduct = products[idx];
+  const productId = chosenProduct.product_id;
+  const productName = chosenProduct.name;
+  const productPrice = chosenProduct.offer_price;
+  const productImg = chosenProduct.image_path;
+
+  if (!selectedItems[productId]) {
+    selectedItems[productId] = {
+      name: productName,
+	  image_path: productImg,
+      price: productPrice,
+      quantity: 1
+    };
+  } else {
+    selectedItems[productId].quantity += 1;
+  }
+
+  updateCartDisplay();
+  updateTotal();
+}
+
+function updateCartDisplay() {
+  const totalElement = document.getElementById('carttotal');
+  cartlist.innerHTML = '';
+  let total = 0; 
+  for (const id in selectedItems) {
+    const item = selectedItems[id];
+	const itemElement = document.createElement('div');
+	const listItem = document.createElement('li');
+    const quantityContainer = document.createElement('div'); 
+	const quantityText = document.createElement('span'); 
+	const addButton = document.createElement('button');
+	const subtractButton = document.createElement('button');
+	addButton.textContent = '+';
+	subtractButton.textContent = '-';
+	quantityText.textContent = item.quantity; 
+	  
+		addButton.addEventListener('click', () => {
+			addItem(id);
+		});
+		subtractButton.addEventListener('click', () => {
+			removeItem(id);
+		});
+	const hr = document.createElement('hr');
+		quantityContainer.appendChild(subtractButton); 
+		quantityContainer.appendChild(quantityText); 
+		quantityContainer.appendChild(addButton); 
+		quantityContainer.appendChild(hr); 
+	  
+    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.appendChild(quantityContainer); 
+	cartlist.appendChild(listItem);
+	total += item.price * item.quantity; 
+  }
+  totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
+}
+
+function updateTotal() {
+  const totalElement = document.getElementById('carttotal');
+  let total = 0;
+  for (const id in selectedItems) {
+    total += selectedItems[id].price * selectedItems[id].quantity;
+  }
+  totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
+}
+
+function addItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].quantity++;
+	}
+	updateCartDisplay();
+}
+
+function removeItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		selectedItems[ProductId].quantity--;
+		if (selectedItems[ProductId].quantity <= 0) {
+			delete selectedItems[ProductId];
+		}
+	}
+	updateCartDisplay();
+}
+
+const cartNav = document.getElementById('cartLink');
+const closeBtn = document.querySelector('.cart-close-button');
+console.log(`cartNav : ${cartNav.length} , closeBtn : ${closeBtn.length}`);
+
+// Show cart on nav click
+cartNav.addEventListener('click', () => {
+  console.log("cart-opened-Clicked");
+  document.body.classList.add('cart-opened');
+});
+
+// Close cart
+closeBtn.addEventListener('click', () => {
+	console.log("cart-CloseButton -Clicked");
+  document.body.classList.remove('cart-opened');
+});
+
+
+function openCartPopup() {
+  document.querySelector(".cart-overlay").style.display = "flex"; // Show the cart-overlay
+}
+
+function closeCartPopup() {
+  document.querySelector(".cart-overlay").style.display = "none"; // Hide the cart-overlay
+}
+
+document.getElementById('cartLink').addEventListener('click', function(event) {
+  event.preventDefault();
+  openCartPopup();
+});
+
+document.querySelector('.cart-close-button').addEventListener('click', function(event) {
+  event.preventDefault();
+  closeCartPopup();
+});
+
+cartNav.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.body.classList.add('cart-opened');
+});
+
+closeBtn.addEventListener('click', () => {
+  document.body.classList.remove('cart-opened');
+});
+
