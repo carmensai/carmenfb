@@ -380,6 +380,7 @@ function handleProductClick(event) {
 
 function updateCartDisplay() {
   cartlist.innerHTML = '';
+  let total = 0; 
   for (const id in selectedItems) {
     const item = selectedItems[id];
 	const itemElement = document.createElement('div');
