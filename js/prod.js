@@ -334,7 +334,7 @@ function addcart()
 
 function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
-const cart = document.getElementById('cart');
+const cart = document.getElementById('cartlist');
 const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
 console.log(`BtnProducts : ${BtnProducts.length}, cart : ${cart.length} , totalElement : ${totalElement.length} , cartOverlay : ${cartOverlay.length}`);
