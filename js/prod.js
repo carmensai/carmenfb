@@ -379,12 +379,12 @@ function handleProductClick(event) {
 }
 
 function updateCartDisplay() {
-  cart.innerHTML = '';
+  cartlist.innerHTML = '';
   for (const id in selectedItems) {
     const item = selectedItems[id];
     const itemElement = document.createElement('div');
     itemElement.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
-    cart.appendChild(itemElement);
+    cartlist.appendChild(itemElement);
   }
 }
 
@@ -402,11 +402,13 @@ console.log(`cartNav : ${cartNav.length} , closeBtn : ${closeBtn.length}`);
 
 // Show cart on nav click
 cartNav.addEventListener('click', () => {
+  console.log("cart-opened-Clicked");
   document.body.classList.add('cart-opened');
 });
 
 // Close cart
 closeBtn.addEventListener('click', () => {
+	console.log("cart-CloseButton -Clicked");
   document.body.classList.remove('cart-opened');
 });
 
