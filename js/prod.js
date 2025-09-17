@@ -339,6 +339,13 @@ const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartNav = document.getElementById('cartLink');
 const closeBtn = document.querySelector('.cart-close-button');
+
+	console.log(`BtnProducts : ${BtnProducts.length}`);
+	console.log(`cart : ${cart.length}`);
+	console.log(`totalElement : ${totalElement.length}`);
+	console.log(`cartOverlay : ${cartOverlay.length}`);
+	console.log(`cartNav : ${cartNav.length}`);
+	console.log(`closeBtn : ${closeBtn.length}`);
 	
 	BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
