@@ -328,10 +328,7 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 }
 
 
-const BtnProducts = document.querySelectorAll('.addcartbutton');
-const cart = document.getElementById('cart');
-const totalElement = document.getElementById('total');
-const cartOverlay = document.querySelector('.cart-overlay');
+
 //const closeBtn = document.querySelector('.cart-close-button');
 //const cartNav = document.getElementById('cartLink');
 
@@ -412,6 +409,10 @@ closeBtn.addEventListener('click', () => {
 });
 
 function addtocart() {
+const BtnProducts = document.querySelectorAll('.addcartbutton');
+const cart = document.getElementById('cart');
+const totalElement = document.getElementById('total');
+const cartOverlay = document.querySelector('.cart-overlay');
   BtnProducts.forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
