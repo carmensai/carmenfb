@@ -331,7 +331,15 @@ const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cart');
 const totalElement = document.getElementById('total');
 const cartOverlay = document.querySelector('.cart-overlay');
-
+function addtocart() {
+	BtnProducts.forEach(button => {
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      handleProductClick(event);
+      document.body.classList.add('cart-opened');
+    });
+  });
+}
 
 //const closeBtn = document.querySelector('.cart-close-button');
 //const cartNav = document.getElementById('cartLink');
@@ -414,13 +422,5 @@ closeBtn.addEventListener('click', () => {
   document.body.classList.remove('cart-opened');
 });
 
-function addtocart() {
-	BtnProducts.forEach(button => {
-    button.addEventListener('click', event => {
-      event.preventDefault();
-      handleProductClick(event);
-      document.body.classList.add('cart-opened');
-    });
-  });
-}
+
 addtocart();
