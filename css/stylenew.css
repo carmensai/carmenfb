@@ -1972,16 +1972,51 @@ footer {
 }
 
 .cart-overlay {
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    pointer-events: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
 }
 
 .cart-opened .cart-overlay {
-    opacity: 1;
-    pointer-events: auto;
+  display: block;
 }
 
+.cart-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.cart-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .cart-content {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .cart-close-button {
+    font-size: 2rem;
+  }
+}
 
 .cart-dropdown .mobile-cart .btn-close {
     position: absolute;
