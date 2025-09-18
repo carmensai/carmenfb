@@ -355,10 +355,10 @@ function addtocart() {
   });
 }
 
-
+  let clickedcount = 1;
 function handleProductClick(idx) {
  // const button = event.target;
-  let clickedcount = 1;
+   clickedcount += 1;
 
   console.log(`clickedcount = ${clickedcount}`);
   const chosenProduct = products[idx];
