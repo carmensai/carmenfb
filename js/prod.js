@@ -75,7 +75,7 @@ function myFunction(xml) {
   const slideitem = "<div class=\"sliderItem\" id=\"";
   const slidebg = "<div class=\"sliderBg\"></div>";
   const prodref = "<a href=\"#productdet\">";
-  const butbuynow = "<button class=\"buyButton\">BUY NOW!</button>";
+  const butbuynow = "<a class=\"buyButton\">BUY NOW!</a>";
   const prodcontainer = "<div class=\"product\">";
   // const prodimg = "<img src="./img/air.png" alt="" class="productImg">";
   const proddetail = "<div class=\"productDetails\">";
@@ -193,8 +193,8 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
-	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
+	 "<p> <a id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</a> </p>" +
+	 "<p> <a class=\"buyButton\">Buy Now</a> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
 		/*
@@ -344,8 +344,8 @@ const cart = document.getElementById('cartlist');
 const cartOverlay = document.querySelector('.cart-overlay');
 console.log(`BtnProducts : ${BtnProducts.length} , cartOverlay : ${cartOverlay.length}`);
 
-	BtnProducts.forEach(button => {
-    button.addEventListener('click', function(event) {
+	BtnProducts.forEach((item,index) => {
+    item.addEventListener('click', function(event) {
 	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(event);
