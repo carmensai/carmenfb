@@ -384,6 +384,7 @@ function updateCartDisplay() {
   cartlist.innerHTML = '';
   let total = 0; 
   for (const id in selectedItems) {
+	console.log(`id: ${id}, item.quantity: ${item.quantity}`);
     const item = selectedItems[id];
 	const itemElement = document.createElement('div');
 	const listItem = document.createElement('li');
@@ -392,10 +393,21 @@ function updateCartDisplay() {
 	const addButton = document.createElement('button');
 	const subtractButton = document.createElement('button');
 	addButton.textContent = '+';
-	addButton.classList.add('.cart-add-button');
+	addButton.classList.add('cart-add-button');
 	subtractButton.textContent = '-';
-	subtractButton.classList.add('.cart-subtract-button');
+	subtractButton.classList.add('cart-subtract-button');
+	console.log(`quantityText.textContent: ${item.quantity}`);
 	quantityText.textContent = item.quantity; 
+	const hr = document.createElement('hr');
+		quantityContainer.appendChild(subtractButton); 
+		quantityContainer.appendChild(quantityText); 
+		quantityContainer.appendChild(addButton); 
+		quantityContainer.appendChild(hr); 
+	console.log(`listItem.textContent: ${item.quantity}`);  
+    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.appendChild(quantityContainer); 
+	cartlist.appendChild(listItem);
+
 		addButton.addEventListener('click', (event) => {
 			if (event.target.classList.contains('cart-add-button')) {
 			addItem(id);
@@ -406,15 +418,7 @@ function updateCartDisplay() {
 			removeItem(id);
 			}
 		});
-	const hr = document.createElement('hr');
-		quantityContainer.appendChild(subtractButton); 
-		quantityContainer.appendChild(quantityText); 
-		quantityContainer.appendChild(addButton); 
-		quantityContainer.appendChild(hr); 
-	  
-    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
-    listItem.appendChild(quantityContainer); 
-	cartlist.appendChild(listItem);
+	console.log(`After add Remove: ${item.quantity}`); 
 	total += item.price * item.quantity; 
   }
   totalElement.textContent = `Grand Total: $${total.toFixed(2)}`;
