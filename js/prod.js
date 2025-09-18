@@ -337,37 +337,34 @@ function addcart()
 
 const selectedItems = {};
 
-
 function addtocart() {
-  const productList = document.querySelectorAll('.sliderItem'); 
-  // Use the container that holds all your product buttons
+const BtnProducts = document.querySelectorAll('.addcartbutton');
+const cart = document.getElementById('cartlist');
+// const totalElement = document.getElementById('carttotal');
+const cartOverlay = document.querySelector('.cart-overlay');
+console.log(`BtnProducts : ${BtnProducts.length} `);
 
-  productList.addEventListener('click', function(event) {
-    // Check if the clicked element is a cart button
-    if (event.target.classList.contains('addcartbutton')) {
-      event.preventDefault();
-
-      const idx = Number(event.target.dataset.index);
-      console.log("Button clicked");
+	BtnProducts.forEach( button => {
+    button.addEventListener('click', function() {
+	const idx = Number(button.dataset.index);
+	  console.log("Button clicked");
+     // event.preventDefault();
       handleProductClick(idx);
       // document.body.classList.add('cart-opened');
-    }
+    }, { once: true });
   });
 }
 
-  const productList = document.querySelectorAll('.sliderItem'); 
-  // Use the container that holds all your product buttons
-
-  productList.addEventListener('click', function(event) {
-    // Check if the clicked element is a cart button
-    if (event.target.classList.contains('addcartbutton')) {
+document.querySelectorAll('.addcartbutton').forEach( (item, index) => {
+    item.button.addEventListener('click', () {
+	const idx = Number(button.dataset.index);
+	  console.log("Button clicked");
       event.preventDefault();
-      const idx = Number(event.target.dataset.index);
-      console.log("Button clicked");
       handleProductClick(idx);
       // document.body.classList.add('cart-opened');
-    }
+    });
   });
+
 
 function handleProductClick(idx) {
  // const button = event.target;
