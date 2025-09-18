@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
+	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -337,24 +337,37 @@ function addcart()
 
 const selectedItems = {};
 
-function addtocart() {
-const BtnProducts = document.querySelectorAll('.addcartbutton');
-const cart = document.getElementById('cartlist');
-// const totalElement = document.getElementById('carttotal');
-const cartOverlay = document.querySelector('.cart-overlay');
-console.log(`BtnProducts : ${BtnProducts.length} `);
 
-	BtnProducts.forEach( button => {
-    button.addEventListener('click', function() {
-	const idx = Number(button.dataset.index);
-	  console.log("Button clicked");
-     // event.preventDefault();
+function addtocart() {
+  const productList = document.querySelectorAll('.sliderItem'); 
+  // Use the container that holds all your product buttons
+
+  productList.addEventListener('click', function(event) {
+    // Check if the clicked element is a cart button
+    if (event.target.classList.contains('addcartbutton')) {
+      event.preventDefault();
+
+      const idx = Number(event.target.dataset.index);
+      console.log("Button clicked");
       handleProductClick(idx);
       // document.body.classList.add('cart-opened');
-    }, { once: true });
+    }
   });
 }
 
+  const productList = document.querySelectorAll('.sliderItem'); 
+  // Use the container that holds all your product buttons
+
+  productList.addEventListener('click', function(event) {
+    // Check if the clicked element is a cart button
+    if (event.target.classList.contains('addcartbutton')) {
+      event.preventDefault();
+      const idx = Number(event.target.dataset.index);
+      console.log("Button clicked");
+      handleProductClick(idx);
+      // document.body.classList.add('cart-opened');
+    }
+  });
 
 function handleProductClick(idx) {
  // const button = event.target;
