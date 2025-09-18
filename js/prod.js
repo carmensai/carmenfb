@@ -384,9 +384,7 @@ function updateCartDisplay() {
   cartlist.innerHTML = '';
   let total = 0; 
   for (const id in selectedItems) {
-    //const item = selectedItems[id];
-	let item = {};
-	item = selectedItems[id];
+    const item = selectedItems[id];
 	const itemElement = document.createElement('div');
 	const listItem = document.createElement('li');
     const quantityContainer = document.createElement('div'); 
@@ -394,14 +392,19 @@ function updateCartDisplay() {
 	const addButton = document.createElement('button');
 	const subtractButton = document.createElement('button');
 	addButton.textContent = '+';
+	addButton.classList.add('.cart-add-button');
 	subtractButton.textContent = '-';
+	subtractButton.classList.add('.cart-subtract-button');
 	quantityText.textContent = item.quantity; 
-	  
-		addButton.addEventListener('click', () => {
+		addButton.addEventListener('click', (event) => {
+			if (event.target.classList.contains('cart-add-button')) {
 			addItem(id);
+			}
 		});
 		subtractButton.addEventListener('click', () => {
+			if (event.target.classList.contains('cart-subtract-button')) {
 			removeItem(id);
+			}
 		});
 	const hr = document.createElement('hr');
 		quantityContainer.appendChild(subtractButton); 
