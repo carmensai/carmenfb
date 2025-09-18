@@ -356,17 +356,6 @@ function addtocart() {
 }
 
 
-document.querySelectorAll('.addcartbutton').forEach( (item, index) => {
-    item.addEventListener('click', () {
-	const idx = Number(item.dataset.index);
-	  console.log("Button clicked");
-      event.preventDefault();
-      handleProductClick(idx);
-      // document.body.classList.add('cart-opened');
-    });
-  });
-
-
 function handleProductClick(idx) {
  // const button = event.target;
   let clickedcount = 1;
