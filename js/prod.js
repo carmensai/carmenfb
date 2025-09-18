@@ -345,19 +345,22 @@ const cartOverlay = document.querySelector('.cart-overlay');
 console.log(`BtnProducts : ${BtnProducts.length} `);
 
 	BtnProducts.forEach( button => {
-    button.addEventListener('click', function(event) {
+    button.addEventListener('click', function() {
+	const idx = Number(button.dataset.index);
 	  console.log("Button clicked");
-      event.preventDefault();
-      handleProductClick(event);
+     // event.preventDefault();
+      handleProductClick(idx);
       // document.body.classList.add('cart-opened');
     }, { once: true });
   });
 }
 
 
-function handleProductClick(event) {
-  const button = event.target;
-  const idx = Number(button.dataset.index);
+function handleProductClick(idx) {
+ // const button = event.target;
+  Let clickedcount = 1;
+
+  console.log(`clickedcount = ${clickedcount}`);
   const chosenProduct = products[idx];
   const productId = chosenProduct.product_id;
   const productName = chosenProduct.name;
