@@ -338,22 +338,23 @@ function addcart()
 const selectedItems = {};
 
 function addtocart() {
-const BtnProducts = document.querySelectorAll('.addcartbutton');
-const cart = document.getElementById('cartlist');
-// const totalElement = document.getElementById('carttotal');
-const cartOverlay = document.querySelector('.cart-overlay');
-console.log(`BtnProducts : ${BtnProducts.length} `);
+  const BtnProducts = document.querySelectorAll('.addcartbutton');
+  const cart = document.getElementById('cartlist');
+  const cartOverlay = document.querySelector('.cart-overlay');
 
-	BtnProducts.forEach( button => {
-    button.addEventListener('click', function() {
-	const idx = Number(button.dataset.index);
-	  console.log("Button clicked");
-     // event.preventDefault();
+  console.log(`BtnProducts : ${BtnProducts.length}`);
+
+  BtnProducts.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default behavior if needed
+      const idx = Number(button.dataset.index);
+      console.log("Button clicked");
       handleProductClick(idx);
       // document.body.classList.add('cart-opened');
-    }, { once: true });
+    });
   });
 }
+
 
 document.querySelectorAll('.addcartbutton').forEach( (item, index) => {
     item.button.addEventListener('click', () {
