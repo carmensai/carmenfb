@@ -193,8 +193,8 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <a id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</a> </p>" +
-	 "<p> <a class=\"buyButton\">Buy Now</a> </p>" +
+	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
+	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
 		/*
@@ -327,32 +327,32 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 	});
 }
 
-//function addcart()
-//{
-//	addtocart();
-//}
+function addcart()
+{
+	addtocart();
+}
 
 //const closeBtn = document.querySelector('.cart-close-button');
 //const cartNav = document.getElementById('cartLink');
 
 const selectedItems = {};
 
-//function addtocart() {
+function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cartlist');
 // const totalElement = document.getElementById('carttotal');
 const cartOverlay = document.querySelector('.cart-overlay');
-console.log(`BtnProducts : ${BtnProducts.length} , cartOverlay : ${cartOverlay.length}`);
+console.log(`BtnProducts : ${BtnProducts.length} `);
 
-	BtnProducts.forEach((item,index) => {
-    item.addEventListener('click', function(event) {
+	BtnProducts.forEach( button => {
+    button.addEventListener('click', function(event) {
 	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(event);
       // document.body.classList.add('cart-opened');
     });
   });
-//}
+}
 
 
 function handleProductClick(event) {
@@ -486,3 +486,4 @@ closeBtn.addEventListener('click', () => {
   document.body.classList.remove('cart-opened');
 });
 
+addcart();
