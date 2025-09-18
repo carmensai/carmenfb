@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart()\">Add to Cart</button> </p>" +
+	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -327,17 +327,17 @@ const productParagraphs = productInfoDetails.querySelectorAll("p");
 	});
 }
 
-function addcart()
-{
-	addtocart();
-}
+//function addcart()
+//{
+//	addtocart();
+//}
 
 //const closeBtn = document.querySelector('.cart-close-button');
 //const cartNav = document.getElementById('cartLink');
 
 const selectedItems = {};
 
-function addtocart() {
+//function addtocart() {
 const BtnProducts = document.querySelectorAll('.addcartbutton');
 const cart = document.getElementById('cartlist');
 // const totalElement = document.getElementById('carttotal');
@@ -345,14 +345,14 @@ const cartOverlay = document.querySelector('.cart-overlay');
 console.log(`BtnProducts : ${BtnProducts.length} , cartOverlay : ${cartOverlay.length}`);
 
 	BtnProducts.forEach(button => {
-    button.addEventListener('click', event => {
+    button.addEventListener('click', function(event) {
 	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(event);
       // document.body.classList.add('cart-opened');
     });
   });
-}
+//}
 
 
 function handleProductClick(event) {
