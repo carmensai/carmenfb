@@ -384,7 +384,9 @@ function updateCartDisplay() {
   cartlist.innerHTML = '';
   let total = 0; 
   for (const id in selectedItems) {
-    const item = selectedItems[id];
+    //const item = selectedItems[id];
+	let item = {};
+	item = selectedItems[id];
 	const itemElement = document.createElement('div');
 	const listItem = document.createElement('li');
     const quantityContainer = document.createElement('div'); 
