@@ -357,8 +357,8 @@ function addtocart() {
 
 
 document.querySelectorAll('.addcartbutton').forEach( (item, index) => {
-    item.button.addEventListener('click', () {
-	const idx = Number(button.dataset.index);
+    item.addEventListener('click', () {
+	const idx = Number(item.dataset.index);
 	  console.log("Button clicked");
       event.preventDefault();
       handleProductClick(idx);
