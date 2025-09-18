@@ -358,7 +358,7 @@ console.log(`BtnProducts : ${BtnProducts.length} `);
 
 function handleProductClick(idx) {
  // const button = event.target;
-  Let clickedcount = 1;
+  let clickedcount = 1;
 
   console.log(`clickedcount = ${clickedcount}`);
   const chosenProduct = products[idx];
