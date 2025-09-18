@@ -401,7 +401,7 @@ function updateCartDisplay() {
 			addItem(id);
 			}
 		});
-		subtractButton.addEventListener('click', () => {
+		subtractButton.addEventListener('click', (event) => {
 			if (event.target.classList.contains('cart-subtract-button')) {
 			removeItem(id);
 			}
