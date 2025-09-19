@@ -338,7 +338,7 @@ function addcart()
 const selectedItems = {};
 
 function addtocart() {
-  const BtnProducts = document.querySelectorAll('.sliderItem');
+  const BtnProducts = document.querySelectorAll('.addcartbutton');
   const cart = document.getElementById('cartlist');
   const cartOverlay = document.querySelector('.cart-overlay');
 
