@@ -338,14 +338,14 @@ function addcart()
 const selectedItems = {};
 
 function addtocart() {
-  const BtnProducts = document.querySelectorAll('.addcartbutton');
+  const BtnProducts = document.querySelectorAll('.sliderItem');
   const cart = document.getElementById('cartlist');
   const cartOverlay = document.querySelector('.cart-overlay');
 
   console.log(`BtnProducts : ${BtnProducts.length}`);
 
   BtnProducts.forEach((button) => {
-    button.addEventListener('click', (event) => {
+	  button.addEventListener('click', (event) => {
       event.preventDefault(); // Prevent default behavior if needed
       const idx = Number(button.dataset.index);
       console.log("Button clicked");
