@@ -338,22 +338,24 @@ function addcart()
 const selectedItems = {};
 
 function addtocart() {
-  const BtnProducts = document.querySelectorAll('.addcartbutton');
+  const BtnProducts = document.querySelectorAll('.sliderItem');
   const cart = document.getElementById('cartlist');
   const cartOverlay = document.querySelector('.cart-overlay');
 
   console.log(`BtnProducts : ${BtnProducts.length}`);
 
-  BtnProducts.forEach((button) => {
-	  button.addEventListener('click', (event) => {
-      event.preventDefault(); // Prevent default behavior if needed
-      const idx = Number(button.dataset.index);
-      console.log("Button clicked");
-      handleProductClick(idx);
+  BtnProducts.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+      if (event.target.classList.contains('addcartbutton')) {
+        event.preventDefault();
+        console.log("Button clicked");
+        handleProductClick(index); // Use the correct index from forEach
+      }
       // document.body.classList.add('cart-opened');
     });
   });
 }
+
 
   let clickedcount = 1;
 function handleProductClick(idx) {
@@ -381,6 +383,7 @@ function handleProductClick(idx) {
   updateCartDisplay();
   updateTotal();
 }
+
 
 function updateCartDisplay() {
   const totalElement = document.getElementById('carttotal');
