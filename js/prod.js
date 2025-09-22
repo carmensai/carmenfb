@@ -398,10 +398,18 @@ function updateCartDisplay() {
 	const quantityText = document.createElement('span'); 
 	const addButton = document.createElement('button');
 	const subtractButton = document.createElement('button');
+	const itemImage = document.createElement('img');
+	const itemDelete = document.createElement('i');
+  
 	addButton.textContent = '+';
 	addButton.classList.add('cart-add-button');
 	subtractButton.textContent = '-';
 	subtractButton.classList.add('cart-subtract-button');
+	itemImage.src = `${item.image_path}`;
+	itemImage.classList.add('cart-image');
+	itemDelete.classList.add('fa', 'fa-trash');
+	itemDelete.setAttribute('aria-hidden', 'true');
+	  
 	console.log(`quantityText.textContent: ${item.quantity}`);
 	quantityText.textContent = item.quantity; 
 	const hr = document.createElement('hr');
@@ -411,7 +419,9 @@ function updateCartDisplay() {
 		quantityContainer.appendChild(hr); 
 	console.log(`listItem.textContent: ${item.quantity}`);  
     listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
-    listItem.appendChild(quantityContainer); 
+    listItem.appendChild(itemImage);
+	listItem.appendChild(quantityContainer); 
+	listItem.appendChild(itemDelete);  
 	cartlist.appendChild(listItem);
 
 		addButton.addEventListener('click', (event) => {
