@@ -1395,6 +1395,8 @@ html {
   border: 1px solid gray;
   z-index: 1;
 }
+
+/*
 .sliderItem addCartButton {
   border: none;
   outline: 0;
@@ -1412,6 +1414,7 @@ html {
   color: black;
   opacity: 0.7;
 }
+*/
 
 .sliderItem:nth-child(1) .sliderBg {
   background-color: #369e62;
