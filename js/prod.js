@@ -193,7 +193,7 @@ function myFunction(xml) {
 	//"<p class=\"sliderSizeCap\">" + "3XL" + "</p>" + 
 	//"<p class=\"sliderSizeCap\">" + "4XL" + "</p>" +  
 	 "<p class=\"sliderPriceCap\">" + "Rs " + x[i].getElementsByTagName("Data")[6].childNodes[0].nodeValue + "</p>" +
-	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\" onclick=\"addcart();\">Add to Cart</button> </p>" +
+	 "<p> <button id=\"addcartBtn\" class=\"addcartbutton\" data-index= \"" + `${i - 1}` + "\">Add to Cart</button> </p>" +
 	 "<p> <button class=\"buyButton\">Buy Now</button> </p>" +
 	 "</a>" +
 	// "<a> <p> <button class=\"addcartbutton\">Add to Cart </button> </p> </a>" + 
@@ -501,4 +501,20 @@ closeBtn.addEventListener('click', () => {
   document.body.classList.remove('cart-opened');
 });
 
-addcart();
+function initCartClickHandler() {
+  // Attach to a stable parent — document works if you don't have a specific container
+  document.addEventListener('click', function(event) {
+    // Match either a specific ID or the class
+    if (event.target.id === 'addcartBtn' || event.target.classList.contains('addcartbutton')) {
+      event.preventDefault();
+
+      const idx = Number(event.target.dataset.index);
+      console.log("Button clicked:", event.target.id || event.target.className);
+
+      handleProductClick(idx);
+      // document.body.classList.add('cart-opened');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initCartClickHandler);
