@@ -528,6 +528,17 @@ closeBtn.addEventListener('click', () => {
 function initCartClickHandler() {
   // Attach to a stable parent — document works if you don't have a specific container
   document.addEventListener('click', function(event) {
+  const instockSizes = document.querySelectorAll(".sliderSizeTextinstock");
+    // Match either a specific ID or the class
+    if (event.target.classList.contains('sliderSizeTextinstock')) {
+      event.preventDefault();
+      const idx = Number(event.target.dataset.index);
+      console.log("Button clicked:", event.target.id || event.target.className);
+	  instockSizes.forEach(el => el.classList.remove("active"));
+	  item.classList.add("active");
+     // updateProductSize(idx);
+      // document.body.classList.add('cart-opened');
+    }
     // Match either a specific ID or the class
     if (event.target.id === 'addcartBtn' || event.target.classList.contains('addcartbutton')) {
       event.preventDefault();
@@ -542,3 +553,7 @@ function initCartClickHandler() {
 }
 
 document.addEventListener('DOMContentLoaded', initCartClickHandler);
+
+
+
+
