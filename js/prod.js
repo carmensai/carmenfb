@@ -418,12 +418,11 @@ function updateCartDisplay() {
 		quantityContainer.appendChild(addButton); 
 		quantityContainer.appendChild(hr); 
 	console.log(`listItem.textContent: ${item.quantity}`);  
-    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
     listItem.appendChild(itemImage);
+	listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.appendChild(itemDelete);  
 	listItem.appendChild(quantityContainer); 
-	listItem.appendChild(itemDelete);  
 	cartlist.appendChild(listItem);
-
 		addButton.addEventListener('click', (event) => {
 			if (event.target.classList.contains('cart-add-button')) {
 			addItem(id);
@@ -432,6 +431,11 @@ function updateCartDisplay() {
 		subtractButton.addEventListener('click', (event) => {
 			if (event.target.classList.contains('cart-subtract-button')) {
 			removeItem(id);
+			}
+		});
+		itemDelete.addEventListener('click', (event) => {
+			if (event.target.classList.contains('fa fa-trash')) {
+			deleteAllItem(id);
 			}
 		});
 	console.log(`After add Remove: ${item.quantity}`); 
@@ -452,6 +456,13 @@ function updateTotal() {
 function addItem(ProductId) {
 	if (selectedItems[ProductId]) {
 		selectedItems[ProductId].quantity++;
+	}
+	updateCartDisplay();
+}
+
+function deleteAllItem(ProductId) {
+	if (selectedItems[ProductId]) {
+		delete selectedItems[ProductId];
 	}
 	updateCartDisplay();
 }
