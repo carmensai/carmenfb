@@ -2001,27 +2001,13 @@ footer {
   max-height: 80vh;
   overflow-y: auto;
 }
-.cart-add-button{
-    position: absolute;
-    display: inline-block;
-    background-color: #368b44;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-	margin: 0 5px;
-    cursor: pointer;
-    width: 12%;
-    top: 95%;
-    left: 16%;
-    font-size: 12px;
-    transition: .2s linear;
-}
-.cart-subtract-button{
-  background-color: #fff;
+.cart-add-button .cart-subtract-button {
+  background-color: #368b44;
   border: none;
   margin: 0 5px;
   padding: 8px 12px;
   border-radius: 4px;
+  transition: .2s linear;
   cursor: pointer;
 }
 
@@ -2030,8 +2016,9 @@ footer {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  background: none;
+  background: white;
   border: none;
+  color: black;
   cursor: pointer;
 }
 
