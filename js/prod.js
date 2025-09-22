@@ -399,7 +399,7 @@ function updateCartDisplay() {
 	const addButton = document.createElement('button');
 	const subtractButton = document.createElement('button');
 	const itemImage = document.createElement('img');
-	const itemDelete = document.createElement('i');
+	const itemDelete = document.createElement('button');
   
 	addButton.textContent = '+';
 	addButton.classList.add('cart-add-button');
@@ -408,7 +408,7 @@ function updateCartDisplay() {
 	itemImage.src = `${item.image_path}`;
 	itemImage.classList.add('cart-image');
 	
-	itemDelete.classList.add('fa-solid', 'fa-trash','icon-trash-demo', 'spin-trash');
+	itemDelete.classList.add('fa-solid', 'fa-trash','icon-trash-demo');
 	itemDelete.setAttribute('aria-hidden', 'true');
 	
 	console.log(`quantityText.textContent: ${item.quantity}`);
@@ -420,8 +420,8 @@ function updateCartDisplay() {
 	    quantityContainer.appendChild(itemDelete); 
 		quantityContainer.appendChild(hr); 
 	console.log(`listItem.textContent: ${item.quantity}`);  
-    listItem.appendChild(itemImage);
-	listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+    listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
+	listItem.appendChild(itemImage);
 	listItem.appendChild(quantityContainer); 
 	cartlist.appendChild(listItem);
 		addButton.addEventListener('click', (event) => {
@@ -434,8 +434,10 @@ function updateCartDisplay() {
 			removeItem(id);
 			}
 		});
+	  
+	  
 		itemDelete.addEventListener('click', (event) => {
-			if (event.target.classList.contains('fa fa-trash')) {
+			if (event.target.classList.contains('icon-trash-demo')) {
 			deleteAllItem(id);
 			}
 		});
@@ -465,6 +467,7 @@ function deleteAllItem(ProductId) {
 	if (selectedItems[ProductId]) {
 		delete selectedItems[ProductId];
 	}
+	  
 	updateCartDisplay();
 }
 
@@ -493,7 +496,6 @@ closeBtn.addEventListener('click', () => {
 	console.log("cart-CloseButton -Clicked");
   document.body.classList.remove('cart-opened');
 });
-
 
 
 function openCartPopup() {
