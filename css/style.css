@@ -2183,3 +2183,51 @@ footer {
     padding: 0;
     border: 0
 }
+  .icon-trash-demo {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .trash-hover:hover {
+    color: crimson;
+    text-shadow: 0 0 5px crimson;
+  }
+  .trash-circle {
+    background: #eee;
+    border-radius: 50%;
+    padding: 10px;
+    color: #333;
+  }
+  .trash-gradient {
+    background: linear-gradient(45deg, #ff4d4d, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Bounce on click */
+  .trash-bounce:active {
+    transform: scale(0.9);
+  }
+
+  /* Shake on hover */
+  .trash-shake:hover {
+    animation: shake 0.3s;
+  }
+
+  /* Shake on hover */
+  .trash-shake:hover {
+    animation: shake 0.3s;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+  }
+
+  /* Spin animation */
+  .spin-trash {
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
