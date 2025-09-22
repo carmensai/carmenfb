@@ -408,9 +408,9 @@ function updateCartDisplay() {
 	itemImage.src = `${item.image_path}`;
 	itemImage.classList.add('cart-image');
 	
-	itemDelete.classList.add('fa', 'fa-trash');
+	itemDelete.classList.add('fa-solid', 'fa-trash','icon-trash-demo', 'spin-trash');
 	itemDelete.setAttribute('aria-hidden', 'true');
-	  
+	
 	console.log(`quantityText.textContent: ${item.quantity}`);
 	quantityText.textContent = item.quantity; 
 	const hr = document.createElement('hr');
