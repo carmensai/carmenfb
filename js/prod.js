@@ -407,6 +407,7 @@ function updateCartDisplay() {
 	subtractButton.classList.add('cart-subtract-button');
 	itemImage.src = `${item.image_path}`;
 	itemImage.classList.add('cart-image');
+	
 	itemDelete.classList.add('fa', 'fa-trash');
 	itemDelete.setAttribute('aria-hidden', 'true');
 	  
@@ -416,11 +417,11 @@ function updateCartDisplay() {
 		quantityContainer.appendChild(subtractButton); 
 		quantityContainer.appendChild(quantityText); 
 		quantityContainer.appendChild(addButton); 
+	    quantityContainer.appendChild(itemDelete); 
 		quantityContainer.appendChild(hr); 
 	console.log(`listItem.textContent: ${item.quantity}`);  
     listItem.appendChild(itemImage);
 	listItem.textContent = `${item.name} => ${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}`;
-    listItem.appendChild(itemDelete);  
 	listItem.appendChild(quantityContainer); 
 	cartlist.appendChild(listItem);
 		addButton.addEventListener('click', (event) => {
