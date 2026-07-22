@@ -65,12 +65,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <script>
-    const { createClient } = supabase;
-
-    const client = createClient(
-      "https://uebguqrxirqyjhxtyuef.supabase.co",
-      "YOUR_ANON_KEY"
-    );
+  const client = createClient(
+    "https://uebguqrxirqyjhxtyuef.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVlYmd1cXJ4aXJxeWpoeHR5dWVmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2NTc3MDYsImV4cCI6MjEwMDIzMzcwNn0.JkWPHlDbv7UbFoJDCYbj-njSoGDq7_Vg02R-HmM4M6s"
+  );
 
     async function loadProductsFromDB() {
       const { data, error } = await client
